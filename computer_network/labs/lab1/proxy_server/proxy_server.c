@@ -29,12 +29,12 @@ struct CacheEntry {
 
 // 全局缓存和黑名单
 struct CacheEntry cache[CACHE_SIZE];          // 缓存数组
-char* blacklist[] = { "httpbin.org" };        // 禁止访问的网站
-char* redirect_sites[] = { "example.com" };   // 重定向的网站
-char redirect_url[] = "www.cctv.cn";          // 重定向目标 URL
+char* blacklist[] = { "example.com" };        // 禁止访问的网站
+char* redirect_sites[] = { "www.cctv.cn" };   // 重定向的网站
+char redirect_url[] = "today.hit.edu.cn";          // 重定向目标 URL
 
 // 用户 IP 黑名单
-char* user_blacklist[] = { "127.0.1.1", "192.168.1.100" }; // 禁止访问的用户 IP
+char* user_blacklist[] = { "127.0.0.1", "192.168.1.100" }; // 禁止访问的用户 IP
 
 // 函数声明
 BOOL InitSocket(); // 初始化代理服务器的套接字
