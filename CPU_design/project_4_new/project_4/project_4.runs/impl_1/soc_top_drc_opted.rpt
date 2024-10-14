@@ -1,0 +1,297 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Sep  9 13:59:50 2024
+| Host         : TianChang running 64-bit major release  (build 9200)
+| Command      : report_drc -file soc_top_drc_opted.rpt -pb soc_top_drc_opted.pb -rpx soc_top_drc_opted.rpx
+| Design       : soc_top
+| Device       : xc7a200tfbg676-2
+| Speed File   : -2
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 49
++----------+----------+-------------------------------------------------------------------+------------+
+| Rule     | Severity | Description                                                       | Violations |
++----------+----------+-------------------------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties               | 1          |
+| DPIP-1   | Warning  | Input pipelining                                                  | 8          |
+| DPOP-2   | Warning  | MREG Output pipelining                                            | 4          |
+| RPBF-3   | Warning  | IO port buffering is incomplete                                   | 16         |
+| AVAL-4   | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 4          |
+| REQP-20  | Advisory | enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND                   | 4          |
+| REQP-24  | Advisory | enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND                   | 4          |
+| REQP-29  | Advisory | enum_CREG_0_connects_CEC_GND                                      | 4          |
+| REQP-30  | Advisory | enum_MREG_0_connects_CEM_GND                                      | 4          |
++----------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP mrcore/inst/FU_MDU_module/mymul/a0b0/DSP48E1_inst input mrcore/inst/FU_MDU_module/mymul/a0b0/DSP48E1_inst/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP mrcore/inst/FU_MDU_module/mymul/a0b0/DSP48E1_inst input mrcore/inst/FU_MDU_module/mymul/a0b0/DSP48E1_inst/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP mrcore/inst/FU_MDU_module/mymul/a0b1/DSP48E1_inst input mrcore/inst/FU_MDU_module/mymul/a0b1/DSP48E1_inst/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP mrcore/inst/FU_MDU_module/mymul/a0b1/DSP48E1_inst input mrcore/inst/FU_MDU_module/mymul/a0b1/DSP48E1_inst/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP mrcore/inst/FU_MDU_module/mymul/a1b0/DSP48E1_inst input mrcore/inst/FU_MDU_module/mymul/a1b0/DSP48E1_inst/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP mrcore/inst/FU_MDU_module/mymul/a1b0/DSP48E1_inst input mrcore/inst/FU_MDU_module/mymul/a1b0/DSP48E1_inst/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP mrcore/inst/FU_MDU_module/mymul/a1b1/DSP48E1_inst input mrcore/inst/FU_MDU_module/mymul/a1b1/DSP48E1_inst/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP mrcore/inst/FU_MDU_module/mymul/a1b1/DSP48E1_inst input mrcore/inst/FU_MDU_module/mymul/a1b1/DSP48E1_inst/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP mrcore/inst/FU_MDU_module/mymul/a0b0/DSP48E1_inst multiplier stage mrcore/inst/FU_MDU_module/mymul/a0b0/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP mrcore/inst/FU_MDU_module/mymul/a0b1/DSP48E1_inst multiplier stage mrcore/inst/FU_MDU_module/mymul/a0b1/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP mrcore/inst/FU_MDU_module/mymul/a1b0/DSP48E1_inst multiplier stage mrcore/inst/FU_MDU_module/mymul/a1b0/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP mrcore/inst/FU_MDU_module/mymul/a1b1/DSP48E1_inst multiplier stage mrcore/inst/FU_MDU_module/mymul/a1b1/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+RPBF-3#1 Warning
+IO port buffering is incomplete  
+Device port lcd_db[0] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#2 Warning
+IO port buffering is incomplete  
+Device port lcd_db[10] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#3 Warning
+IO port buffering is incomplete  
+Device port lcd_db[11] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#4 Warning
+IO port buffering is incomplete  
+Device port lcd_db[12] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#5 Warning
+IO port buffering is incomplete  
+Device port lcd_db[13] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#6 Warning
+IO port buffering is incomplete  
+Device port lcd_db[14] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#7 Warning
+IO port buffering is incomplete  
+Device port lcd_db[15] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#8 Warning
+IO port buffering is incomplete  
+Device port lcd_db[1] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#9 Warning
+IO port buffering is incomplete  
+Device port lcd_db[2] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#10 Warning
+IO port buffering is incomplete  
+Device port lcd_db[3] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#11 Warning
+IO port buffering is incomplete  
+Device port lcd_db[4] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#12 Warning
+IO port buffering is incomplete  
+Device port lcd_db[5] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#13 Warning
+IO port buffering is incomplete  
+Device port lcd_db[6] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#14 Warning
+IO port buffering is incomplete  
+Device port lcd_db[7] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#15 Warning
+IO port buffering is incomplete  
+Device port lcd_db[8] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#16 Warning
+IO port buffering is incomplete  
+Device port lcd_db[9] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+mrcore/inst/FU_MDU_module/mymul/a0b0/DSP48E1_inst: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+mrcore/inst/FU_MDU_module/mymul/a0b1/DSP48E1_inst: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+mrcore/inst/FU_MDU_module/mymul/a1b0/DSP48E1_inst: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#4 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+mrcore/inst/FU_MDU_module/mymul/a1b1/DSP48E1_inst: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+REQP-20#1 Advisory
+enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND  
+mrcore/inst/FU_MDU_module/mymul/a0b0/DSP48E1_inst: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-20#2 Advisory
+enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND  
+mrcore/inst/FU_MDU_module/mymul/a0b1/DSP48E1_inst: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-20#3 Advisory
+enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND  
+mrcore/inst/FU_MDU_module/mymul/a1b0/DSP48E1_inst: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-20#4 Advisory
+enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND  
+mrcore/inst/FU_MDU_module/mymul/a1b1/DSP48E1_inst: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#1 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+mrcore/inst/FU_MDU_module/mymul/a0b0/DSP48E1_inst: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#2 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+mrcore/inst/FU_MDU_module/mymul/a0b1/DSP48E1_inst: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#3 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+mrcore/inst/FU_MDU_module/mymul/a1b0/DSP48E1_inst: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#4 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+mrcore/inst/FU_MDU_module/mymul/a1b1/DSP48E1_inst: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-29#1 Advisory
+enum_CREG_0_connects_CEC_GND  
+mrcore/inst/FU_MDU_module/mymul/a0b0/DSP48E1_inst: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-29#2 Advisory
+enum_CREG_0_connects_CEC_GND  
+mrcore/inst/FU_MDU_module/mymul/a0b1/DSP48E1_inst: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-29#3 Advisory
+enum_CREG_0_connects_CEC_GND  
+mrcore/inst/FU_MDU_module/mymul/a1b0/DSP48E1_inst: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-29#4 Advisory
+enum_CREG_0_connects_CEC_GND  
+mrcore/inst/FU_MDU_module/mymul/a1b1/DSP48E1_inst: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#1 Advisory
+enum_MREG_0_connects_CEM_GND  
+mrcore/inst/FU_MDU_module/mymul/a0b0/DSP48E1_inst: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#2 Advisory
+enum_MREG_0_connects_CEM_GND  
+mrcore/inst/FU_MDU_module/mymul/a0b1/DSP48E1_inst: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#3 Advisory
+enum_MREG_0_connects_CEM_GND  
+mrcore/inst/FU_MDU_module/mymul/a1b0/DSP48E1_inst: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#4 Advisory
+enum_MREG_0_connects_CEM_GND  
+mrcore/inst/FU_MDU_module/mymul/a1b1/DSP48E1_inst: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+

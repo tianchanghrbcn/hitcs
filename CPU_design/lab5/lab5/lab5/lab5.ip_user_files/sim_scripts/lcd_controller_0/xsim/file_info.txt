@@ -1,0 +1,6 @@
+text_bram.v,verilog,xil_defaultlib,../../../../lab4.srcs/sources_1/ip/lcd_controller_0/ip/text_bram/sim/text_bram.v,
+rst_rom.v,verilog,xil_defaultlib,../../../../lab4.srcs/sources_1/ip/lcd_controller_0/ip/rst_rom/sim/rst_rom.v,
+font_rom.v,verilog,xil_defaultlib,../../../../lab4.srcs/sources_1/ip/lcd_controller_0/ip/font_rom/sim/font_rom.v,
+lcd_controller.v,verilog,xil_defaultlib,../../../../lab4.srcs/sources_1/ip/lcd_controller_0/imports/hardware/lcd_controller.v,
+lcd_controller_0.v,verilog,xil_defaultlib,../../../../lab4.srcs/sources_1/ip/lcd_controller_0/sim/lcd_controller_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

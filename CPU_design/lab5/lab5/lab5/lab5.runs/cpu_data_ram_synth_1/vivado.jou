@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Aug 20 21:07:17 2024
+# Process ID: 10708
+# Current directory: C:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab5/lab5.runs/cpu_data_ram_synth_1
+# Command line: vivado.exe -log cpu_data_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_data_ram.tcl
+# Log file: C:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab5/lab5.runs/cpu_data_ram_synth_1/cpu_data_ram.vds
+# Journal file: C:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab5/lab5.runs/cpu_data_ram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cpu_data_ram.tcl -notrace

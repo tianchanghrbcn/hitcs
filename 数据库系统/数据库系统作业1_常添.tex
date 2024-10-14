@@ -1,0 +1,177 @@
+\documentclass[11pt]{article} % 设置字体大小为11pt
+\usepackage{ctex} % 支持中文
+\usepackage{fontspec} % 字体管理
+\usepackage{amsmath, amssymb} % 数学符号支持
+\usepackage{listings} % 代码块支持
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} % 设置页边距
+\usepackage{setspace} % 控制行间距
+
+% 设置中文字体为楷体 (KaiTi)
+\setCJKmainfont{KaiTi}
+
+% 设置英文字体为 Courier New
+\setmainfont{Courier New}
+
+\linespread{1.25}
+
+\title{数据库系统作业1} 
+\author{常添} 
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{第一题}
+
+\subsection{查询借阅了《西游记》这本书的学生的班级}
+关系代数表达式：
+\[
+\Pi_{\text{\texttt{CLASS}}} (\text{\texttt{S}} \bowtie \text{\texttt{L}} \bowtie \sigma_{\text{\texttt{BNAME}}=\text{《西游记》}}(\text{\texttt{B}}))
+\]
+
+\subsection{查询201班学生借阅图书的书名}
+关系代数表达式：
+\[
+\Pi_{\text{\texttt{BNAME}}} (\text{\texttt{S}} \bowtie \sigma_{\text{\texttt{CLASS}}='201'}(\text{\texttt{S}}) \bowtie \text{\texttt{L}} \bowtie \text{\texttt{B}})
+\]
+
+\subsection{查询小明借过，但小李没有借过的图书的编号}
+关系代数表达式：
+\[
+\Pi_{\text{\texttt{B\#}}} (\sigma_{\text{\texttt{SNAME}}=\text{小明}}(\text{\texttt{S}}) \bowtie \text{\texttt{L}}) - \Pi_{\text{\texttt{B\#}}} (\sigma_{\text{\texttt{SNAME}}=\text{小李}}(\text{\texttt{S}}) \bowtie \text{\texttt{L}})
+\]
+
+\subsection{查询借阅过《红楼梦》这本书的总学生数}
+关系代数表达式：
+\[
+\text{COUNT}(\Pi_{\text{\texttt{S\#}}} (\text{\texttt{L}} \bowtie \sigma_{\text{\texttt{BNAME}}=\text{《红楼梦》}}(\text{\texttt{B}})))
+\]
+
+\section{第二题}
+
+\subsection{查询物理系的全体学生}
+关系代数表达式：
+\[
+\Pi_{\text{\texttt{S\#}, \texttt{SNAME}}} (\sigma_{\text{\texttt{D\#}}=\text{物理系}}(\text{\texttt{S}}))
+\]
+
+\subsection{查询化学系的全体学生的学号和姓名}
+关系代数表达式：
+\[
+\Pi_{\text{\texttt{S\#}, \texttt{SNAME}}} (\sigma_{\text{\texttt{D\#}}=\text{化学系}}(\text{\texttt{S}}))
+\]
+
+\subsection{查询选修了1002课程但没有选修1005课程的学生}
+关系代数表达式：
+\[
+\Pi_{\text{\texttt{S\#}}} (\sigma_{\text{\texttt{C\#}}=\texttt{'1002'}}(\text{\texttt{SC}})) - \Pi_{\text{\texttt{S\#}}} (\sigma_{\text{\texttt{C\#}}=\texttt{'1005'}}(\text{\texttt{SC}}))
+\]
+
+\subsection{查询既选修了1002课程的学生中选修了1003课程的学生姓名}
+关系代数表达式：
+\[
+\Pi_{\text{\texttt{SNAME}}} ((\Pi_{\text{\texttt{S\#}}} (\sigma_{\text{\texttt{C\#}}=\texttt{'1002'}}(\text{\texttt{SC}})) \cap \Pi_{\text{\texttt{S\#}}} (\sigma_{\text{\texttt{C\#}}=\texttt{'1003'}}(\text{\texttt{SC}}))) \bowtie \text{\texttt{S}})
+\]
+
+\section{第三题}
+
+\subsection{参照完整性约束验证}
+关系代数表达式如下：
+\[
+\Pi_{\text{\texttt{F}}}(\text{\texttt{S}}) - \Pi_{\text{\texttt{K}}}(\text{\texttt{R}})
+\]
+
+当差集为 \( \emptyset \) 时，表明参照完整性约束没有被违反；如果差集不为空，则意味着外键 \( \texttt{F} \) 在关系 \( \texttt{R} \) 中没有找到与主键 \( \texttt{K} \) 相对应的值。
+
+\section{第四题}
+
+\subsection{查找价格最低的笔记本电脑型号}
+\textbf{关系代数表达式}：
+\[
+\Pi_{\text{\texttt{model}}}(\sigma_{\text{\texttt{price}}=\texttt{min}(\text{\texttt{price}})}(\text{\texttt{Laptop}}))
+\]
+
+\subsection{查找出现在两台或两台以上笔记本中的屏幕尺寸}
+\textbf{关系代数表达式}：
+\[
+\Pi_{\text{\texttt{screenSize}}}(\sigma_{\text{\texttt{count(screenSize)}} \geq \texttt{2}}(\text{\texttt{Laptop}}))
+\]
+
+\subsection{查找同时生产喷墨打印机和激光打印机的制造商}
+\textbf{关系代数表达式}：
+\[
+\Pi_{\text{\texttt{manufacturer}}}((\sigma_{\text{\texttt{type}}=\texttt{'ink-jet'}}(\text{\texttt{Printer}})) \cap (\sigma_{\text{\texttt{type}}=\texttt{'laser'}}(\text{\texttt{Printer}})))
+\]
+
+\section{第五题：图书管理数据库查询（使用 SQL语言）}
+
+\subsection{删除《西游记》这本书的所有借阅信息}
+\begin{lstlisting}[language=SQL]
+DELETE FROM L
+WHERE B# = (SELECT B# FROM B WHERE BNAME = '《西游记》');
+\end{lstlisting}
+
+\subsection{查询201班学生借阅图书的书名}
+\begin{lstlisting}[language=SQL]
+SELECT B.BNAME
+FROM B, L, S
+WHERE B.B# = L.B# AND L.S# = S.S# AND S.CLASS = '201';
+\end{lstlisting}
+
+\subsection{查询小明借过，但小李没有借过的图书的编号}
+\begin{lstlisting}[language=SQL]
+SELECT B#
+FROM L
+WHERE S# = (SELECT S# FROM S WHERE SNAME = '小明')
+EXCEPT
+SELECT B#
+FROM L
+WHERE S# = (SELECT S# FROM S WHERE SNAME = '小李');
+\end{lstlisting}
+
+\subsection{查询被借阅过的每本书的图书编号和借阅次数}
+\begin{lstlisting}[language=SQL]
+SELECT B#, COUNT(*)
+FROM L
+GROUP BY B#;
+\end{lstlisting}
+
+\section{第六题：企业管理数据库查询（使用 SQL语言）}
+
+\subsection{查询一号部门（D\# = 1）员工的个数}
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(*)
+FROM Employee
+WHERE D# = 1;
+\end{lstlisting}
+
+\subsection{查询每个部门的部门 ID 和员工数量}
+\begin{lstlisting}[language=SQL]
+SELECT D#, COUNT(*)
+FROM Employee
+GROUP BY D#;
+\end{lstlisting}
+
+\subsection{查询技术部员工工资超过 10000 的员工姓名}
+\begin{lstlisting}[language=SQL]
+SELECT E.NAME
+FROM Employee E, Department D
+WHERE E.D# = D.D# AND D.Dname = '技术部' AND E.SALARY > 10000;
+\end{lstlisting}
+
+\subsection{查询所有部门的平均工资，返回部门 ID 和平均工资（avgSalary）}
+\begin{lstlisting}[language=SQL]
+SELECT D#, AVG(SALARY) AS avgSalary
+FROM Employee
+GROUP BY D#;
+\end{lstlisting}
+
+\subsection{查询技术部中姓张的员工的个数}
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(*)
+FROM Employee E, Department D
+WHERE E.D# = D.D# AND D.Dname = '技术部' AND E.NAME LIKE '张%';
+\end{lstlisting}
+
+\end{document}
