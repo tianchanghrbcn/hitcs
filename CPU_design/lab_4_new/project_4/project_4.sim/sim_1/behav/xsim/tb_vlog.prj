@@ -1,0 +1,77 @@
+# compile verilog/system verilog design source files
+verilog blk_mem_gen_v8_4_4  --include "../../../../project_4.ip_user_files/ipstatic/hdl" --include "../../../../project_4.srcs/sources_1/ip/clk_pll" --include "../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super" \
+"../../../../project_4.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v" \
+
+verilog xil_defaultlib  --include "../../../../project_4.ip_user_files/ipstatic/hdl" --include "../../../../project_4.srcs/sources_1/ip/clk_pll" --include "../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super" \
+"../../../../project_4.srcs/sources_1/ip/input_ram/sim/input_ram.v" \
+"../../../../project_4.srcs/sources_1/ip/ans_ram/sim/ans_ram.v" \
+"../../../../project_4.srcs/sources_1/ip/axi_bus/sim/axi_bus.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/ip/bram_td/sim/bram_td.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/ip/bram_sd/sim/bram_sd.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/alu.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/arf.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/bram_32_1024_sd.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/bram_32_1024_td.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/branch_predictor.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/buffer.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/commit.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/cp0_group.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/decode.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/decoder.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/dispatch.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/div.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/dsp_mul.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/f_adder_front.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/f_comp.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/f_decoder.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/f_divider_front.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/f_normal.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/f_prf.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/f_round.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/f_sqrter_front.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/fetch.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/fixed_to_float.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/float_base.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/float_to_fixed.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/fpu_top.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_alu.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_fccu.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_fpu.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_mdu.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_mu.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/gpr_table.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/interconnect.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/l1_tlb.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/l2_tlb.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/mem_ctrl.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/mul.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/rename.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/rob.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/station.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super/mycpu_top.v" \
+"../../../../project_4.srcs/sources_1/ip/ma_river_core_0/sim/ma_river_core_0.v" \
+"../../../../project_4.srcs/sources_1/ip/lcd_controller_0/ip/text_bram/sim/text_bram.v" \
+
+verilog dist_mem_gen_v8_0_13  --include "../../../../project_4.ip_user_files/ipstatic/hdl" --include "../../../../project_4.srcs/sources_1/ip/clk_pll" --include "../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super" \
+"../../../../project_4.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v" \
+
+verilog xil_defaultlib  --include "../../../../project_4.ip_user_files/ipstatic/hdl" --include "../../../../project_4.srcs/sources_1/ip/clk_pll" --include "../../../../project_4.srcs/sources_1/ip/ma_river_core_0/imports/super" \
+"../../../../project_4.srcs/sources_1/ip/lcd_controller_0/ip/rst_rom/sim/rst_rom.v" \
+"../../../../project_4.srcs/sources_1/ip/lcd_controller_0/ip/font_rom/sim/font_rom.v" \
+"../../../../project_4.srcs/sources_1/ip/lcd_controller_0/imports/hardware/lcd_controller.v" \
+"../../../../project_4.srcs/sources_1/ip/lcd_controller_0/sim/lcd_controller_0.v" \
+"../../../../project_4.srcs/sources_1/ip/mr_bram/sim/mr_bram.v" \
+"../../../../project_4.srcs/sources_1/ip/clk_pll/clk_pll_clk_wiz.v" \
+"../../../../project_4.srcs/sources_1/ip/clk_pll/clk_pll.v" \
+"../../../../project_4.srcs/sources_1/imports/new/checker_wrapper.v" \
+"../../../../project_4.srcs/sources_1/imports/new/decoder_checker.v" \
+"../../../../project_4.srcs/sources_1/new/inst_decoder.v" \
+"../../../../project_4.srcs/sources_1/new/soc_top.v" \
+"../../../../project_4.srcs/sim_1/imports/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

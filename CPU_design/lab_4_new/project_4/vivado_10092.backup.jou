@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Sep  9 13:56:09 2024
+# Process ID: 10092
+# Current directory: D:/ComputerScience/CPU_design/project_4_new/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24932 D:\ComputerScience\CPU_design\project_4_new\project_4\project_4.xpr
+# Log file: D:/ComputerScience/CPU_design/project_4_new/project_4/vivado.log
+# Journal file: D:/ComputerScience/CPU_design/project_4_new/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ComputerScience/CPU_design/project_4_new/project_4/project_4.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_simulation
+open_wave_config D:/ComputerScience/CPU_design/project_4_new/project_4/project_4.srcs/sim_1/imports/lab4/tb_behav.wcfg
+source tb.tcl
+run 10 ms
+close_sim
+launch_simulation
+open_wave_config D:/ComputerScience/CPU_design/project_4_new/project_4/project_4.srcs/sim_1/imports/lab4/tb_behav.wcfg
+source tb.tcl
+run 10 ms
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {D:/ComputerScience/CPU_design/project_4_new/project_4/project_4.runs/impl_1/soc_top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+close_sim
