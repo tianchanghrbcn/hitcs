@@ -23,7 +23,7 @@ int waitSeq;
 const int SEND_WIND_SIZE = 10;
 
 void printTips() {
-    printf("| gbn + [X] +[Y] + op  +filename |\n");
+    printf("| gbn + [rate1] + [rate2] + operand  + filename |\n");
 }
 
 BOOL lossInLossRatio(float lossRatio) {
@@ -240,7 +240,7 @@ int main() {
                 printf("Shake hands stage\n");
                 stage = 0;
                 bool runFlag = true;
-                int recvSize = 0;
+                int recvSize;
                 while (runFlag) {
                     switch (stage) {
                     case 0:
