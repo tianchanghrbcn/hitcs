@@ -1,0 +1,26 @@
+http://1d.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/aedd163f-596c-4038-94d9-74d5f07289bb?P1=1712750269&P2=404&P3=2&P4=LvECdohInACtrw1tdDFXLGV%2bIkPWjI9byvNYZe3aSK%2baZnPBLN%2bBOX8tTtmFeEksozo0%2fcZY31cnuWGQXJ5mjQ%3d%3d
+HTTP/1.1 206 Partial Content
+Date: Wed, 10 Apr 2024 09:18:58 GMT
+Content-Type: application/octet-stream
+Content-Length: 49
+Connection: keep-alive
+Accept-Ranges: bytes
+Cache-Control: public, max-age=17280000
+ETag: "6xVaWf1uSRSPu0MtQgyU3LZELL0="
+Last-Modified: Sat, 06 Apr 2024 16:45:35 GMT
+MS-CorrelationId: 3d267824-8897-479e-9d0c-b038ded207e3
+MS-CV: F0Hbr3Rjr0y4Y5C6.1.1.40.1.1.6.1.1.2.0
+MS-RequestId: 83f59109-f2e7-40bd-8c23-cd14343b7484
+Server: ECAcc (dac/9C13)
+X-AspNet-Version: 4.0.30319
+X-AspNetMvc-Version: 5.3
+X-CCC: CN
+X-CID: 8
+X-Powered-By: ASP.NET
+X-Powered-By: ARR/3.0
+X-Powered-By: ASP.NET
+x-via: 1.1 PS-DFW-01oeo33:3 (Cdn Cache Server V2.0), 1.1 PS-CZX-01bAC195:3 (Cdn Cache Server V2.0), 1.1 PS-000-01p5h44:1 (Cdn Cache Server V2.0)
+Content-Range: bytes 20424337-20424385/606114694
+Age: 58218
+X-Ws-Request-Id: 66165982_PS-000-01p5h44_19016-5338
+

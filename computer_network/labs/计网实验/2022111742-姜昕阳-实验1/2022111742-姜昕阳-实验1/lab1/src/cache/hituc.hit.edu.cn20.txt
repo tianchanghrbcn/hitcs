@@ -1,0 +1,1 @@
+http://www.lib.hit.edu.cn/_js/_portletPlugs/datepicker/js/datepicker_lang_HK.js
