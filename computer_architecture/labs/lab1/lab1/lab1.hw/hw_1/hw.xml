@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2019.2 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7a200t_0" gui_info="dashboard1=hw_ila_1[xc7a200t_0/hw_ila_1/Status=ILA_STATUS_1;xc7a200t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7a200t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7a200t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7a200t_0/hw_ila_1/Waveform=ILA_WAVE_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a200t_0" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value=""/>
+      <Properties Property="PROBES.FILE" value=""/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/soc_top.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="your_cpu/debug_wb_rf_wen" gui_info="Trigger Setup=0"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="your_cpu/debug_wb_rf_wdata[31]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[30]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[29]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[28]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[27]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[26]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[25]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[24]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[23]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[22]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[21]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[20]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[19]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[18]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[17]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[16]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[15]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[14]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[13]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[12]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[11]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[10]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[9]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[8]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[7]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[6]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[5]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[4]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[3]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[2]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[1]"/>
+        <net name="your_cpu/debug_wb_rf_wdata[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;b1"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;b1"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="your_cpu/debug_wb_rf_wen"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq5&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq5&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[4:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq5&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="your_cpu/debug_wb_rf_wnum[4]"/>
+        <net name="your_cpu/debug_wb_rf_wnum[3]"/>
+        <net name="your_cpu/debug_wb_rf_wnum[2]"/>
+        <net name="your_cpu/debug_wb_rf_wnum[1]"/>
+        <net name="your_cpu/debug_wb_rf_wnum[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="your_cpu/inst[31]"/>
+        <net name="your_cpu/inst[30]"/>
+        <net name="your_cpu/inst[29]"/>
+        <net name="your_cpu/inst[28]"/>
+        <net name="your_cpu/inst[27]"/>
+        <net name="your_cpu/inst[26]"/>
+        <net name="your_cpu/inst[25]"/>
+        <net name="your_cpu/inst[24]"/>
+        <net name="your_cpu/inst[23]"/>
+        <net name="your_cpu/inst[22]"/>
+        <net name="your_cpu/inst[21]"/>
+        <net name="your_cpu/inst[20]"/>
+        <net name="your_cpu/inst[19]"/>
+        <net name="your_cpu/inst[18]"/>
+        <net name="your_cpu/inst[17]"/>
+        <net name="your_cpu/inst[16]"/>
+        <net name="your_cpu/inst[15]"/>
+        <net name="your_cpu/inst[14]"/>
+        <net name="your_cpu/inst[13]"/>
+        <net name="your_cpu/inst[12]"/>
+        <net name="your_cpu/inst[11]"/>
+        <net name="your_cpu/inst[10]"/>
+        <net name="your_cpu/inst[9]"/>
+        <net name="your_cpu/inst[8]"/>
+        <net name="your_cpu/inst[7]"/>
+        <net name="your_cpu/inst[6]"/>
+        <net name="your_cpu/inst[5]"/>
+        <net name="your_cpu/inst[4]"/>
+        <net name="your_cpu/inst[3]"/>
+        <net name="your_cpu/inst[2]"/>
+        <net name="your_cpu/inst[1]"/>
+        <net name="your_cpu/inst[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="your_cpu/pc[31]"/>
+        <net name="your_cpu/pc[30]"/>
+        <net name="your_cpu/pc[29]"/>
+        <net name="your_cpu/pc[28]"/>
+        <net name="your_cpu/pc[27]"/>
+        <net name="your_cpu/pc[26]"/>
+        <net name="your_cpu/pc[25]"/>
+        <net name="your_cpu/pc[24]"/>
+        <net name="your_cpu/pc[23]"/>
+        <net name="your_cpu/pc[22]"/>
+        <net name="your_cpu/pc[21]"/>
+        <net name="your_cpu/pc[20]"/>
+        <net name="your_cpu/pc[19]"/>
+        <net name="your_cpu/pc[18]"/>
+        <net name="your_cpu/pc[17]"/>
+        <net name="your_cpu/pc[16]"/>
+        <net name="your_cpu/pc[15]"/>
+        <net name="your_cpu/pc[14]"/>
+        <net name="your_cpu/pc[13]"/>
+        <net name="your_cpu/pc[12]"/>
+        <net name="your_cpu/pc[11]"/>
+        <net name="your_cpu/pc[10]"/>
+        <net name="your_cpu/pc[9]"/>
+        <net name="your_cpu/pc[8]"/>
+        <net name="your_cpu/pc[7]"/>
+        <net name="your_cpu/pc[6]"/>
+        <net name="your_cpu/pc[5]"/>
+        <net name="your_cpu/pc[4]"/>
+        <net name="your_cpu/pc[3]"/>
+        <net name="your_cpu/pc[2]"/>
+        <net name="your_cpu/pc[1]"/>
+        <net name="your_cpu/pc[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>
