@@ -12,7 +12,8 @@ module regfile(
     output [31:0] rdata2
     );
     reg [31:0] regs [31:0];
-
+    
+    //delete external file
     always @(negedge clk) begin 
         if (we) begin 
             regs[waddr] <= wdata;
