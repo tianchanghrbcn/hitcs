@@ -130,8 +130,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="mr_bram"/>
   <BlockFileSet Type="BlockSrcs" Name="ma_river_core_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mr_bram"/>
   <BlockFileSet Type="BlockSrcs" Name="lcd_controller_0"/>
   <BlockFileSet Type="BlockSrcs" Name="input_ram"/>
   <BlockFileSet Type="BlockSrcs" Name="ans_ram"/>
