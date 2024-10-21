@@ -27,95 +27,84 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Device 21-403] Loading part xc7a200tfbg676-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 30032 
+INFO: Helper process launched with PID 9608 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1023.914 ; gain = 234.629
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1024.508 ; gain = 234.629
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'soc_top' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
 	Parameter SIMULATION bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'clk_pll' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/clk_pll_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (1#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/clk_pll_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mr_bram' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/mr_bram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mr_bram' (2#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/mr_bram_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'lcd_controller_0' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/lcd_controller_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'lcd_controller_0' (3#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/lcd_controller_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (1#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mr_bram' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/mr_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mr_bram' (2#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/mr_bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'lcd_controller_0' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/lcd_controller_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_controller_0' (3#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/lcd_controller_0_stub.v:6]
 WARNING: [Synth 8-689] width (4) of port connection 'rid' does not match port width (6) of module 'lcd_controller_0' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:211]
 WARNING: [Synth 8-689] width (4) of port connection 'bid' does not match port width (6) of module 'lcd_controller_0' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:234]
 WARNING: [Synth 8-7023] instance 'lcd' of module 'lcd_controller_0' has 59 connections declared, but only 50 given [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:180]
-INFO: [Synth 8-6157] synthesizing module 'ma_river_core_0' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/ma_river_core_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ma_river_core_0' (4#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/ma_river_core_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ma_river_core_0' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/ma_river_core_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ma_river_core_0' (4#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/ma_river_core_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'mrcore' of module 'ma_river_core_0' has 51 connections declared, but only 39 given [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:283]
 INFO: [Synth 8-6157] synthesizing module 'checker_wrapper' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/new/checker_wrapper.v:8]
 INFO: [Synth 8-155] case statement is not full and has no default [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/new/checker_wrapper.v:131]
 INFO: [Synth 8-6155] done synthesizing module 'checker_wrapper' (5#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/new/checker_wrapper.v:8]
-INFO: [Synth 8-6157] synthesizing module 'axi_bus' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/axi_bus_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_bus' (6#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/axi_bus_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_bus' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/axi_bus_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_bus' (6#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/axi_bus_stub.v:6]
 WARNING: [Synth 8-7023] instance 'axib' of module 'axi_bus' has 78 connections declared, but only 76 given [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:429]
 INFO: [Synth 8-6157] synthesizing module 'cpu_inst_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/cpu_inst_rom.v:23]
-INFO: [Synth 8-6157] synthesizing module 'cpu_inst0_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_inst0_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_inst0_rom' (7#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_inst0_rom_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_inst1_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_inst1_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_inst1_rom' (8#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_inst1_rom_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_inst2_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_inst2_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_inst2_rom' (9#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_inst2_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_inst0_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_inst0_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_inst0_rom' (7#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_inst0_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_inst1_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_inst1_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_inst1_rom' (8#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_inst1_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_inst2_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_inst2_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_inst2_rom' (9#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_inst2_rom_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'cpu_inst_rom' (10#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/cpu_inst_rom.v:23]
-INFO: [Synth 8-6157] synthesizing module 'cpu_data_ram' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_data_ram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_data_ram' (11#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_data_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_data_ram' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_data_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_data_ram' (11#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_data_ram_stub.v:6]
 WARNING: [Synth 8-689] width (8) of port connection 'a' does not match port width (7) of module 'cpu_data_ram' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:531]
-INFO: [Synth 8-6157] synthesizing module 'cpu' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/cpu.v:3]
-INFO: [Synth 8-6157] synthesizing module 'pc' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/pc.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'pc' (12#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/pc.v:3]
-INFO: [Synth 8-6157] synthesizing module 'ADD' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ADD.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'ADD' (13#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ADD.v:4]
-INFO: [Synth 8-6157] synthesizing module 'IF_ID' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/IF_ID_Reg.v:4]
-INFO: [Synth 8-6157] synthesizing module 'npc' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/npc.v:4]
-WARNING: [Synth 8-567] referenced signal 'write_enable' should be on the sensitivity list [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/npc.v:16]
-INFO: [Synth 8-6155] done synthesizing module 'npc' (14#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/npc.v:4]
-INFO: [Synth 8-6157] synthesizing module 'IR' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/IR.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'IR' (15#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/IR.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (16#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/IF_ID_Reg.v:4]
-WARNING: [Synth 8-7023] instance 'IF_ID' of module 'IF_ID' has 10 connections declared, but only 9 given [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/cpu.v:123]
-INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/regfile.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'regfile' (17#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/regfile.v:4]
-INFO: [Synth 8-6157] synthesizing module 'extender' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/extender.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'extender' (18#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/extender.v:3]
-INFO: [Synth 8-6157] synthesizing module 'ID_EX' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:8]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-INFO: [Synth 8-6157] synthesizing module 'data_holder' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/data_reg.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'data_holder' (19#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/data_reg.v:3]
-INFO: [Synth 8-6157] synthesizing module 'imm' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/imm.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'imm' (20#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/imm.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (21#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:8]
-INFO: [Synth 8-6157] synthesizing module 'mux32' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/mux.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'mux32' (22#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/mux.v:4]
-INFO: [Synth 8-6157] synthesizing module 'hazard' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/hazard_detection_unit.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'hazard' (23#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/hazard_detection_unit.v:7]
-INFO: [Synth 8-6157] synthesizing module 'mux4to1' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/mux_4.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'mux4to1' (24#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/mux_4.v:4]
-WARNING: [Synth 8-7023] instance 'forwarding_mux_1' of module 'mux4to1' has 6 connections declared, but only 5 given [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/cpu.v:204]
-WARNING: [Synth 8-7023] instance 'forwarding_mux_2' of module 'mux4to1' has 6 connections declared, but only 5 given [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/cpu.v:212]
-INFO: [Synth 8-6157] synthesizing module 'alu_me' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/alu_me.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'alu_me' (25#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/alu_me.v:9]
-INFO: [Synth 8-6157] synthesizing module 'EX_MEM' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/EX_MEM_Reg.v:3]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/EX_MEM_Reg.v:28]
-WARNING: [Synth 8-567] referenced signal 'mem_rt' should be on the sensitivity list [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/EX_MEM_Reg.v:27]
-INFO: [Synth 8-6155] done synthesizing module 'EX_MEM' (26#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/EX_MEM_Reg.v:3]
-INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MEM_WB_Reg.v:7]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MEM_WB_Reg.v:34]
-WARNING: [Synth 8-567] referenced signal 'wb_rt' should be on the sensitivity list [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MEM_WB_Reg.v:33]
-INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (27#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MEM_WB_Reg.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'cpu' (28#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/cpu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/cpu.v:5]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (12#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ADD' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ADD.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ADD' (13#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ADD.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MUX.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (14#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MUX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID_registers' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/IF_ID_registers.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID_registers' (15#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/IF_ID_registers.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Extender' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Extender.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Extender' (16#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Extender.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Registers' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Registers.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Registers' (17#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Registers.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX_registers' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_registers.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX_registers' (18#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_registers.v:44]
+INFO: [Synth 8-6157] synthesizing module 'MUX1' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MUX1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'MUX1' (19#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MUX1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'MUX2' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MUX2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2' (20#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MUX2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Equal' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Equal.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Equal' (21#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Equal.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (22#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM_registers' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/EX_MEM_registers.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM_registers' (23#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/EX_MEM_registers.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB_registers' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MEM_WB_registers.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB_registers' (24#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MEM_WB_registers.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Writeback_aMUX' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Writeback_aMUX.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Writeback_aMUX' (25#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Writeback_aMUX.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Writeback_dMUX' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Writeback_dMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Writeback_dMUX' (26#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Writeback_dMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (27#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/cpu.v:5]
 INFO: [Synth 8-6157] synthesizing module 'cpu_checker' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/cpu_checker.v:42]
 	Parameter SIMULATION bound to: 0 - type: integer 
 WARNING: [Synth 8-689] width (8) of port connection 'addr' does not match port width (5) of module 'cpu_inst_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/cpu_checker.v:137]
-INFO: [Synth 8-6157] synthesizing module 'cpu_ans0_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_ans0_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_ans0_rom' (29#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_ans0_rom_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_ans1_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_ans1_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_ans1_rom' (30#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_ans1_rom_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_ans2_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_ans2_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_ans2_rom' (31#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-26816-TianChang/realtime/cpu_ans2_rom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_checker' (32#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/cpu_checker.v:42]
-INFO: [Synth 8-6155] done synthesizing module 'soc_top' (33#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cpu_ans0_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_ans0_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_ans0_rom' (28#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_ans0_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_ans1_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_ans1_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_ans1_rom' (29#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_ans1_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_ans2_rom' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_ans2_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_ans2_rom' (30#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/.Xil/Vivado-29724-TianChang/realtime/cpu_ans2_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_checker' (31#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/cpu_checker.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'soc_top' (32#1) [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
 WARNING: [Synth 8-3331] design cpu_checker has unconnected port checker_raddr[31]
 WARNING: [Synth 8-3331] design cpu_checker has unconnected port checker_raddr[30]
 WARNING: [Synth 8-3331] design cpu_checker has unconnected port checker_raddr[29]
@@ -148,51 +137,28 @@ WARNING: [Synth 8-3331] design cpu_checker has unconnected port checker_waddr[19
 WARNING: [Synth 8-3331] design cpu_checker has unconnected port checker_waddr[18]
 WARNING: [Synth 8-3331] design cpu_checker has unconnected port checker_waddr[17]
 WARNING: [Synth 8-3331] design cpu_checker has unconnected port checker_waddr[16]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[31]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[30]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[29]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[28]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[27]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[26]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[15]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[14]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[13]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[12]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[11]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[10]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[9]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[8]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[7]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[6]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[5]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[4]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[3]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[2]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[1]
-WARNING: [Synth 8-3331] design hazard has unconnected port if_id_ir[0]
-WARNING: [Synth 8-3331] design hazard has unconnected port id_ex_ir[10]
-WARNING: [Synth 8-3331] design hazard has unconnected port id_ex_ir[9]
-WARNING: [Synth 8-3331] design hazard has unconnected port id_ex_ir[8]
-WARNING: [Synth 8-3331] design hazard has unconnected port id_ex_ir[7]
-WARNING: [Synth 8-3331] design hazard has unconnected port id_ex_ir[6]
-WARNING: [Synth 8-3331] design hazard has unconnected port id_ex_ir[5]
-WARNING: [Synth 8-3331] design hazard has unconnected port id_ex_ir[4]
-WARNING: [Synth 8-3331] design hazard has unconnected port id_ex_ir[3]
-WARNING: [Synth 8-3331] design hazard has unconnected port id_ex_ir[2]
-WARNING: [Synth 8-3331] design hazard has unconnected port id_ex_ir[1]
-WARNING: [Synth 8-3331] design hazard has unconnected port id_ex_ir[0]
-WARNING: [Synth 8-3331] design hazard has unconnected port ex_mem_ir[25]
-WARNING: [Synth 8-3331] design hazard has unconnected port ex_mem_ir[24]
-WARNING: [Synth 8-3331] design hazard has unconnected port ex_mem_ir[23]
-WARNING: [Synth 8-3331] design hazard has unconnected port ex_mem_ir[22]
-WARNING: [Synth 8-3331] design hazard has unconnected port ex_mem_ir[21]
-WARNING: [Synth 8-3331] design hazard has unconnected port mem_wb_ir[25]
-WARNING: [Synth 8-3331] design hazard has unconnected port mem_wb_ir[24]
-WARNING: [Synth 8-3331] design hazard has unconnected port mem_wb_ir[23]
-WARNING: [Synth 8-3331] design hazard has unconnected port mem_wb_ir[22]
-WARNING: [Synth 8-3331] design hazard has unconnected port mem_wb_ir[21]
-WARNING: [Synth 8-3331] design npc has unconnected port clk
-WARNING: [Synth 8-3331] design IF_ID has unconnected port flush
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[31]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[30]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[29]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[28]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[27]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[26]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[25]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[24]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[23]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[22]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[21]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[10]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[9]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[8]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[7]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[6]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[5]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[4]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[3]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[2]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[1]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[0]
 WARNING: [Synth 8-3331] design checker_wrapper has unconnected port arlen[3]
 WARNING: [Synth 8-3331] design checker_wrapper has unconnected port arlen[2]
 WARNING: [Synth 8-3331] design checker_wrapper has unconnected port arlen[1]
@@ -216,9 +182,30 @@ WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awlen[2]
 WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awlen[1]
 WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awlen[0]
 WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awsize[2]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awsize[1]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awsize[0]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awburst[1]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awburst[0]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awlock[1]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awlock[0]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awcache[3]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awcache[2]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awcache[1]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awcache[0]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awprot[2]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awprot[1]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port awprot[0]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port wid[3]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port wid[2]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port wid[1]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port wid[0]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port wstrb[3]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port wstrb[2]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port wstrb[1]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port wstrb[0]
+WARNING: [Synth 8-3331] design checker_wrapper has unconnected port wlast
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1100.289 ; gain = 311.004
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1100.938 ; gain = 311.059
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -231,12 +218,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1100.289 ; gain = 311.004
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1100.938 ; gain = 311.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1100.289 ; gain = 311.004
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1100.938 ; gain = 311.059
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1100.289 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1100.938 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -280,21 +267,21 @@ Parsing XDC File [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1
 Finished Parsing XDC File [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1219.473 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1224.844 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1219.473 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1224.844 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'axib' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1219.473 ; gain = 430.188
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1224.852 ; gain = 434.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg676-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1219.473 ; gain = 430.188
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1224.852 ; gain = 434.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -317,7 +304,7 @@ Applied set_property DONT_TOUCH = true for checker/_a0. (constraint file  auto g
 Applied set_property DONT_TOUCH = true for checker/_a1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for checker/_a2. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1219.473 ; gain = 430.188
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1224.852 ; gain = 434.973
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'checker_wrapper'
 ---------------------------------------------------------------------------------------------------
@@ -330,19 +317,8 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'check
                  iSTATE1 |                            00001 |                              101
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'checker_wrapper'
-WARNING: [Synth 8-327] inferring latch for variable 'npc_reg' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/npc.v:18]
-WARNING: [Synth 8-327] inferring latch for variable 'mux_B_select_reg' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'mux_sll_select_reg' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:47]
-WARNING: [Synth 8-327] inferring latch for variable 'alu_op_reg' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:43]
-WARNING: [Synth 8-327] inferring latch for variable 'id_ex_rd_reg' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/hazard_detection_unit.v:35]
-WARNING: [Synth 8-327] inferring latch for variable 'mem_rd_reg' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/hazard_detection_unit.v:65]
-WARNING: [Synth 8-327] inferring latch for variable 'wb_rd_reg' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/hazard_detection_unit.v:72]
-WARNING: [Synth 8-327] inferring latch for variable 'dmem_write_enable_reg' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/EX_MEM_Reg.v:31]
-WARNING: [Synth 8-327] inferring latch for variable 'reg_write_enable_reg' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MEM_WB_Reg.v:41]
-WARNING: [Synth 8-327] inferring latch for variable 'write_back_mux_select_reg' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MEM_WB_Reg.v:36]
-WARNING: [Synth 8-327] inferring latch for variable 'write_back_addr_reg' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MEM_WB_Reg.v:37]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1219.473 ; gain = 430.188
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1224.852 ; gain = 434.973
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -355,32 +331,31 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 3     
 	   3 Input     32 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 29    
+	               32 Bit    Registers := 34    
 	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
 +---Muxes : 
 	   2 Input     53 Bit        Muxes := 2     
-	   2 Input     32 Bit        Muxes := 9     
-	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 13    
 	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     26 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 2     
 	   5 Input      5 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 5     
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
 	   5 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 4     
-	   3 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -411,7 +386,7 @@ Module cpu_inst_rom__xdcDup__1
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
-Module pc 
+Module PC 
 Detailed RTL Component Info : 
 +---Registers : 
 	               32 Bit    Registers := 1     
@@ -419,53 +394,74 @@ Module ADD
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
-Module IR 
-Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 1     
-Module data_holder 
-Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 1     
-Module imm 
-Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 1     
-Module ID_EX 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   4 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module mux32 
+Module MUX 
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
-Module hazard 
+Module IF_ID_registers 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+Module Extender 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input      5 Bit        Muxes := 3     
-	   2 Input      2 Bit        Muxes := 1     
-	   3 Input      2 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 3     
-Module mux4to1 
+	   2 Input     32 Bit        Muxes := 1     
+Module Registers 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module ID_EX_registers 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module MUX1__mod 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   4 Input     32 Bit        Muxes := 1     
-Module alu_me 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     32 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
-Module EX_MEM 
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module EX_MEM_registers 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
+Module MEM_WB_registers 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
+Module Writeback_aMUX 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   4 Input      1 Bit        Muxes := 1     
-Module MEM_WB 
+	   2 Input      5 Bit        Muxes := 1     
+Module Writeback_dMUX 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   4 Input      1 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+Module cpu 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 Module cpu_inst_rom 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -499,22 +495,31 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[14]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[14]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[15]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[15]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[11]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[11]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[12]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[12]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[13]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[13]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[3]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[3]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[1]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[1]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[9]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[9]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[7]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[7]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[6]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[6]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[5]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[5]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[4]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[4]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[8]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[8]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[2]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[2]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[10]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[10]'
-INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX/ID_EX_IR/instr_output_reg[0]' (FDR) to 'your_cpu/ID_EX/imm/reg_output_reg[0]'
+INFO: [Synth 8-4471] merging register 'your_cpu/IF_ID_reg/NPC_o_reg[31:0]' into 'your_cpu/pc/output_address_reg[31:0]' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/IF_ID_registers.v:18]
+INFO: [Synth 8-4471] merging register 'your_cpu/ID_EX_reg/NPC_o_reg[31:0]' into 'your_cpu/IF_PC_reg_reg[31:0]' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_registers.v:67]
+WARNING: [Synth 8-3331] design ALU has unconnected port IR[31]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'your_cpu/Registers_set/output_data_A__3' (FDRE) to 'your_cpu/IF_ID_reg/IR_o_reg[21]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/Registers_set/output_data_A__2' (FDRE) to 'your_cpu/IF_ID_reg/IR_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/Registers_set/output_data_A__1' (FDRE) to 'your_cpu/IF_ID_reg/IR_o_reg[23]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/Registers_set/output_data_A__0' (FDRE) to 'your_cpu/IF_ID_reg/IR_o_reg[24]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/Registers_set/output_data_A' (FDRE) to 'your_cpu/IF_ID_reg/IR_o_reg[25]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/Registers_set/output_data_B__3' (FDRE) to 'your_cpu/IF_ID_reg/IR_o_reg[16]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/Registers_set/output_data_B__2' (FDRE) to 'your_cpu/IF_ID_reg/IR_o_reg[17]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/Registers_set/output_data_B__1' (FDRE) to 'your_cpu/IF_ID_reg/IR_o_reg[18]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/Registers_set/output_data_B__0' (FDRE) to 'your_cpu/IF_ID_reg/IR_o_reg[19]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/Registers_set/output_data_B' (FDRE) to 'your_cpu/IF_ID_reg/IR_o_reg[20]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX_reg/shamt_o_reg[4]' (FDRE) to 'your_cpu/ID_EX_reg/Imm32_o_reg[10]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX_reg/shamt_o_reg[3]' (FDRE) to 'your_cpu/ID_EX_reg/Imm32_o_reg[9]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX_reg/shamt_o_reg[2]' (FDRE) to 'your_cpu/ID_EX_reg/Imm32_o_reg[8]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX_reg/shamt_o_reg[1]' (FDRE) to 'your_cpu/ID_EX_reg/Imm32_o_reg[7]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX_reg/shamt_o_reg[0]' (FDRE) to 'your_cpu/ID_EX_reg/Imm32_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX_reg/Imm32_o_reg[30]' (FDRE) to 'your_cpu/ID_EX_reg/Imm32_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX_reg/Imm32_o_reg[31]' (FDRE) to 'your_cpu/ID_EX_reg/Imm32_o_reg[29]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX_reg/Imm32_o_reg[29]' (FDRE) to 'your_cpu/ID_EX_reg/Imm32_o_reg[28]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX_reg/Imm32_o_reg[28]' (FDRE) to 'your_cpu/ID_EX_reg/Imm32_o_reg[27]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX_reg/Imm32_o_reg[27]' (FDRE) to 'your_cpu/ID_EX_reg/Imm32_o_reg[26]'
+INFO: [Synth 8-3886] merging instance 'your_cpu/ID_EX_reg/Imm32_o_reg[26]' (FDRE) to 'your_cpu/ID_EX_reg/Imm32_o_reg[25]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[2]' (FDRE) to 'checker/status_reg[3]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[3]' (FDRE) to 'checker/status_reg[4]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[4]' (FDRE) to 'checker/status_reg[5]'
@@ -552,70 +557,65 @@ INFO: [Synth 8-3886] merging instance 'checker/answaddr_reg[15]' (FDRE) to 'chec
 INFO: [Synth 8-3886] merging instance 'checker/errwaddr_reg[15]' (FDRE) to 'checker/errwaddr_reg[16]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[15]' (FDRE) to 'checker/status_reg[16]'
 INFO: [Synth 8-3886] merging instance 'checker/answaddr_reg[16]' (FDRE) to 'checker/errwaddr_reg[16]'
-INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[16]' (FDRE) to 'checker/anspc_reg[31]'
+INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[16]' (FDRE) to 'checker/anspc_reg[17]'
 INFO: [Synth 8-3886] merging instance 'checker/errwaddr_reg[16]' (FDRE) to 'checker/errwaddr_reg[17]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[16]' (FDRE) to 'checker/status_reg[17]'
 INFO: [Synth 8-3886] merging instance 'checker/answaddr_reg[17]' (FDRE) to 'checker/errwaddr_reg[17]'
-INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[17]' (FDRE) to 'checker/anspc_reg[31]'
+INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[17]' (FDRE) to 'checker/anspc_reg[18]'
 INFO: [Synth 8-3886] merging instance 'checker/errwaddr_reg[17]' (FDRE) to 'checker/errwaddr_reg[18]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[17]' (FDRE) to 'checker/status_reg[18]'
 INFO: [Synth 8-3886] merging instance 'checker/answaddr_reg[18]' (FDRE) to 'checker/errwaddr_reg[18]'
-INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[18]' (FDRE) to 'checker/anspc_reg[31]'
+INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[18]' (FDRE) to 'checker/anspc_reg[19]'
 INFO: [Synth 8-3886] merging instance 'checker/errwaddr_reg[18]' (FDRE) to 'checker/errwaddr_reg[19]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[18]' (FDRE) to 'checker/status_reg[19]'
 INFO: [Synth 8-3886] merging instance 'checker/answaddr_reg[19]' (FDRE) to 'checker/errwaddr_reg[19]'
-INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[19]' (FDRE) to 'checker/anspc_reg[31]'
+INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[19]' (FDRE) to 'checker/anspc_reg[20]'
 INFO: [Synth 8-3886] merging instance 'checker/errwaddr_reg[19]' (FDRE) to 'checker/errwaddr_reg[20]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[19]' (FDRE) to 'checker/status_reg[20]'
 INFO: [Synth 8-3886] merging instance 'checker/answaddr_reg[20]' (FDRE) to 'checker/errwaddr_reg[20]'
-INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[20]' (FDRE) to 'checker/anspc_reg[31]'
+INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[20]' (FDRE) to 'checker/anspc_reg[21]'
 INFO: [Synth 8-3886] merging instance 'checker/errwaddr_reg[20]' (FDRE) to 'checker/errwaddr_reg[21]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[20]' (FDRE) to 'checker/status_reg[21]'
 INFO: [Synth 8-3886] merging instance 'checker/answaddr_reg[21]' (FDRE) to 'checker/errwaddr_reg[21]'
-INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[21]' (FDRE) to 'checker/anspc_reg[31]'
+INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[21]' (FDRE) to 'checker/anspc_reg[22]'
 INFO: [Synth 8-3886] merging instance 'checker/errwaddr_reg[21]' (FDRE) to 'checker/errwaddr_reg[22]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[21]' (FDRE) to 'checker/status_reg[22]'
 INFO: [Synth 8-3886] merging instance 'checker/answaddr_reg[22]' (FDRE) to 'checker/errwaddr_reg[22]'
-INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[22]' (FDRE) to 'checker/anspc_reg[31]'
+INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[22]' (FDRE) to 'checker/anspc_reg[23]'
 INFO: [Synth 8-3886] merging instance 'checker/errwaddr_reg[22]' (FDRE) to 'checker/errwaddr_reg[23]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[22]' (FDRE) to 'checker/status_reg[23]'
 INFO: [Synth 8-3886] merging instance 'checker/answaddr_reg[23]' (FDRE) to 'checker/errwaddr_reg[23]'
-INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[23]' (FDRE) to 'checker/anspc_reg[31]'
+INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[23]' (FDRE) to 'checker/anspc_reg[24]'
 INFO: [Synth 8-3886] merging instance 'checker/errwaddr_reg[23]' (FDRE) to 'checker/errwaddr_reg[24]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[23]' (FDRE) to 'checker/status_reg[24]'
 INFO: [Synth 8-3886] merging instance 'checker/answaddr_reg[24]' (FDRE) to 'checker/errwaddr_reg[24]'
-INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[24]' (FDRE) to 'checker/anspc_reg[31]'
+INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[24]' (FDRE) to 'checker/anspc_reg[25]'
 INFO: [Synth 8-3886] merging instance 'checker/errwaddr_reg[24]' (FDRE) to 'checker/errwaddr_reg[25]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[24]' (FDRE) to 'checker/status_reg[25]'
 INFO: [Synth 8-3886] merging instance 'checker/answaddr_reg[25]' (FDRE) to 'checker/errwaddr_reg[25]'
-INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[25]' (FDRE) to 'checker/anspc_reg[31]'
+INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[25]' (FDRE) to 'checker/anspc_reg[26]'
 INFO: [Synth 8-3886] merging instance 'checker/errwaddr_reg[25]' (FDRE) to 'checker/errwaddr_reg[26]'
 INFO: [Synth 8-3886] merging instance 'checker/status_reg[25]' (FDRE) to 'checker/status_reg[26]'
 INFO: [Synth 8-3886] merging instance 'checker/answaddr_reg[26]' (FDRE) to 'checker/errwaddr_reg[26]'
-INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[26]' (FDRE) to 'checker/anspc_reg[31]'
+INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[26]' (FDRE) to 'checker/anspc_reg[27]'
 INFO: [Synth 8-3886] merging instance 'checker/errwaddr_reg[26]' (FDRE) to 'checker/errwaddr_reg[27]'
-INFO: [Synth 8-3886] merging instance 'checker/status_reg[26]' (FDRE) to 'checker/status_reg[27]'
-INFO: [Synth 8-3886] merging instance 'checker/answaddr_reg[27]' (FDRE) to 'checker/errwaddr_reg[27]'
-INFO: [Synth 8-3886] merging instance 'checker/anspc_reg[27]' (FDRE) to 'checker/anspc_reg[31]'
-INFO: [Synth 8-3886] merging instance 'checker/errwaddr_reg[27]' (FDRE) to 'checker/errwaddr_reg[28]'
-INFO: [Synth 8-3886] merging instance 'checker/status_reg[27]' (FDRE) to 'checker/status_reg[28]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\checker/anspc_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\checker/errwaddr_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\checker/status_reg[31] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 1294.953 ; gain = 505.668
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1224.852 ; gain = 434.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Preliminary Mapping	Report (see note below)
-+------------+---------------------------+-----------+----------------------+--------------+
-|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives   | 
-+------------+---------------------------+-----------+----------------------+--------------+
-|soc_top     | your_cpu/regfile/regs_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
-+------------+---------------------------+-----------+----------------------+--------------+
++------------+--------------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                           | Inference | Size (Depth x Width) | Primitives   | 
++------------+--------------------------------------+-----------+----------------------+--------------+
+|soc_top     | your_cpu/Registers_set/registers_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+--------------------------------------+-----------+----------------------+--------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -632,26 +632,24 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'sys_clk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 1294.953 ; gain = 505.668
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1224.852 ; gain = 434.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_5/i_17/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_5/i_17/O'
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 1294.953 ; gain = 505.668
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 1231.035 ; gain = 441.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping	Report
-+------------+---------------------------+-----------+----------------------+--------------+
-|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives   | 
-+------------+---------------------------+-----------+----------------------+--------------+
-|soc_top     | your_cpu/regfile/regs_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
-+------------+---------------------------+-----------+----------------------+--------------+
++------------+--------------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                           | Inference | Size (Depth x Width) | Primitives   | 
++------------+--------------------------------------+-----------+----------------------+--------------+
+|soc_top     | your_cpu/Registers_set/registers_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+--------------------------------------+-----------+----------------------+--------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -665,229 +663,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (your_cpu/IF_ID/IF_ID_NPC/npc_reg[0]) is unused and will be removed from module soc_top.
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/I3 (LUT6)
-     2: i_328/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     3: i_328/I0 (LUT6)
-     4: i_786/O (LUT2)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     5: i_786/I1 (LUT2)
-     6: i_785/O (LUT2)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     7: i_785/I1 (LUT2)
-     8: i_276/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     9: i_276/I5 (LUT6)
-    10: i_288/O (LUT5)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-    11: i_288/I4 (LUT5)
-    12: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Inferred a: "set_disable_timing -from I3 -to O i_326"
-Found timing loop:
-     0: i_328/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_328/I0 (LUT6)
-     2: i_786/O (LUT2)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     3: i_786/I1 (LUT2)
-     4: i_785/O (LUT2)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     5: i_785/I1 (LUT2)
-     6: i_276/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     7: i_276/I5 (LUT6)
-     8: i_288/O (LUT5)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     9: i_288/I4 (LUT5)
-    10: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-    11: i_326/I1 (LUT6)
-    12: i_786/O (LUT2)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Inferred a: "set_disable_timing -from I0 -to O i_328"
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/I1 (LUT6)
-     2: i_786/O (LUT2)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     3: i_786/I1 (LUT2)
-     4: i_785/O (LUT2)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     5: i_785/I1 (LUT2)
-     6: i_276/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     7: i_276/I4 (LUT6)
-     8: i_281/O (LUT5)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     9: i_281/I4 (LUT5)
-    10: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Inferred a: "set_disable_timing -from I1 -to O i_326"
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_304/O (LUT5)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_304/I4 (LUT5)
-     2: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     3: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Inferred a: "set_disable_timing -from I4 -to O i_304"
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
-Found timing loop:
-     0: i_326/O (LUT6)
-      [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v:40]
-     1: i_326/O (LUT6)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:11]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 1294.953 ; gain = 505.668
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:38 . Memory (MB): peak = 1245.285 ; gain = 455.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -911,13 +688,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1294.953 ; gain = 505.668
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1250.535 ; gain = 460.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1294.953 ; gain = 505.668
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1250.535 ; gain = 460.656
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -936,25 +713,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1294.953 ; gain = 505.668
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1250.535 ; gain = 460.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1294.953 ; gain = 505.668
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1250.535 ; gain = 460.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1294.953 ; gain = 505.668
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 1250.535 ; gain = 460.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1294.953 ; gain = 505.668
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 1250.535 ; gain = 460.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -997,85 +774,65 @@ Report Cell Usage:
 |13    |lcd_controller_0 |     1|
 |14    |ma_river_core_0  |     1|
 |15    |mr_bram          |     1|
-|16    |BUFG             |     1|
-|17    |CARRY4           |    50|
-|18    |LUT1             |    23|
-|19    |LUT2             |    92|
-|20    |LUT3             |   142|
-|21    |LUT4             |   106|
-|22    |LUT5             |   265|
-|23    |LUT6             |   216|
+|16    |CARRY4           |    80|
+|17    |LUT1             |     8|
+|18    |LUT2             |    25|
+|19    |LUT3             |   216|
+|20    |LUT4             |    80|
+|21    |LUT5             |   283|
+|22    |LUT6             |   504|
+|23    |MUXF7            |     1|
 |24    |RAM32M           |    12|
-|25    |FDRE             |   857|
+|25    |FDRE             |   914|
 |26    |FDSE             |     1|
-|27    |LD               |    31|
-|28    |LDC              |    31|
-|29    |IBUF             |     3|
-|30    |OBUF             |     6|
+|27    |IBUF             |     3|
+|28    |OBUF             |     6|
 +------+-----------------+------+
 
 Report Instance Areas: 
-+------+----------------+------------------------+------+
-|      |Instance        |Module                  |Cells |
-+------+----------------+------------------------+------+
-|1     |top             |                        |  3427|
-|2     |  checker       |cpu_checker             |   715|
-|3     |    ir          |cpu_inst_rom            |   138|
-|4     |  cw            |checker_wrapper         |   183|
-|5     |  inst_sram     |cpu_inst_rom__xdcDup__1 |   128|
-|6     |  your_cpu      |cpu                     |  1065|
-|7     |    EX_MEM      |EX_MEM                  |   104|
-|8     |      EX_MEM_IR |IR_8                    |    39|
-|9     |      EX_MEM_PC |pc_9                    |    31|
-|10    |      aluoutput |data_holder_10          |    32|
-|11    |    ID_EX       |ID_EX                   |   555|
-|12    |      Data_A    |data_holder_4           |    65|
-|13    |      Data_B    |data_holder_5           |    32|
-|14    |      ID_EX_IR  |IR_6                    |   306|
-|15    |      ID_EX_PC  |pc_7                    |    31|
-|16    |      imm       |imm                     |    77|
-|17    |    IF_ID       |IF_ID                   |    96|
-|18    |      IF_ID_IR  |IR_2                    |    34|
-|19    |      IF_ID_NPC |npc                     |    31|
-|20    |      IF_ID_PC  |pc_3                    |    31|
-|21    |    MEM_WB      |MEM_WB                  |   211|
-|22    |      LMD       |data_holder             |    33|
-|23    |      MEM_WB_IR |IR                      |    47|
-|24    |      MEM_WB_PC |pc_0                    |    45|
-|25    |      aluoutput |data_holder_1           |    78|
-|26    |    adder       |ADD                     |     9|
-|27    |    alu_inst    |alu_me                  |    16|
-|28    |    hazard      |hazard                  |    21|
-|29    |    pc          |pc                      |    31|
-|30    |    regfile     |regfile                 |    22|
-+------+----------------+------------------------+------+
++------+------------------+------------------------+------+
+|      |Instance          |Module                  |Cells |
++------+------------------+------------------------+------+
+|1     |top               |                        |  3724|
+|2     |  checker         |cpu_checker             |   725|
+|3     |    ir            |cpu_inst_rom            |   138|
+|4     |  cw              |checker_wrapper         |   183|
+|5     |  inst_sram       |cpu_inst_rom__xdcDup__1 |   128|
+|6     |  your_cpu        |cpu                     |  1354|
+|7     |    EX_MEM_reg    |EX_MEM_registers        |    86|
+|8     |    ID_EX_reg     |ID_EX_registers         |   783|
+|9     |    IF_ID_reg     |IF_ID_registers         |   128|
+|10    |    MEM_WB_reg    |MEM_WB_registers        |   170|
+|11    |    Registers_set |Registers               |    12|
+|12    |    alu           |ALU                     |    34|
+|13    |    equal         |Equal                   |     3|
+|14    |    pc            |PC                      |    73|
++------+------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1294.953 ; gain = 505.668
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 1250.535 ; gain = 460.656
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 33 critical warnings and 92 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:52 . Memory (MB): peak = 1294.953 ; gain = 386.484
-Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1294.953 ; gain = 505.668
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:38 . Memory (MB): peak = 1250.535 ; gain = 336.742
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 1250.535 ; gain = 460.656
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1294.953 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 124 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1262.543 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
-INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1294.953 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1265.164 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 74 instances were transformed.
-  LD => LDCE: 31 instances
-  LDC => LDCE: 31 instances
-  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 12 instances
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-194 Infos, 133 Warnings, 33 Critical Warnings and 0 Errors encountered.
+191 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 1294.953 ; gain = 832.094
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1294.953 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:50 . Memory (MB): peak = 1265.164 ; gain = 801.621
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1265.164 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/synth_1/soc_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file soc_top_utilization_synth.rpt -pb soc_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Oct 19 14:41:17 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 21 14:16:54 2024...

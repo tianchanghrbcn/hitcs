@@ -30,6 +30,5 @@ WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 fo
 WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'a' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v:531]
 WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'addr' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/cpu_checker.v:137]
 WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/axi_crossbar_v2_1/hdl/axi_crossbar_v2_1_vl_rfs.v:3103]
-WARNING: [VRFC 10-5021] port 'flush' is not connected on this instance [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/cpu.v:123]
 Completed static elaboration
 INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

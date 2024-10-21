@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat Oct 19 14:44:56 2024
+| Date         : Mon Oct 21 14:29:13 2024
 | Host         : TianChang running 64-bit major release  (build 9200)
 | Command      : report_methodology -file soc_top_methodology_drc_routed.rpt -pb soc_top_methodology_drc_routed.pb -rpx soc_top_methodology_drc_routed.rpx
 | Design       : soc_top
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 80
+             Violations found: 20
 +-----------+------------------+-----------------------------------------------------------+------------+
 | Rule      | Severity         | Description                                               | Violations |
 +-----------+------------------+-----------------------------------------------------------+------------+
@@ -32,10 +32,9 @@ Table of Contents
 | TIMING-7  | Critical Warning | No common node between related clocks                     | 1          |
 | TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin                 | 1          |
 | SYNTH-5   | Warning          | Mapped onto distributed RAM because of timing constraints | 8          |
+| SYNTH-6   | Warning          | Timing of a block RAM might be sub-optimal                | 3          |
 | SYNTH-12  | Warning          | DSP input not registered                                  | 4          |
 | TIMING-18 | Warning          | Missing input or output delay                             | 1          |
-| TIMING-20 | Warning          | Non-clocked latch                                         | 62         |
-| TIMING-23 | Warning          | Combinational loop found                                  | 1          |
 +-----------+------------------+-----------------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -100,6 +99,21 @@ Mapped onto distributed RAM because of timing constraints
 The instance mrcore/inst/BranchPredictor_module/global_BPB1_reg_r2_128_255_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
 Related violations: <none>
 
+SYNTH-6#1 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mrcore/inst/FU_MU_module/dcache_tag0_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mrcore/inst/FU_MU_module/dcache_tag1_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mrcore/inst/FU_MU_module/dcache_tag2_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
 SYNTH-12#1 Warning
 DSP input not registered  
 DSP instance mrcore/inst/FU_MDU_module/mymul/a0b0/DSP48E1_inst is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
@@ -123,321 +137,6 @@ Related violations: <none>
 TIMING-18#1 Warning
 Missing input or output delay  
 An input delay is missing on sys_rstn relative to clock(s) sys_clk
-Related violations: <none>
-
-TIMING-20#1 Warning
-Non-clocked latch  
-The latch your_cpu/EX_MEM/dmem_write_enable_reg cannot be properly analyzed as its control pin your_cpu/EX_MEM/dmem_write_enable_reg/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#2 Warning
-Non-clocked latch  
-The latch your_cpu/ID_EX/alu_op_reg[0] cannot be properly analyzed as its control pin your_cpu/ID_EX/alu_op_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#3 Warning
-Non-clocked latch  
-The latch your_cpu/ID_EX/alu_op_reg[1] cannot be properly analyzed as its control pin your_cpu/ID_EX/alu_op_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#4 Warning
-Non-clocked latch  
-The latch your_cpu/ID_EX/alu_op_reg[2] cannot be properly analyzed as its control pin your_cpu/ID_EX/alu_op_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#5 Warning
-Non-clocked latch  
-The latch your_cpu/ID_EX/alu_op_reg[3] cannot be properly analyzed as its control pin your_cpu/ID_EX/alu_op_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#6 Warning
-Non-clocked latch  
-The latch your_cpu/ID_EX/alu_op_reg[4] cannot be properly analyzed as its control pin your_cpu/ID_EX/alu_op_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#7 Warning
-Non-clocked latch  
-The latch your_cpu/ID_EX/alu_op_reg[5] cannot be properly analyzed as its control pin your_cpu/ID_EX/alu_op_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#8 Warning
-Non-clocked latch  
-The latch your_cpu/ID_EX/mux_B_select_reg cannot be properly analyzed as its control pin your_cpu/ID_EX/mux_B_select_reg/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#9 Warning
-Non-clocked latch  
-The latch your_cpu/ID_EX/mux_sll_select_reg cannot be properly analyzed as its control pin your_cpu/ID_EX/mux_sll_select_reg/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#10 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[10] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[10]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#11 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[11] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[11]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#12 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[12] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[12]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#13 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[13] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[13]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#14 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[14] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[14]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#15 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[15] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[15]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#16 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[16] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[16]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#17 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[17] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[17]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#18 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[18] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[18]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#19 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[19] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[19]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#20 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[1] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#21 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[20] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[20]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#22 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[21] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[21]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#23 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[22] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[22]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#24 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[23] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[23]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#25 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[24] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[24]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#26 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[25] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[25]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#27 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[26] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[26]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#28 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[27] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[27]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#29 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[28] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[28]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#30 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[29] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[29]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#31 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[2] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#32 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[30] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[30]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#33 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[31] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[31]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#34 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[3] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#35 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[4] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#36 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[5] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#37 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[6] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#38 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[7] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#39 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[8] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[8]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#40 Warning
-Non-clocked latch  
-The latch your_cpu/IF_ID/IF_ID_NPC/npc_reg[9] cannot be properly analyzed as its control pin your_cpu/IF_ID/IF_ID_NPC/npc_reg[9]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#41 Warning
-Non-clocked latch  
-The latch your_cpu/MEM_WB/reg_write_enable_reg cannot be properly analyzed as its control pin your_cpu/MEM_WB/reg_write_enable_reg/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#42 Warning
-Non-clocked latch  
-The latch your_cpu/MEM_WB/write_back_addr_reg[0] cannot be properly analyzed as its control pin your_cpu/MEM_WB/write_back_addr_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#43 Warning
-Non-clocked latch  
-The latch your_cpu/MEM_WB/write_back_addr_reg[1] cannot be properly analyzed as its control pin your_cpu/MEM_WB/write_back_addr_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#44 Warning
-Non-clocked latch  
-The latch your_cpu/MEM_WB/write_back_addr_reg[2] cannot be properly analyzed as its control pin your_cpu/MEM_WB/write_back_addr_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#45 Warning
-Non-clocked latch  
-The latch your_cpu/MEM_WB/write_back_addr_reg[3] cannot be properly analyzed as its control pin your_cpu/MEM_WB/write_back_addr_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#46 Warning
-Non-clocked latch  
-The latch your_cpu/MEM_WB/write_back_addr_reg[4] cannot be properly analyzed as its control pin your_cpu/MEM_WB/write_back_addr_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#47 Warning
-Non-clocked latch  
-The latch your_cpu/MEM_WB/write_back_mux_select_reg cannot be properly analyzed as its control pin your_cpu/MEM_WB/write_back_mux_select_reg/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#48 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/id_ex_rd_reg[0] cannot be properly analyzed as its control pin your_cpu/hazard/id_ex_rd_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#49 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/id_ex_rd_reg[1] cannot be properly analyzed as its control pin your_cpu/hazard/id_ex_rd_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#50 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/id_ex_rd_reg[2] cannot be properly analyzed as its control pin your_cpu/hazard/id_ex_rd_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#51 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/id_ex_rd_reg[3] cannot be properly analyzed as its control pin your_cpu/hazard/id_ex_rd_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#52 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/id_ex_rd_reg[4] cannot be properly analyzed as its control pin your_cpu/hazard/id_ex_rd_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#53 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/mem_rd_reg[0] cannot be properly analyzed as its control pin your_cpu/hazard/mem_rd_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#54 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/mem_rd_reg[1] cannot be properly analyzed as its control pin your_cpu/hazard/mem_rd_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#55 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/mem_rd_reg[2] cannot be properly analyzed as its control pin your_cpu/hazard/mem_rd_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#56 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/mem_rd_reg[3] cannot be properly analyzed as its control pin your_cpu/hazard/mem_rd_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#57 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/mem_rd_reg[4] cannot be properly analyzed as its control pin your_cpu/hazard/mem_rd_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#58 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/wb_rd_reg[0] cannot be properly analyzed as its control pin your_cpu/hazard/wb_rd_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#59 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/wb_rd_reg[1] cannot be properly analyzed as its control pin your_cpu/hazard/wb_rd_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#60 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/wb_rd_reg[2] cannot be properly analyzed as its control pin your_cpu/hazard/wb_rd_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#61 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/wb_rd_reg[3] cannot be properly analyzed as its control pin your_cpu/hazard/wb_rd_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#62 Warning
-Non-clocked latch  
-The latch your_cpu/hazard/wb_rd_reg[4] cannot be properly analyzed as its control pin your_cpu/hazard/wb_rd_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-23#1 Warning
-Combinational loop found  
-A timing loop has been detected on a combinational path. A timing arc has been disabled between your_cpu/ID_EX/ID_EX_IR/reg_write_enable_reg_i_6/I1 and your_cpu/ID_EX/ID_EX_IR/reg_write_enable_reg_i_6/O to disable the timing loop
 Related violations: <none>
 
 

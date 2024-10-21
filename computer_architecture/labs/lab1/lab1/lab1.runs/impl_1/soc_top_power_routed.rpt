@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sat Oct 19 14:45:03 2024
+| Date             : Mon Oct 21 14:29:27 2024
 | Host             : TianChang running 64-bit major release  (build 9200)
 | Command          : report_power -file soc_top_power_routed.rpt -pb soc_top_power_summary_routed.pb -rpx soc_top_power_routed.rpx
 | Design           : soc_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.383        |
+| Total On-Chip Power (W)  | 0.384        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.242        |
+| Dynamic (W)              | 0.243        |
 | Device Static (W)        | 0.140        |
 | Effective TJA (C/W)      | 1.9          |
 | Max Ambient (C)          | 84.3         |
@@ -53,22 +53,21 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.035 |        6 |       --- |             --- |
-| Slice Logic              |     0.032 |    40711 |       --- |             --- |
-|   LUT as Logic           |     0.028 |    18587 |    133800 |           13.89 |
+| Slice Logic              |     0.032 |    41004 |       --- |             --- |
+|   LUT as Logic           |     0.028 |    18850 |    133800 |           14.09 |
 |   LUT as Distributed RAM |     0.002 |     2360 |     46200 |            5.11 |
-|   CARRY4                 |    <0.001 |      550 |     33450 |            1.64 |
-|   Register               |    <0.001 |    12077 |    267600 |            4.51 |
-|   F7/F8 Muxes            |    <0.001 |     1298 |    133800 |            0.97 |
-|   Others                 |     0.000 |      221 |       --- |             --- |
-|   LUT as Shift Register  |     0.000 |        2 |     46200 |           <0.01 |
-|   BUFG                   |     0.000 |        1 |        32 |            3.13 |
-| Signals                  |     0.043 |    29903 |       --- |             --- |
+|   CARRY4                 |    <0.001 |      580 |     33450 |            1.73 |
+|   Register               |    <0.001 |    12072 |    267600 |            4.51 |
+|   F7/F8 Muxes            |    <0.001 |     1299 |    133800 |            0.97 |
+|   LUT as Shift Register  |    <0.001 |        2 |     46200 |           <0.01 |
+|   Others                 |     0.000 |      207 |       --- |             --- |
+| Signals                  |     0.044 |    30018 |       --- |             --- |
 | Block RAM                |     0.013 |     30.5 |       365 |            8.36 |
 | MMCM                     |     0.106 |        1 |        10 |           10.00 |
 | DSPs                     |     0.002 |        4 |       740 |            0.54 |
 | I/O                      |     0.011 |       26 |       400 |            6.50 |
 | Static Power             |     0.140 |          |           |                 |
-| Total                    |     0.383 |          |           |                 |
+| Total                    |     0.384 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.156 |       0.125 |      0.031 |
+| Vccint    |       1.000 |     0.157 |       0.126 |      0.031 |
 | Vccaux    |       1.800 |     0.090 |       0.059 |      0.031 |
 | Vcco33    |       3.300 |     0.008 |       0.003 |      0.005 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -150,10 +149,11 @@ Table of Contents
 +------------------------------+-----------+
 | Name                         | Power (W) |
 +------------------------------+-----------+
-| soc_top                      |     0.242 |
+| soc_top                      |     0.243 |
 |   axib                       |     0.001 |
 |     inst                     |     0.001 |
 |       gen_samd.crossbar_samd |     0.001 |
+|   checker                    |     0.001 |
 |   lcd                        |     0.003 |
 |     inst                     |     0.003 |
 |   mrcore                     |     0.113 |
@@ -164,11 +164,11 @@ Table of Contents
 |       Commit_module          |     0.005 |
 |       Decode_module          |     0.002 |
 |       Dispatch_module        |     0.002 |
-|       FU_ALU0_module         |     0.009 |
-|       FU_ALU1_module         |     0.007 |
+|       FU_ALU0_module         |     0.008 |
+|       FU_ALU1_module         |     0.008 |
 |       FU_MDU_module          |     0.011 |
-|       FU_MU_module           |     0.023 |
-|       Fetch_module           |     0.005 |
+|       FU_MU_module           |     0.022 |
+|       Fetch_module           |     0.006 |
 |       L2_TLB_module          |     0.007 |
 |       ROB_module             |     0.012 |
 |       Rename_module          |     0.006 |
@@ -181,7 +181,7 @@ Table of Contents
 |     U0                       |     0.002 |
 |       inst_blk_mem_gen       |     0.002 |
 |   your_cpu                   |     0.003 |
-|     ID_EX                    |     0.001 |
+|     ID_EX_reg                |     0.001 |
 +------------------------------+-----------+
 
 

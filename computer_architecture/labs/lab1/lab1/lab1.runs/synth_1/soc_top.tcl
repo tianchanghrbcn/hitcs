@@ -52,27 +52,28 @@ add_files D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/la
 add_files D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/hitcoa_at2024/cpu_lab1_inst0.coe
 add_files D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/hitcoa_at2024/cpu_lab1_inst2.coe
 add_files D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/hitcoa_at2024/cpu_lab1_ans2.coe
+read_verilog D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/define.v
+set_property file_type "Verilog Header" [get_files D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/define.v]
 read_verilog -library xil_defaultlib {
   D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ADD.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/EX_MEM_Reg.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_Reg.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/IF_ID_Reg.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/IR.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MEM_WB_Reg.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/alu_me.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ALU.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/EX_MEM_registers.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Equal.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Extender.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/ID_EX_registers.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/IF_ID_registers.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MEM_WB_registers.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MUX.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MUX1.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/MUX2.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/PC.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Registers.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Writeback_aMUX.v
+  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/Writeback_dMUX.v
   D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/new/checker_wrapper.v
   D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/cpu.v
   D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/cpu_checker.v
   D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/cpu_inst_rom.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/data_reg.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/extender.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/hazard_detection_unit.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/imm.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/mux.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/mux_4.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/npc.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/pc.v
-  D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/imports/src/regfile.v
   D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/new/soc_top.v
 }
 read_ip -quiet D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.srcs/sources_1/ip/axi_bus/axi_bus.xci

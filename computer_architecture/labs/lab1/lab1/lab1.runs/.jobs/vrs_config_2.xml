@@ -10,6 +10,13 @@
 		<Parent Id="cpu_inst2_rom_synth_1"/>
 		<Parent Id="cpu_ans2_rom_synth_1"/>
 	</Run>
+	<Run Id="impl_1" LaunchDir="D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab1/lab1/lab1.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="mr_bram_synth_1"/>
+		<Parent Id="cpu_inst0_rom_synth_1"/>
+		<Parent Id="cpu_inst2_rom_synth_1"/>
+		<Parent Id="cpu_ans2_rom_synth_1"/>
+	</Run>
 	<Parameters>
 		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
 		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
