@@ -1,0 +1,19 @@
+﻿  lab2_server.cpp
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\lab2_server.cpp(107,26): warning C4477: 'sscanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'unsigned __int64'
+      D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\lab2_server.cpp(107,26):
+      this argument is used as a buffer size
+  
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\lab2_server.cpp(107,26): warning C4477: 'sscanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 4 has type 'unsigned __int64'
+      D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\lab2_server.cpp(107,26):
+      this argument is used as a buffer size
+  
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\lab2_server.cpp(135,49): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\lab2_server.cpp(152,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\lab2_server.cpp(175,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\lab2_server.cpp(188,77): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\lab2_server.cpp(201,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\lab2_server.cpp(237,77): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\lab2_server.cpp(263,10): warning C4244: 'initializing': conversion from 'std::streamsize' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\lab2_server.cpp(287,31): warning C4309: '=': truncation of constant value
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\lab2_server.cpp(304,69): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  lab2_server.vcxproj -> D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_server\x64\Debug\lab2_server.exe

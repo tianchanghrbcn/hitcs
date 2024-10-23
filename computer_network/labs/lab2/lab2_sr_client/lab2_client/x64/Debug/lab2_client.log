@@ -1,0 +1,20 @@
+﻿  lab2_client.cpp
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(83,23): warning C4477: 'sscanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'unsigned __int64'
+      D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(83,23):
+      this argument is used as a buffer size
+  
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(83,23): warning C4477: 'sscanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 4 has type 'unsigned __int64'
+      D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(83,23):
+      this argument is used as a buffer size
+  
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(115,79): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(144,52): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(152,79): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(215,79): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(234,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(240,79): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(266,52): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(273,52): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(316,10): warning C4244: 'initializing': conversion from 'std::streamsize' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\lab2_client.cpp(358,69): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  lab2_client.vcxproj -> D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_sr_client\x64\Debug\lab2_client.exe
