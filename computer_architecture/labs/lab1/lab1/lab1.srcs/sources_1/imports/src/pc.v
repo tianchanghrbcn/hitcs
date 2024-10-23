@@ -1,10 +1,10 @@
 module PC(
     input       clk,
     input		reset_n,
-    input [31:0] new_address,  // 下一个地址
+    input [31:0] new_address,
     input stall,
 	 
-    output reg [31:0] output_address	// 当前PC内容
+    output reg [31:0] output_address
 );
 	always@(posedge clk) begin
 		if(reset_n == 1'b0) 

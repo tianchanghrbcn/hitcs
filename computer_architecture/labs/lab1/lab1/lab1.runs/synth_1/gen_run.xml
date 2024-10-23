@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1729491260">
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1729683695">
   <File Type="PA-TCL" Name="soc_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="soc_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="soc_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="soc_top.vds"/>
   <File Type="RDS-UTIL" Name="soc_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="soc_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="soc_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="soc_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="soc_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/axi_bus/axi_bus.xci">
@@ -411,9 +414,9 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ma_river_core_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="mr_bram"/>
   <BlockFileSet Type="BlockSrcs" Name="cpu_inst2_rom"/>
+  <BlockFileSet Type="BlockSrcs" Name="mr_bram"/>
+  <BlockFileSet Type="BlockSrcs" Name="ma_river_core_0"/>
   <BlockFileSet Type="BlockSrcs" Name="lcd_controller_0"/>
   <BlockFileSet Type="BlockSrcs" Name="cpu_data_ram"/>
   <BlockFileSet Type="BlockSrcs" Name="cpu_inst0_rom"/>
