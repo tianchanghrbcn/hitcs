@@ -1,0 +1,1286 @@
+http://www.lib.hit.edu.cn/
+HTTP/1.1 200 OK
+Server:  
+Date: Wed, 10 Apr 2024 09:17:37 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+Frame-Options: SAMEORIGIN
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+
+1f26
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+<title>本科生院</title>
+<meta name="keywords" content="本科生院">
+<meta name="description" content="哈尔滨工业大学" >
+
+<link type="text/css" href="/_css/_system/system.css" rel="stylesheet"/>
+<link type="text/css" href="/_upload/site/1/style/3/3.css" rel="stylesheet"/>
+<link type="text/css" href="/_upload/site/00/1c/28/style/6/6.css" rel="stylesheet"/>
+<link type="text/css" href="/_js/_portletPlugs/wp_sclndr/wp_sclndr.css" rel="stylesheet" />
+
+<link type="text/css" href="/_js/_portletPlugs/sudyNavi/css/sudyNav.css" rel="stylesheet" />
+<link type="text/css" href="/_js/_portletPlugs/datepicker/css/datepicker.css" rel="stylesheet" />
+<link type="text/css" href="/_js/_portletPlugs/wbox/css/wbox_nobg.css" rel="stylesheet" />
+
+<link type="text/css" href="/_js/_portletPlugs/simpleNews/css/simplenews.css" rel="stylesheet" />
+
+<script language="javascript" src="/_js/sudy-jquery-autoload.js" jquery-src="/_js/jquery-2.x.min.js" sudy-wp-context="" sudy-wp-siteId="28"></script>
+<script language="javascript" src="/_js/jquery-migrate.min.js"></script>
+<script language="javascript" src="/_js/jquery.sudy.wp.visitcount.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/wp_sclndr/wp_sclndr.js"></script>
+
+<script type="text/javascript" src="/_js/_portletPlugs/sudyNavi/jquery.sudyNav.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/datepicker/js/jquery.datepicker.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/datepicker/js/datepicker_lang_HK.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/wbox/js/wbox.js"></script>
+<script type="text/javascript" src="/_upload/tpl/03/e3/995/template995/extends/extends.js"></script>
+<link href="/_upload/tpl/03/e3/995/template995/slick/slick.css" type="text/css" rel="stylesheet" />
+<link href="/_upload/tpl/03/e3/995/template995/slick/slick-theme.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="/_upload/tpl/03/e3/995/template995/style.css" type="text/css" />
+<link rel="stylesheet" href="/_upload/tpl/03/e3/995/template995/mobile.css" type="text/css"/>
+<link rel="stylesheet" href="/_upload/tpl/03/e3/995/template995/media.css" type="text/css"/>
+<link rel="shorcut icon" href="/_upload/tpl/03/e3/995/template995/favicon.ico">
+<!--[if lt IE 9]>
+<script src="/_upload/tpl/03/e3/995/template995/extends/libs/html5.js"></script>
+<![endif]-->
+</head>
+<body class="main">
+	<div class="searchwarpper" style="display: none;">
+		<span class="close"><img src="/_upload/tpl/03/e3/995/template995/images/close.png"></span>
+		<div class="searchbox" frag="窗口03" portletmode="search">
+			<!--搜索组件-->
+				<div class="wp-search clearfix">
+					<form action="/_web/_search/api/search/new.rst?locale=zh_CN&request_locale=zh_CN&_p=YXM9MjgmdD05OTUmZD0zNTgzJnA9MSZtPVNOJg__" method="post" target="_blank">
+						<div class="search-input">
+							<input name="keyword" class="search-title" type="text" value=""
+								onblur="if(this.value == '') { this.value = ''; }"
+								onfocus="if(this.value == '') { this.value = ''; }" placeholder="" />
+						</div>
+						<div class="search-btn">
+							<input name="submit" class="search-submit" type="submit" value="搜索" />
+						</div>
+					</form>
+				</div>
+				<!--//复制以上代码到自定义搜索-->
+			
+		</div>
+	</div>
+<!--Start||head-->
+<div class="wrapper header" id="header">
+	<div class="inner">
+		<div class="mod clearfix">
+			<a class="navi-aside-toggle"></a>
+			<div class="head-left" frag="面板01">
+				<!--logo开始-->
+				<div class="sitelogo" frag="窗口01" portletmode="simpleSiteAttri">
+					<a href="/main.htm" title="返回本科生院首页"><img class="logo1" src="/_upload/tpl/03/e3/995/template995/images/logo.svg"><img class="logo2" src="/_upload/tpl/03/e3/995/template995/images/logo2.svg"></a> 
+				</div>
+				<!--//logo结束-->
+			</div>
+			<div class="head-right">
+				<div class="search-btn">
+					<img class="btn1" src="/_upload/tpl/03/e3/995/template995/images/search-btn.svg" alt="">
+					<img class="btn2" src="/_upload/tpl/03/e3/995/template995/images/search-btn2.svg" alt="">
+				</div>
+				<div class="wrapper nav wp-navi" id="nav">
+					<div class="wp-panel">
+						<div class="wp-window" frag="窗口1" portletmode="simpleSudyNavi" configs="{'c5':'3','c9':'0','c6':'0','c4':'_self','c8':'2','c2':'1','c7':'2','c3':'30','c1':'1'}" contents="{'c2':'0', 'c1':'/首页,/院况介绍,/机构设置,/规章制度,/资料下载,/信息公开'}">
+							
+								
+								<ul class="wp-menu clearfix" data-nav-aside='{"title":"导航","index":0}'>
+									
+									<li class="menu-item i1"><a class="menu-link" href="http://hituc.hit.edu.cn/main.htm" target="_self">首页</a>
+										
+									</li>
+									
+									<li class="menu-item i2"><a class="menu-link" href="/17786/list.htm" target="_self">院况介绍</a>
+										
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i2-1"><a class="sub-link" href="/17793/list.htm"
+													target="_self">本院简介</a></li>
+											
+											<li class="sub-item i2-2"><a class="sub-link" href="/17794/list.htm"
+													target="_self">现任领导</a></li>
+											
+										</ul>
+										
+									</li>
+									
+									<li class="menu-item i3"><a class="menu-link" href="/17787/list.htm" target="_self">机构设置</a>
+										
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i3-1"><a class="sub-link" href="/17798/list.htm"
+													target="_self">教务处</a></li>
+											
+											<li class="sub-item i3-2"><a class="sub-link" href="/17799/list.htm"
+													target="_self">教学研究与质量管理处</a></li>
+											
+											<li class="sub-item i3-3"><a class="sub-link" href="https://zsb.hit.edu.cn"
+													target="_blank">本科生招生办公室</a></li>
+											
+											<li class="sub-item i3-4"><a class="sub-link" href="http://zsjyc.hit.edu.cn"
+													target="_blank">终身教育处</a></li>
+											
+											<li class="sub-item i3-5"><a class="sub-link" href="/17797/list.htm"
+													target="_self">院办公室</a></li>
+											
+										</ul>
+										
+									</li>
+									
+									<li class="menu-item i4"><a class="menu-link" href="/17788/list.htm" target="_self">规章制度</a>
+										
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i4-1"><a class="sub-link" href="/17802/list.htm"
+													target="_self">教学运行</a></li>
+											
+											<li class="sub-item i4-2"><a class="sub-link" href="/17803/list.htm"
+													target="_self">学籍与交流</a></li>
+											
+											<li class="sub-item i4-3"><a class="sub-link" href="/sjjx_18054/list.htm"
+													target="_self">实践教学</a>
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i4-3-1"><a class="sub-link" href="/sjwj/list.htm"
+													target="_self">上级文件</a></li>
+											
+											<li class="sub-item i4-3-2"><a class="sub-link" href="/xxwj/list.htm"
+													target="_self">学校文件</a></li>
+											
+										</ul>
+										</li>
+											
+											<li class="sub-item i4-4"><a class="sub-link" href="/17804/list.htm"
+													target="_self">创新创业</a></li>
+											
+											<li c
+2000
+lass="sub-item i4-5"><a class="sub-link" href="/17805/list.htm"
+													target="_self">教学研究</a></li>
+											
+											<li class="sub-item i4-6"><a class="sub-link" href="/17806/list.htm"
+													target="_self">教学建设</a></li>
+											
+											<li class="sub-item i4-7"><a class="sub-link" href="/17807/list.htm"
+													target="_self">教学质量</a>
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i4-7-1"><a class="sub-link" href="/sjwj_18835/list.htm"
+													target="_self">上级文件</a></li>
+											
+											<li class="sub-item i4-7-2"><a class="sub-link" href="/xxwj_18836/list.htm"
+													target="_self">学校文件</a></li>
+											
+										</ul>
+										</li>
+											
+											<li class="sub-item i4-8"><a class="sub-link" href="/17808/list.htm"
+													target="_self">教师教学发展</a></li>
+											
+											<li class="sub-item i4-9"><a class="sub-link" href="/17809/list.htm"
+													target="_self">教师手册</a></li>
+											
+										</ul>
+										
+									</li>
+									
+									<li class="menu-item i5"><a class="menu-link" href="/17789/list.htm" target="_self">资料下载</a>
+										
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i5-1"><a class="sub-link" href="/17810/list.htm"
+													target="_self">教学运行</a></li>
+											
+											<li class="sub-item i5-2"><a class="sub-link" href="/17811/list.htm"
+													target="_self">学籍与交流</a></li>
+											
+											<li class="sub-item i5-3"><a class="sub-link" href="/sjjx_18057/list.htm"
+													target="_self">实践教学</a></li>
+											
+											<li class="sub-item i5-4"><a class="sub-link" href="/17812/list.htm"
+													target="_self">创新创业</a></li>
+											
+											<li class="sub-item i5-5"><a class="sub-link" href="/17813/list.htm"
+													target="_self">教学研究</a></li>
+											
+											<li class="sub-item i5-6"><a class="sub-link" href="/17814/list.htm"
+													target="_self">教学建设</a>
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i5-6-1"><a class="sub-link" href="/zyjs/list.htm"
+													target="_self">专业建设</a>
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i5-6-1-1"><a class="sub-link" href="/zysz/list.htm"
+													target="_self">专业设置</a></li>
+											
+											<li class="sub-item i5-6-1-2"><a class="sub-link" href="/ylbkzyjsd/list.htm"
+													target="_self">一流本科专业建设点</a></li>
+											
+											<li class="sub-item i5-6-1-3"><a class="sub-link" href="/zdzy/list.htm"
+													target="_self">重点专业</a></li>
+											
+											<li class="sub-item i5-6-1-4"><a class="sub-link" href="/dexsxwzy/list.htm"
+													target="_self">第二学士学位专业</a></li>
+											
+											<li class="sub-item i5-6-1-5"><a class="sub-link" href="/fxzy/list.htm"
+													target="_self">辅修专业</a></li>
+											
+										</ul>
+										</li>
+											
+											<li class="sub-item i5-6-2"><a class="sub-link" href="/kcjs/list.htm"
+													target="_self">课程建设</a></li>
+											
+											<li class="sub-item i5-6-3"><a class="sub-link" href="/jcjs/list.htm"
+													target="_self">教材建设</a></li>
+											
+											<li class="sub-item i5-6-4"><a class="sub-link" href="/szdw/list.htm"
+													target="_self">师资队伍</a></li>
+											
+										</ul>
+										</li>
+											
+											<li class="sub-item i5-7"><a class="sub-link" href="/17815/list.htm"
+													target="_self">教学质量</a>
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i5-7-1"><a class="sub-link" href="/jxjx/list.htm"
+													target="_self">教学简讯</a>
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i5-7-1-1"><a class="sub-link" href="/2012n/list.htm"
+													target="_self">2012年</a></li>
+											
+											<li class="sub-item i5-7-1-2"><a class="sub-link" href="/2013n/list.htm"
+													target="_self">2013年</a></li>
+											
+											<li class="sub-item i5-7-1-3"><a class="sub-link" href="/2014n/list.htm"
+													target="_self">2014年</a></li>
+											
+											<li class="sub-item i5-7-1-4"><a class="sub-link" href="/2015n/list.htm"
+													target="_self">2015年</a></li>
+											
+											<li class="sub-item i5-7-1-5"><a class="sub-link" href="/2016n/list.htm"
+													target="_self">2016年</a></li>
+											
+											<li class="sub-item i5-7-1-6"><a class="sub-link" href="/2017n/list.htm"
+													target="_self">2017年</a></li>
+											
+											<li class="sub-item i5-7-1-7"><a class="sub-link" href="/2018n/list.htm"
+													target="_self">2018年</a></li>
+											
+											<li class="sub-item i5-7-1-8"><a class="sub-link" href="/2019n/list.htm"
+													target="_self">2019年</a></li>
+											
+											<li class="sub-item i5-7-1-9"><a class="sub-link" href="/2020n/list.htm"
+													target="_self">2020年</a></li>
+											
+											<li class="sub-item i5-7-1-10"><a class="sub-link" href="/2021n/list.htm"
+													target="_self">2021年</a></li>
+											
+											<li class="sub-item i5-7-1-11"><a class="sub-link" href="/2022n/list.htm"
+													target="_self">2022年</a></li>
+											
+											<li class="sub-item i5-7-1-12"><a class="sub-link" href="/2023n/list.htm"
+													target="_self">2023年</a></li>
+											
+											<li class="sub-item i5-7-1-13"><a class="sub-link" href="/2024n/list.htm"
+													target="_self">2024年</a></li>
+											
+										</ul>
+										</li>
+											
+											<li class="sub-item i5-7-2"><a class="sub-link" href="/zlnb/list.htm"
+													target="_self">质量年报</a></li>
+											
+											<li class="sub-item i5-7-3"><a class="sub-link" href="/xyjxztpj/list.htm"
+													target="_self">学院教学状态评价</a></li>
+											
+										</ul>
+										</li>
+											
+											<li class="sub-item i5-8"><a class="sub-link" href="/17816/list.htm"
+													target="_self">教学信息化</a></li>
+											
+										</ul>
+										
+									</li>
+									
+									<li class="menu-item i6"><a class="menu-link" href="/17790/list.htm" target="_self">信息公开</a>
+										
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i6-1"><a class="sub-link" href="/17817/list.htm"
+													target="_self">办事指南</a>
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i6-1-1"><a class="sub-link" href="/17844/list.htm"
+													target="_self">教学运行</a></li>
+											
+											<li class="sub-item i6-1-2"><a class="sub-link" href="/17845/list.htm"
+													target="_self">学籍与交流</a></li>
+											
+											<li class="sub-item i6-1-3"><a class="sub-link" href="/17846/list.htm"
+													target="_self">创新与实践</a></li>
+											
+											<li class="sub-item i6-1-4"><a class="sub-link" href="/17847/list.htm"
+													target="_self">教学研究与建设</a></li>
+											
+											<li class="sub-item i6-1-5"><a class="sub-link" href="/17848/list.htm"
+													target="_self">教学质量</a></li>
+											
+										</ul>
+										</li>
+											
+											<li class="sub-item i6-2"><a class="sub-link" href="/17818/list.htm"
+													target="_self">职权清单</a>
+						
+2000
+				<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i6-2-1"><a class="sub-link" href="/17849/list.htm"
+													target="_self">教务处职权清单</a></li>
+											
+											<li class="sub-item i6-2-2"><a class="sub-link" href="/17850/list.htm"
+													target="_self">教研处职权清单</a></li>
+											
+											<li class="sub-item i6-2-3"><a class="sub-link" href="https://zsb.hit.edu.cn/article/read/5c35ddcf434587b1ba8d5939f673af5b"
+													target="_blank">本科生招生办公室职权清单</a></li>
+											
+										</ul>
+										</li>
+											
+											<li class="sub-item i6-3"><a class="sub-link" href="/17819/list.htm"
+													target="_self">职权流程</a>
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i6-3-1"><a class="sub-link" href="/17851/list.htm"
+													target="_self">教务处职权流程</a></li>
+											
+											<li class="sub-item i6-3-2"><a class="sub-link" href="/17852/list.htm"
+													target="_self">教研处职权流程</a></li>
+											
+											<li class="sub-item i6-3-3"><a class="sub-link" href="https://zsb.hit.edu.cn/article/category/03694b55b820513c2e704cbfbf0e4b52"
+													target="_blank">本科生招生办公室职权流程</a></li>
+											
+										</ul>
+										</li>
+											
+											<li class="sub-item i6-4"><a class="sub-link" href="/17820/list.htm"
+													target="_self">服务事项</a>
+										<em class="menu-switch-arrow"></em>
+										<ul class="sub-menu ">
+											
+											<li class="sub-item i6-4-1"><a class="sub-link" href="/17853/list.htm"
+													target="_self">教务处服务事项</a></li>
+											
+											<li class="sub-item i6-4-2"><a class="sub-link" href="/17854/list.htm"
+													target="_self">教研处服务事项</a></li>
+											
+											<li class="sub-item i6-4-3"><a class="sub-link" href="/17855/list.htm"
+													target="_self">本科生院办公室服务事项</a></li>
+											
+											<li class="sub-item i6-4-4"><a class="sub-link" href="/17856/list.htm"
+													target="_self">进驻师生服务中心事项</a></li>
+											
+										</ul>
+										</li>
+											
+										</ul>
+										
+									</li>
+									
+								</ul>
+								
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--End||head-->
+<!--aside导航-->
+<div class="wp-navi-aside" id="wp-navi-aside">
+  <div class="aside-inner">
+    <div class="navi-aside-wrap"></div>
+  </div>
+  <div class="navi-aside-mask"></div>
+</div>
+<!--End||nav-->
+<!--Start||focus-->
+<div class="wrapper mbanner" id="banner">
+	<div class="inner clearfix">
+		<div class="banner" frag="窗口2" portletmode="simpleNews" configs="{'c28':'320','c14':'1','c1':'1','c29':'1','c39':'300','c38':'100','c21':'0','c4':'1','c6':'15','c9':'0','c12':'0','c30':'0','c37':'1','c31':'0','c16':'1','c27':'320','c15':'0','c32':'','c5':'_blank','c40':'1','c17':'0','c19':'yyyy-MM-dd','c33':'500','c2':'序号,标题,发布时间','c23':'1','c41':'240','c22':'0','c7':'1','c13':'200','c43':'0','c24':'240','c35':'-1:-1','c3':'3','c8':'1','c44':'0','c25':'320','c34':'300','c18':'yyyy-MM-dd','c20':'0','c42':'320','c10':'50','c11':'1','c36':'0','c26':'1'}" contents="{'c2':'0', 'c1':'/大图切换'}">
+			<div class="con">
+				<ul class="news_list clearfix">
+					
+					<li class="news n1 clearfix">
+						<a href="https://mp.weixin.qq.com/s?__biz=MzI3NzU5NTEwNw==&mid=2247653973&idx=1&sn=75b52d73dae6df5e8e3db404d2d065f7&chksm=eb6f0cd9dc1885cff683a3cdcac3d1a52a420879cfacf97d974771c8e55d6c2e5391a49e24b6&token=387136480&lang=zh_CN#rd" target="_blank">
+							<div class="news_imgs"><img src="/_upload/article/images/b8/99/47e0f3f64e63a2dd7142706db3f7/438ce5fc-2e39-4974-ba38-55143989804e.jpg"></div>
+						</a>
+					</li>
+					
+					<li class="news n2 clearfix">
+						<a href="https://mp.weixin.qq.com/s?__biz=MzI3NzU5NTEwNw==&mid=2247652708&idx=1&sn=b3aebb268fda1ad96601618a76b21dc3&chksm=eb6f03e8dc188afe98cdd5db94b592c46598ab0eb29edcaf9424c7c47a91dfb7eb8e837b5b4a&token=182104800&lang=zh_CN#rd" target="_blank">
+							<div class="news_imgs"><img src="/_upload/article/images/33/e5/cc0f51774755973e00795d7e06d5/0cbca4ee-c4d6-4c45-9efd-6d23281a26d8.jpg"></div>
+						</a>
+					</li>
+					
+					<li class="news n3 clearfix">
+						<a href="http://news.hit.edu.cn/2023/1231/c1510a235052/page.htm" target="_blank">
+							<div class="news_imgs"><img src="/_upload/article/images/e2/e3/46424db04ca99a2f96aebe673ad1/ee7a7860-8456-4be4-9020-56d226a32497.jpg"></div>
+						</a>
+					</li>
+					
+				</ul>	
+			</div>
+		</div>
+		<div class="post post0 post-10 mbox" frag="窗口10" portletmode="simpleNews" configs="{'c28':'320','c14':'1','c1':'1','c29':'1','c39':'300','c38':'100','c21':'0','c4':'1','c6':'15','c9':'0','c12':'0','c30':'0','c37':'1','c31':'0','c16':'1','c27':'320','c15':'0','c32':'','c5':'_blank','c40':'1','c17':'0','c19':'yyyy-MM-dd','c33':'500','c2':'序号,标题,发布时间','c23':'1','c41':'240','c22':'0','c7':'1','c13':'200','c43':'0','c24':'240','c35':'-1:-1','c3':'7','c8':'1','c44':'0','c25':'320','c34':'300','c18':'yyyy-MM-dd','c20':'0','c42':'320','c10':'50','c11':'1','c36':'0','c26':'1'}" contents="{'c2':'0', 'c1':'/信息系统'}">
+			<div class="con">
+									<ul class="news_list clearfix">
+						
+						<li class="news n1">
+							<a href="http://jwts.hit.edu.cn" target="_blank">
+								<div class="news_box">
+									<div class="news_ico">
+										<svg xmlns="http://www.w3.org/2000/svg" id="svg1" width="49.734" height="51.242"
+											viewBox="0 0 49.734 51.242">
+											<g id="ico1" transform="translate(1 1)">
+												<g id="图层_1" data-name="图层 1" transform="translate(0 0)">
+													<path id="路径_29949" data-name="路径 29949" d="M38.589,14.832,22.827,9.5,7.13,14.832l15.7,5.373Z"
+														transform="translate(-6.993 -8.849)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-linejoin="round" stroke-width="2" />
+													<line id="直线_209" data-name="直线 209" y2="5.497" transform="translate(4.818 7.788)" fill="none"
+														stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+													<path id="路径_29950" data-name="路径 29950"
+														d="M82.114,41.5V54.275l-6.1-2.31-4.041,4.044L68.74,52.776"
+														transform="translate(-55.238 -33.908)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-linejoin="round" stroke-width="2" />
+													<circle id="椭圆_471" data-name="椭圆 471" cx="2.803" cy="2.803" r="2.803"
+														transform="translate(2.102 14.426)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-linejoin="round" stroke-width="2" />
+													<path id="路径_29951" data-name="路径 29951"
+														d="M191.061,20.329V9.754A3.254,3.254,0,0,0,187.807,6.5H183.74"
+														transform="translate(-145.292 -6.5)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<path id="路径_29952" data-name="路径 29952"
+														d="M6.5,153.74v10.575a3.254,3.254,0,0,0,3.254,3.254H20.329"
+														transform="translate(-6.5 -121.799)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<ellipse id="椭圆_472" data-name="椭圆 472" cx="5.506" cy="13.35" rx="5.506" ry="13.35"
+														transform="translate(20.654 29.948) rotate(-45)" fill="none" stroke="#fff"
+														stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+													<ellipse id="椭圆_473" data-name="椭圆 473" cx="13.35" cy="5.506" rx="13.35" ry="5.506"
+														transform="translate(20.654 41.041) rotate(-45)" fill="none" stroke="#fff"
+														stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+												
+2000
+	<ellipse id="椭圆_474" data-name="椭圆 474" cx="1.484" cy="1.484" rx="1.484" ry="1.484"
+														transform="translate(32.502 34.01)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+												</g>
+											</g>
+										</svg>
+									</div>
+									<div class="news_title">
+										本科教学管理与服务平台
+									</div>
+								</div>
+							</a>
+						</li>
+						
+						
+						<li class="news n1">
+							<a href="http://jwcs.hit.edu.cn" target="_blank">
+								<div class="news_box">
+								<div class="news_ico">
+									<svg xmlns="http://www.w3.org/2000/svg" width="48.085" id="svg2" height="49.126" viewBox="0 0 48.085 49.126">
+										<g id="ico2" transform="translate(1 1.129)">
+										  <g id="图层_1" data-name="图层 1" transform="translate(0 0)">
+											<path id="路径_29939" data-name="路径 29939" d="M190.108,20.825V10.254A3.218,3.218,0,0,0,186.928,7H182.74" transform="translate(-145.373 -6.892)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29940" data-name="路径 29940" d="M6.5,174.21v6.245a3.218,3.218,0,0,0,3.18,3.254h9.488" transform="translate(-6.5 -137.83)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29941" data-name="路径 29941" d="M20.246,87.4c-4.779,2.714-9.1,3.339-11.1,1.189s-1.183-6.534,1.7-11.28A11.536,11.536,0,0,0,20.246,87.4Z" transform="translate(-7.715 -61.95)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29942" data-name="路径 29942" d="M92.933,19.082a11.541,11.541,0,0,0-9.4-10.1c4.779-2.714,9.1-3.339,11.1-1.189S95.815,14.329,92.933,19.082Z" transform="translate(-67.198 -6.503)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29943" data-name="路径 29943" d="M43.551,27.445A37.357,37.357,0,0,1,37.7,34.693a36.731,36.731,0,0,1-7.357,5.625,11.676,11.676,0,0,1,1.631-23.131A11.473,11.473,0,0,1,43.551,27.445Z" transform="translate(-17.815 -14.866)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29944" data-name="路径 29944" d="M78.883,65.876a11.763,11.763,0,0,1-4.033,8.9,11.206,11.206,0,0,1-9.25,2.593,36.733,36.733,0,0,0,7.357-5.636A37.356,37.356,0,0,0,78.8,64.49,11.981,11.981,0,0,1,78.883,65.876Z" transform="translate(-53.069 -51.911)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29945" data-name="路径 29945" d="M80.33,36.17a7.508,7.508,0,0,1,5.761,4.84" transform="translate(-64.676 -29.734)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29946" data-name="路径 29946" d="M144.675,141.325H127.857a1.946,1.946,0,0,1-1.887-1.532h0a3.312,3.312,0,0,1,.605-2.762,3.154,3.154,0,0,1,2.49-1.232h14.4a3.154,3.154,0,0,1,2.49,1.232,3.312,3.312,0,0,1,.605,2.762h0A1.946,1.946,0,0,1,144.675,141.325Z" transform="translate(-100.574 -107.752)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29947" data-name="路径 29947" d="M150.6,174.694H144a3.209,3.209,0,0,1-3.165-2.943l-.986-10.48h14.9l-.986,10.48a3.209,3.209,0,0,1-3.166,2.944Z" transform="translate(-111.576 -127.697)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29948" data-name="路径 29948" d="M180.057,112.491v-.883a3.255,3.255,0,0,0-1.991-3.017l-5.186-2.141" transform="translate(-137.603 -84.769)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+										  </g>
+										</g>
+									  </svg>
+									  
+								</div>
+								<div class="news_title">
+									课程教学服务平台
+								</div>
+								</div>
+							</a>
+						</li>
+						
+						
+						<li class="news n1">
+							<a href="http://sjjx.hit.edu.cn" target="_blank">
+								<div class="news_box">
+								<div class="news_ico">
+									<svg xmlns="http://www.w3.org/2000/svg" width="46.958" id="svg3" height="47.77" viewBox="0 0 46.958 47.77">
+										<g id="ico3" transform="translate(1 1)">
+										  <g id="图层_1" data-name="图层 1" transform="translate(0 0)">
+											<line id="直线_202" data-name="直线 202" x2="7.029" transform="translate(24.881 38.195)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+											<line id="直线_203" data-name="直线 203" x2="7.031" transform="translate(37.927 30.355)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+											<line id="直线_204" data-name="直线 204" y1="6.228" x2="3.515" transform="translate(33.218 38.902)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+											<line id="直线_205" data-name="直线 205" y1="6.228" x2="3.513" transform="translate(33.106 23.42)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+											<line id="直线_206" data-name="直线 206" x1="3.513" y1="6.23" transform="translate(39.742 34.98)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+											<line id="直线_207" data-name="直线 207" x1="3.515" y1="6.228" transform="translate(26.582 27.339)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+											<path id="路径_29935" data-name="路径 29935" d="M151.5,20.329V9.754a3.218,3.218,0,0,0-3.18-3.254H133.74" transform="translate(-106.762 -6.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29936" data-name="路径 29936" d="M6.5,163.74v8.406A3.218,3.218,0,0,0,9.68,175.4H20.017" transform="translate(-6.5 -129.63)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29937" data-name="路径 29937" d="M27.872,10.18h3.142A2.3,2.3,0,0,1,32.985,11.3a2.414,2.414,0,0,1,.1,2.307L31,16.432l-3.153.035-2.057-2.889a2.412,2.412,0,0,1,.122-2.29,2.3,2.3,0,0,1,1.963-1.107Z" transform="translate(-21.515 -9.382)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+											<path id="路径_29938" data-name="路径 29938" d="M21.626,39.028,17.75,53.152a2.4,2.4,0,0,0,.774,2.482l3.212,2.653a2.272,2.272,0,0,0,2.869.02l3.378-2.668a2.4,2.4,0,0,0,.8-2.538L24.779,39Z" transform="translate(-15.297 -31.95)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+											<line id="直线_208" data-name="直线 208" x2="3.236" y2="10.736" transform="translate(16.784 9.508)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+										  </g>
+										</g>
+									</svg>
+								</div>
+								<div class="news_title">
+									实践教学管理系统
+								</div>
+								</div>
+							</a>
+						</li>
+						
+						
+						<li class="news n1">
+							<a href="http://zjgl.hit.edu.cn" target="_blank">
+								<div class="news_box">
+									<div class="news_ico">
+										<svg xmlns="http://www.w3.org/2000/svg" id="svg4" width="48.358" height="48.288"
+											viewBox="0 0 48.358 48.288">
+											<g id="ico4" transform="translate(1.053 1)">
+												<g id="图层_1" data-name="图层 1" transform="translate(0 0)">
+													<path id="路径_29924" data-name="路径 29924"
+														d="M105.33,155.889l12.563-4.349,12.514,4.349-12.514,4.384Z"
+														transform="translate(-84.376 -120.077)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-linejoin="round" stroke-width="2" />
+													<path id="路径_29925" data-name="路径 29925" d="M130.406,199.68l-12.514,4.382L105.33,199.68"
+							
+1000
+							transform="translate(-84.376 -157.774)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-linejoin="round" stroke-width="2" />
+													<path id="路径_29926" data-name="路径 29926"
+														d="M169.927,22.221V11.644a3.218,3.218,0,0,0-3.18-3.254H156.41"
+														transform="translate(-124.625 -7.98)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<path id="路径_29927" data-name="路径 29927"
+														d="M9.17,155.63v10.577a3.218,3.218,0,0,0,3.18,3.254H22.687"
+														transform="translate(-8.604 -123.279)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<path id="路径_29928" data-name="路径 29928"
+														d="M20.585,37.547A36.72,36.72,0,0,0,17.3,39.282c-1.1.651-2.139,1.336-3.1,2.046A29.829,29.829,0,0,0,9.918,45.1C7.067,42,5.794,38.953,6.893,37.007s4.315-2.338,8.358-1.362A29.146,29.146,0,0,1,20.585,37.547Z"
+														transform="translate(-6.501 -28.92)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<path id="路径_29929" data-name="路径 29929"
+														d="M106.438,89.157c-1.1,1.952-4.315,2.343-8.358,1.362a31.016,31.016,0,0,0,1.06-5.675,30.071,30.071,0,0,0,4.277-3.775C106.264,84.163,107.536,87.211,106.438,89.157Z"
+														transform="translate(-78.663 -64.894)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<path id="路径_29930" data-name="路径 29930"
+														d="M15.251,90.519c-4.043.981-7.26.584-8.358-1.362s.174-4.989,3.026-8.087a30.071,30.071,0,0,0,4.277,3.775,31.2,31.2,0,0,0,1.056,5.675Z"
+														transform="translate(-6.501 -64.894)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<path id="路径_29931" data-name="路径 29931"
+														d="M103.4,45.094a30.072,30.072,0,0,1-4.277,3.775c.119-1.21.18-2.475.18-3.775s-.061-2.564-.18-3.777a31.05,31.05,0,0,0-1.06-5.675c4.043-.978,7.26-.581,8.358,1.362S106.248,42,103.4,45.094Z"
+														transform="translate(-78.647 -28.918)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<path id="路径_29932" data-name="路径 29932"
+														d="M39.84,46.952c0,1.3-.061,2.564-.18,3.775A31.016,31.016,0,0,1,38.6,56.4a29.219,29.219,0,0,1-5.332-1.9,38.4,38.4,0,0,1-6.39-3.781A30.072,30.072,0,0,1,22.6,46.945a29.829,29.829,0,0,1,4.281-3.77c.965-.709,2-1.395,3.1-2.046s2.2-1.226,3.286-1.735A29.072,29.072,0,0,1,38.6,37.5a31.049,31.049,0,0,1,1.06,5.675C39.778,44.387,39.84,45.65,39.84,46.952Z"
+														transform="translate(-19.187 -30.775)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<path id="路径_29933" data-name="路径 29933"
+														d="M58.437,13.225a29.074,29.074,0,0,0-5.332,1.9,29.146,29.146,0,0,0-5.335-1.9C48.964,9.151,50.908,6.5,53.1,6.5S57.243,9.151,58.437,13.225Z"
+														transform="translate(-39.02 -6.5)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<path id="路径_29934" data-name="路径 29934"
+														d="M54.5,104.145c-1.194,4.074-3.138,6.725-5.335,6.725s-4.139-2.651-5.332-6.725a31.2,31.2,0,0,1-1.06-5.675,38.395,38.395,0,0,0,6.39,3.781,29.218,29.218,0,0,0,5.337,1.894Z"
+														transform="translate(-35.08 -78.519)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+												</g>
+											</g>
+										</svg>
+							
+									</div>
+									<div class="news_title">
+										助教管理系统
+									</div>
+								</div>
+							</a>
+						</li>
+						
+						
+						<li class="news n1">
+							<a href="http://qdb.hit.edu.cn" target="_blank">
+								<div class="new
+2000
+s_box">
+								<div class="news_ico">
+									<svg xmlns="http://www.w3.org/2000/svg" width="46.964" id="svg5" height="47.939" viewBox="0 0 46.964 47.939">
+										<g id="ico5" transform="translate(1 1)">
+										  <g id="图层_1" data-name="图层 1" transform="translate(0 0)">
+											<path id="路径_29920" data-name="路径 29920" d="M168.329,20.329V9.754a3.218,3.218,0,0,0-3.18-3.254H154.81" transform="translate(-123.365 -6.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29921" data-name="路径 29921" d="M7.58,163.74v8.406a3.218,3.218,0,0,0,3.18,3.254H21.1" transform="translate(-7.351 -129.63)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<ellipse id="椭圆_470" data-name="椭圆 470" cx="4.506" cy="4.61" rx="4.506" ry="4.61" transform="translate(8.822)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29922" data-name="路径 29922" d="M41.839,67.117l-2.084-4.694a2.3,2.3,0,0,0-2.137-1.492h-8.01a2.291,2.291,0,0,0-2.08,1.354l-3.7,8.113a2.394,2.394,0,0,0,.139,2.259,2.282,2.282,0,0,0,1.94,1.088h0a2.294,2.294,0,0,0,2.084-1.369l3-6.658" transform="translate(-19.981 -49.123)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<line id="直线_197" data-name="直线 197" x2="14.047" transform="translate(0 25.615)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29923" data-name="路径 29923" d="M118.461,126.574l-3.6-.935a2.983,2.983,0,0,0-2.615.558,3.133,3.133,0,0,0-1.172,2.455v12.33A3.094,3.094,0,0,0,113.362,144l5.195,1.347a2.985,2.985,0,0,0,2.612-.56,3.135,3.135,0,0,0,1.172-2.453V129.844a3.1,3.1,0,0,1,2.26-3l5.36-1.454a2.984,2.984,0,0,1,2.631.541,3.134,3.134,0,0,1,1.186,2.463v12.688a3.1,3.1,0,0,1-2.29,3.015l-4.291,1.1" transform="translate(-88.899 -99.515)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<line id="直线_198" data-name="直线 198" x2="2.4" transform="translate(26.855 32.695)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<line id="直线_199" data-name="直线 199" x2="2.4" transform="translate(26.855 38.002)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<line id="直线_200" data-name="直线 200" x2="2.4" transform="translate(37.819 32.695)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<line id="直线_201" data-name="直线 201" x2="2.4" transform="translate(37.819 38.002)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+										  </g>
+										</g>
+									  </svg>
+								</div>
+								<div class="news_title">
+									教学质量监测数据平台
+								</div>
+								</div>
+							</a>
+						</li>
+						
+						
+						<li class="news n1">
+							<a href="http://jwes.hit.edu.cn" target="_blank">
+								<div class="news_box">
+								<div class="news_ico">
+									<svg xmlns="http://www.w3.org/2000/svg" width="46.735" id="svg6" height="47.77" viewBox="0 0 46.735 47.77">
+										<g id="ico6" transform="translate(1 1)">
+										  <g id="图层_1" data-name="图层 1" transform="translate(0 0)">
+											<path id="路径_29911" data-name="路径 29911" d="M167.257,20.329V9.754a3.218,3.218,0,0,0-3.18-3.254H153.74" transform="translate(-122.521 -6.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29912" data-name="路径 29912" d="M20.017,6.5H9.68A3.218,3.218,0,0,0,6.5,9.754V20.329" transform="translate(-6.5 -6.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29913" data-name="路径 29913" d="M6.5,153.74v10.575a3.218,3.218,0,0,0,3.18,3.254H20.017" transform="translate(-6.5 -121.799)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29914" data-name="路径 29914" d="M153.74,167.569h10.336a3.218,3.218,0,0,0,3.18-3.254V153.74" transform="translate(-122.521 -121.799)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29915" data-name="路径 29915" d="M165.08,65.75a15.324,15.324,0,0,1,1.351,1.848" transform="translate(-131.457 -52.897)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29916" data-name="路径 29916" d="M136.31,45.91a14.643,14.643,0,0,1,2.406,1.165" transform="translate(-108.787 -37.361)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29917" data-name="路径 29917" d="M71.218,54.211a15.4,15.4,0,0,1-7.237,15.88,14.66,14.66,0,0,1-17.061-1.527A15.5,15.5,0,0,1,42.488,51.64,14.95,14.95,0,0,1,56.516,41.59" transform="translate(-34.147 -33.978)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29918" data-name="路径 29918" d="M71.445,88.884c0,3.536-6.683,6.4-14.927,6.4S41.59,92.42,41.59,88.884s6.683-6.4,14.929-6.4" transform="translate(-34.15 -65.998)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="路径_29919" data-name="路径 29919" d="M89.058,56.864c0,8.434-3.78,15.272-8.443,15.272S72.17,65.3,72.17,56.864,75.95,41.59,80.615,41.59" transform="translate(-58.246 -33.978)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+										  </g>
+										</g>
+									  </svg>
+									  
+								</div>
+								<div class="news_title">
+									本科生网上服务系统
+								</div>
+								</div>
+							</a>
+						</li>
+						
+						
+						<li class="news n1">
+							<a href="https://xnfz.hit.edu.cn" target="_blank">
+								<div class="news_box">
+									<div class="news_ico">
+										<svg xmlns="http://www.w3.org/2000/svg" width="47.692" id="svg7" height="48.135" viewBox="0 0 47.692 48.135">
+											<g id="ico7" transform="translate(-5.5 -5.134)">
+												<g id="图层_1" data-name="图层 1" transform="translate(6.5 6.5)">
+													<path id="路径_29962" data-name="路径 29962" d="M183.205,20.442V9.9A3.245,3.245,0,0,0,179.96,6.65h-6.22"
+														transform="translate(-137.559 -6.618)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<path id="路径_29963" data-name="路径 29963" d="M6.5,159.88v9.251a3.245,3.245,0,0,0,3.245,3.245H20.292"
+														transform="translate(-6.5 -126.697)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<path id="路径_29964" data-name="路径 29964" d="M112.01,120.723l11.367-6.583,11.39,6.583Z"
+														transform="translate(-89.184 -90.853)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-linejoin="round" stroke-width="2" />
+													<line id="直线_347" data-name="直线 347" y2="15.533" transform="translate(24.734 29.987)" fill="none"
+														stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+													<line id="直线_348" data-name="直线 348" y2="15.533" transform="translate(43.677 29.987)" fill="none"
+														stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+													<line id="直线_349" data-name="直线 349" x2="23.283" transform="translate(22.409 45.733)" fill="none"
+														stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+													<line id="直线_350" data-name="直线 350" y2="14.605" transform="translate(34.05 31.164)" fill="none"
+														stroke="#fff" stroke-linecap
+2000
+="round" stroke-linejoin="round" stroke-width="2" />
+													<line id="直线_351" data-name="直线 351" x2="7.613" transform="translate(0.299 15.642)" fill="none"
+														stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+													<line id="直线_352" data-name="直线 352" x2="7.615" transform="translate(14.43 7.343)" fill="none"
+														stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+													<line id="直线_353" data-name="直线 353" y1="6.594" x2="3.808" transform="translate(9.329 16.39)"
+														fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+													<line id="直线_354" data-name="直线 354" y1="6.594" x2="3.805" transform="translate(9.208 0)"
+														fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+													<line id="直线_355" data-name="直线 355" x1="3.808" y1="6.592" transform="translate(16.394 12.241)"
+														fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+													<line id="直线_356" data-name="直线 356" x1="3.808" y1="6.594" transform="translate(2.14 4.149)"
+														fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+												</g>
+											</g>
+										</svg>
+									</div>
+									<div class="news_title">
+										虚拟仿真实验教学管理平台
+									</div>
+								</div>
+							</a>
+						</li>
+						
+
+						<li class="news n1">
+							<a href="https://ole.hit.edu.cn" target="_blank">
+								<div class="news_box">
+									<div class="news_ico">
+										<svg xmlns="http://www.w3.org/2000/svg" id="svg8" width="49.734" height="51.242"
+											viewBox="0 0 49.734 51.242">
+											<g id="ico1" transform="translate(1 1)">
+												<g id="图层_1" data-name="图层 1" transform="translate(0 0)">
+													<path id="路径_29949" data-name="路径 29949" d="M38.589,14.832,22.827,9.5,7.13,14.832l15.7,5.373Z"
+														transform="translate(-6.993 -8.849)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-linejoin="round" stroke-width="2" />
+													<line id="直线_209" data-name="直线 209" y2="5.497" transform="translate(4.818 7.788)" fill="none"
+														stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+													<path id="路径_29950" data-name="路径 29950"
+														d="M82.114,41.5V54.275l-6.1-2.31-4.041,4.044L68.74,52.776"
+														transform="translate(-55.238 -33.908)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-linejoin="round" stroke-width="2" />
+													<circle id="椭圆_471" data-name="椭圆 471" cx="2.803" cy="2.803" r="2.803"
+														transform="translate(2.102 14.426)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-linejoin="round" stroke-width="2" />
+													<path id="路径_29951" data-name="路径 29951"
+														d="M191.061,20.329V9.754A3.254,3.254,0,0,0,187.807,6.5H183.74"
+														transform="translate(-145.292 -6.5)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<path id="路径_29952" data-name="路径 29952"
+														d="M6.5,153.74v10.575a3.254,3.254,0,0,0,3.254,3.254H20.329"
+														transform="translate(-6.5 -121.799)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+													<ellipse id="椭圆_472" data-name="椭圆 472" cx="5.506" cy="13.35" rx="5.506" ry="13.35"
+														transform="translate(20.654 29.948) rotate(-45)" fill="none" stroke="#fff"
+														stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+													<ellipse id="椭圆_473" data-name="椭圆 473" cx="13.35" cy="5.506" rx="13.35" ry="5.506"
+														transform="translate(20.654 41.041) rotate(-45)" fill="none" stroke="#fff"
+														stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+													<ellipse id="椭圆_474" data-name="椭圆 474" cx="1.484" cy="1.484" rx="1.484" ry="1.484"
+														transform="translate(32.502 34.01)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-miterlimit="10" stroke-width="2" />
+												</g>
+											</g>
+										</svg>
+									</div>
+									<div class="news_title">
+										在线考试管理平台
+									</div>
+								</div>
+							</a>
+						</li>
+						
+					</ul>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!--End||focus-->
+<!--Start||content-->
+<div class="body_b">
+	<div class="sidenav" frag="窗口120" portletmode="simpleNews" configs="{'c28':'320','c14':'0','c1':'1','c29':'1','c39':'300','c38':'100','c21':'0','c4':'1','c6':'-1','c9':'0','c12':'0','c30':'0','c37':'1','c31':'0','c16':'0','c27':'320','c15':'0','c32':'','c5':'_blank','c40':'1','c17':'1','c19':'yyyy-MM-dd','c33':'500','c2':'序号,标题,发布时间,内容','c23':'1','c41':'240','c22':'0','c7':'1','c13':'200','c43':'0','c24':'240','c35':'-1:-1','c3':'5','c8':'0','c44':'0','c25':'320','c34':'300','c18':'yyyy-MM-dd','c20':'0','c42':'320','c10':'50','c11':'1','c36':'0','c26':'1'}" contents="{'c2':'0', 'c1':'/右侧浮窗'}">
+		<div class="con">
+							<ul class="news_list clearfix">
+					
+					<li class="news n1">
+						<div class="news_box clearfix">
+							<div class="news_wz">
+								<div class="news_con">
+									<div class="news_title">微信公众号</div>
+								</div>
+							</div>
+							<div class="news_content"><ul ><li ><div ><div ><img data-layer="photo" src="/_upload/article/images/13/d2/6c6235f94cac846da573ce080e13/a54d8683-1ba6-49ce-b20b-6432c509af67.jpg" sudyfile-attr="{'title':'code1.jpg'}" original_name="本科生院.jpg" /></div></div></li><li ><div ><div ><img data-layer="photo" src="/_upload/article/images/13/d2/6c6235f94cac846da573ce080e13/62e733fc-0625-4b6b-a6c6-14753eaab8a0.jpg" sudyfile-attr="{'title':'code2.jpg'}" original_name="本科教学.jpg" /></div></div></li></ul></div>
+						</div>
+					</li>
+					
+					
+					<li class="news n1">
+						<a href="http://jwts.hit.edu.cn/jskbcx/queryJsbjkb_wdl" target="_blank">
+							<div class="news_box clearfix">
+								<div class="news_wz">
+									<div class="news_con">
+										<div class="news_title">课表查询</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+					<li class="news n2">
+						<a href="http://jwts.hit.edu.cn/kjscx/queryKjs_wdl" target="_blank">
+							<div class="news_box clearfix">
+								<div class="news_wz">
+									<div class="news_con">
+										<div class="news_title">教室查询 </div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+					<li class="news n3">
+						<a href="http://jwts.hit.edu.cn/sljcjcx/tocjlogin" target="_blank">
+							<div class="news_box clearfix">
+								<div class="news_wz">
+									<div class="news_con">
+										<div class="news_title">四六级成绩查询</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+					<li class="news n4">
+						<a href="http://www.hit.edu.cn/xl_11600/list.htm" target="_blank">
+							<div class="news_box clearfix">
+								<div class="news_wz">
+									<div class="news_con">
+										<div class="news_title">学期学历查询</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+					<li class="news n5">
+						<a href="https://mp.weixin.qq.com/s/494Q-NeMHgB3kyFNaVCcgA" target="_blank">
+							<div class="news_box clearfix">
+								<div class="news_wz">
+									<div class="news_con">
+										<div class="news_title">公派留学项目查询</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+				</ul>
+			
+		</div>
+	</div>
+	<div class="wrapper main1" id="container-1">
+		<div class="inner">
+			<div class="mod clearfix">
+				<div class="ml">
+					<div class="post po
+2000
+st1 post-11 mbox" frag="窗口11" portletmode="simpleNews" configs="{'c28':'320','c14':'1','c1':'1','c29':'1','c39':'300','c38':'100','c21':'0','c4':'1','c6':'-1','c9':'0','c12':'0','c30':'0','c37':'1','c31':'0','c16':'1','c27':'320','c15':'0','c32':'','c5':'_blank','c40':'1','c17':'0','c19':'yyyy-MM-dd','c33':'500','c2':'序号,标题,发布时间,简介','c23':'1','c41':'240','c22':'0','c7':'1','c13':'200','c43':'0','c24':'240','c35':'-1:-1','c3':'4','c8':'0','c44':'0','c25':'320','c34':'300','c18':'yyyy-MM-dd','c20':'0','c42':'320','c10':'-1','c11':'0','c36':'0','c26':'1'}" contents="{'c2':'0', 'c1':'/新闻动态'}">
+						<div class="tt">
+							<h3 class="tit"><span class="title" frag="标题">新闻动态</span> </h3>
+							<div class="more_btn" frag="按钮" type="更多"> <a href="/17859/list.htm" class="w11_more"><span class="more_text" frag="按钮内容">更多 ></span></a>
+							</div>
+						</div>
+						<div class="con clearfix">
+							
+								<div class="list-l">
+									<ul class="news_list clearfix">
+										
+										<li class="news n1">
+											<a href="/2024/0407/c17859a341626/page.htm" target="_blank">
+												<div class="news_box clearfix">
+													<div class="news_wz">
+														<div class="news_con">
+															<div class="news_meta">2024-04-07</div>
+															<div class="news_title">本科生院召开学科建设本科人才培养关键指标推进会</div>
+															<div class="news_text">为牢牢把握学科建设在学校高质量内涵式发展中的引领作用，有组织地推动学科建设，4月7日，本科生院于明德楼E201会议室召开学科建设本科人才培养关键指标推进会。会议由本科生院常务副院长赵雅琴主持，本科生院副院长兼教务处处长徐平、本科生院副院长兼教学研究与质量管理处处长王广智先后作专题报告。会上，徐平和王广智分别围绕高水平科技创新竞赛相关工作，一流课程、一流教材、教学名师相关工作作专题报告。两个报告系统性地介绍了各学科相关领域的建设情况，分析了目前建设中存在的问题，并针对建设目标与下一阶段举措提出了建议。会议最后，相关学院围绕自身学科建设工作现状、存在的问题及下一步工作重点展开了充分交流。相关学院（部）党委书记、院长（主任）、副院长（副主任），本科生院教学研究与质量管理处副处长甄玉宝、王宇、陈绍文参加会议。会议现场</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										
+										<li class="news n2">
+											<a href="/2024/0327/c17859a340904/page.htm" target="_blank">
+												<div class="news_box clearfix">
+													<div class="news_wz">
+														<div class="news_con">
+															<div class="news_meta">2024-03-28</div>
+															<div class="news_title">我校举办第三期本科教育教学审核评估专题培训会</div>
+															<div class="news_text">为全面提高我校本科人才培养质量，稳步推进本科教育教学审核评估工作，全面理解和把握审核评估的实质与内涵，3月26日，我校特邀西北工业大学教务部副部长傅茂森教授来我校作专题报告。培训会上，傅茂森教授从新一轮审核评估“评-建-改”工作要点、西北工业大学审核评估实践经验分享、西北工业大学教学质量保障体系三方面进行了深入解读和分享。他强调，新一轮审核评估对本科教育教学改革发展具有重要意义，也是从源头提升高等教育人才培养质量的有力抓手。并结合西工大实践经验分享审核评估工作应凝聚全校力量，全体发动、全面准备、全员参与，聚焦每一个要素和审核重点，进行系统总结。本科生院全体人员，各学院、学部分管本科教学的副院长及教学秘书、校区教务部门全体人员、校区各学院本科教学工作负责人和教学秘书参加培训会。</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										
+										<li class="news n3">
+											<a href="/2024/0326/c17859a340777/page.htm" target="_blank">
+												<div class="news_box clearfix">
+													<div class="news_wz">
+														<div class="news_con">
+															<div class="news_meta">2024-03-26</div>
+															<div class="news_title">我校召开2024年本科教学工作布置会</div>
+															<div class="news_text">3月25日，我校2024年本科教学工作布置会在一校区活动中心301剧场召开。校党委常委、副校长沈毅主持会议并讲话。沈毅肯定了2023年本科教学工作取得的成绩，并就做好2024年本科教学工作提出3点要求。一是明形势、悟新路。要关注当前国内国际形势以及高等教育发展趋势，落实立德树人根本任务的新生态新格局，坚持不懈用习近平新时代中国特色社会主义思想铸魂育人。深化产教融合、科教融汇，落实教育科技人才三位一体战略，为发展新质生产力加快培养国家急需的拔尖创新人才。二是保底线、促发展。各学院、学部、校区要进一步提高站位，主动作为、协同联动，全面做好审核评估迎评促建工作，系统开展审核评估专项宣传动员并有针对性制定培训指导计划。要扎实做好2024年招生宣传工作，形成目标明确、全校参与、合力凸显的招生工作局面。要全力保障教学运行高质量平稳有序开展。三是勇创新、担使命。为党育人、为国育才是时代赋予我们共同的使命，要敢于摆脱思维惯性，打破路径依赖，积极探索新时代教育教学方法，不断提升教书育人本领，全力以赴确保每一项重点任务都能精准落地，每一项教育创新都能开花结果，共同走好杰出人才培养的“哈工大之路”。本科生院</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										
+										<li class="news n4">
+											<a href="/2024/0320/c17859a340206/page.htm" target="_blank">
+												<div class="news_box clearfix">
+													<div class="news_wz">
+														<div class="news_con">
+															<div class="news_meta">2024-03-22</div>
+															<div class="news_title">教学文件撰写规范培训会圆满举行  教学能力再提升！</div>
+															<div class="news_text">为全面贯彻党的二十大精神，着力建设高素质高校教师队伍特别是青年骨干教师队伍，进一步引导和激励青年教师认真钻研、潜心教学，努力提高课程教学效果，促进青年教师成长，教师教学发展中心于3月19日在格物楼803报告厅开展了主题为《如何准备课堂教学文件》的培训，由我校本科教学督导专家田径老师主讲。培训中田径老师结合“哈尔滨工业大学课堂教学文件检查要点”，从教学大纲、教学设计、教学日历、教案撰写的规范、主要内容以及彼此间的联系与区别做了细致的解读。田径老师指出，教学文件是教师备课的载体，是教学过程中重要的组成部分，只有认真准备教学文件，教师的教学过程才能更熟练，教学效果才能更满意。   参会教师表示，通过此次培训了解各类教学文件的撰写要点，基本掌握教学文件的撰写方法。</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										
+									</ul>
+								</div>
+								<div class="list-r">
+								<ul class="news_list clearfix">
+									
+									<li class="news n1">
+											<div class="news_box clearfix">
+												<div class="news_imgs"><a href='/2024/0407/c17859a341626/page.htm' target='_blank' title='本科生院召开学科建设本科人才培养关键指标推进会'><img src='/_upload/article/images/c2/c4/40da4d504d06b268c3ef9f67aa56/e59e109f
+2000
+-7356-46d7-847f-73ee87990cf5.png' width='320' /></a></div>
+										</a>
+									</li>
+									
+									<li class="news n2">
+											<div class="news_box clearfix">
+												<div class="news_imgs"><a href='/2024/0327/c17859a340904/page.htm' target='_blank' title='我校举办第三期本科教育教学审核评估专题培训会'><img src='/_upload/article/images/40/b6/e5d2bd3a4d0e963543098b8f0d89/e13a80eb-4ef3-4086-a9ea-e631d42a1941.png' width='320' /></a></div>
+										</a>
+									</li>
+									
+									<li class="news n3">
+											<div class="news_box clearfix">
+												<div class="news_imgs"><a href='/2024/0326/c17859a340777/page.htm' target='_blank' title='我校召开2024年本科教学工作布置会'><img src='/_upload/article/images/87/be/d64b7a57409a941f6a49a7811eb9/c86d27ec-65b2-4827-8a56-fb83b765c62b.jpg' width='320' /></a></div>
+										</a>
+									</li>
+									
+									<li class="news n4">
+											<div class="news_box clearfix">
+												<div class="news_imgs"><a href='/2024/0320/c17859a340206/page.htm' target='_blank' title='教学文件撰写规范培训会圆满举行  教学能力再提升！'><img src='/_upload/article/images/e6/71/abf8875148c082d27668d564c31f/5db88251-4bcd-4f73-9a0e-9f7311d64876.jpg' width='320' /></a></div>
+										</a>
+									</li>
+									
+								</ul>
+								</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="mr">
+					<div class="post post1 post-12 mbox" frag="窗口12" portletmode="simpleNews" configs="{'c28':'320','c14':'1','c1':'1','c29':'1','c39':'300','c38':'100','c21':'0','c4':'1','c6':'-1','c9':'0','c12':'0','c30':'0','c37':'1','c31':'0','c16':'1','c27':'320','c15':'0','c32':'','c5':'_blank','c40':'1','c17':'0','c19':'yyyy-MM-dd','c33':'500','c2':'序号,标题,发布时间','c23':'1','c41':'240','c22':'0','c7':'1','c13':'200','c43':'0','c24':'240','c35':'-1:-1','c3':'4','c8':'0','c44':'0','c25':'320','c34':'300','c18':'yyyy-MM-dd','c20':'0','c42':'320','c10':'50','c11':'1','c36':'0','c26':'1'}" contents="{'c2':'0', 'c1':'/通知公告'}">
+						<div class="tt">
+							<h3 class="tit"><span class="title" frag="标题">通知公告</span> </h3>
+							<div class="more_btn" frag="按钮" type="更多"> <a href="/17860/list.htm" class="w12_more"><span class="more_text" frag="按钮内容">更多 ></span></a>
+							</div>
+						</div>
+						<div class="con">
+							
+								<ul class="news_list clearfix">
+									
+									<li class="news n1">
+										<a href="/2024/0407/c17860a341548/page.htm" target="_blank">
+											<div class="news_box clearfix">
+												<div class="news_meta">
+													<div class="data">04.07</div>
+													<div class="news_year">2024 ——— Apr</div>
+												</div>
+												<div class="news_wz">
+													<div class="news_con">
+														<div class="news_title">教务处关于开展自制实验教学仪器设备研究项目验收的通知</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									
+									<li class="news n2">
+										<a href="/2024/0401/c17860a341240/page.htm" target="_blank">
+											<div class="news_box clearfix">
+												<div class="news_meta">
+													<div class="data">04.01</div>
+													<div class="news_year">2024 ——— Apr</div>
+												</div>
+												<div class="news_wz">
+													<div class="news_con">
+														<div class="news_title">国家留学基金委与法国巴黎综合理工大学合作奖学金项目推荐结果公示</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									
+									<li class="news n3">
+										<a href="/2024/0401/c17860a341238/page.htm" target="_blank">
+											<div class="news_box clearfix">
+												<div class="news_meta">
+													<div class="data">04.01</div>
+													<div class="news_year">2024 ——— Apr</div>
+												</div>
+												<div class="news_wz">
+													<div class="news_con">
+														<div class="news_title">国家留学基金委艺术类人才培养特别项目推荐结果公示</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									
+									<li class="news n4">
+										<a href="/2024/0401/c17860a341183/page.htm" target="_blank">
+											<div class="news_box clearfix">
+												<div class="news_meta">
+													<div class="data">04.01</div>
+													<div class="news_year">2024 ——— Apr</div>
+												</div>
+												<div class="news_wz">
+													<div class="news_con">
+														<div class="news_title">关于2024年校级虚拟仿真实验教学项目立项名单的公示</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									
+								</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper main2" id="container-2">
+		<div class="inner">
+			<div class="mod clearfix">
+				<div class="ml">
+					<div class="post post2 post-21 mbox" frag="窗口21" portletmode="schoolCalendar">
+						<div class="tt">
+							<h3 class="tit"><span class="title">校历</span>
+							</h3>
+						</div>
+						<div class="con">
+							<div class="wp_sclndr_box_style3" style="margin: 0 auto;">
+<div id="wp_sclndr_w21"  class="wp_sclndr"></div>
+<div class="printButton" id="endPrint">
+<span id="schoolClnr_w21" class="tailerType" style="display:none;" >/>
+大事</span>
+</div>
+<div id="newslist_w21"></div>
+</div>
+<script type="text/javascript"> 
+var url="/_wp3services/generalQuery?queryObj=trailer&siteId=28&type=2&columnId=&locale=l&time=t";
+var ifrUrl="/_web/_plugs/trailer/web/print.jsp?siteId=28&type=2&columnId=&locale=l&time=t&firstDay=2024-03-04&lastDay=2024-07-07&print=true&_p=YXM9MjgmdD05OTUmZD0zNTgzJnA9MSZtPVNOJg__&showType=false&trailerType=1";
+var wp_sclndr_w21;
+var type="";
+type="1";
+var  param = "&trailerType=" + type;
+$(function(){ 
+loadWboxwp_sclndr_w21();
+   wp_sclndr_w21=$("#wp_sclndr_w21").WPsclndr({ 
+             title: "2023-2024学年春季学期校历", 
+             notes: "", 
+             firstDay: "2024-03-04", 
+             lastDay: "2024-07-07", 
+             theme: "style3", 
+             ajaxUrl: url, 
+             ajaxData:{'trailerType':type},
+             restDays:[],
+             workDays:[],
+         holiday:{
+            active:false         },
+            showToday:true,
+eventWrap:"#newslist_w21",
+eventTpl:"<div class='wpclndr-event-news'><h2><a href='{{d.url}}' target='_blank'>{{d.title}}</a></h2><p><span class='event-news-filed'>地点：</span>{{d.locale}}</p><p><span class='event-news-filed'>时间：</span>{{d.time}}</p></div>"
+         }); 
+     }); 
+ function loadWboxwp_sclndr_w21(){   var opt_printopt_print_w21 = $("#opt_print_w21").wBox({
+    noTitle: false,
+    title: '校历打印',
+    requestType: "iframe",
+    iframeWH: {width: "630", height: "900"},
+     target:ifrUrl+param
+    });
+  }</script> 
+
+						</div>
+					</div>
+				</div>
+				<div class="mr">
+					<div class="post post2 post-22 mbox" frag="窗口22" portletmode="simpleNews" configs="{'c28':'320','c14':'1','c1':'1','c29':'1','c39':'300','c38':'100','c21':'0','c4':'1','c6':'20','c9':'0','c12':'0','c30':'0','c37':'1','c31':'0','c16':'1','c27':'320','c15':'0','c32':'','c5':'_blank','c40':'1','c17':'0','c19':'yyyy-MM-dd','c33':'500','c2':'序号,标题,发布时间','c23':'1','c41':'240','c22':'0','c7':'1','c13':'200','c43':'0','c24':'240','c35':'-1:-1','c3':'4','c8':'1','c44':'0','c25':'320','c34':'300','c18':'yyyy-MM-dd','c20':'0','c42':'320','c10':'50','c11':'1','c36':'0','c26':'1'}" contents="{'c2':'0', 'c1':'/快速通道'}">
+						<div class="tt">
+							<h3 class="tit"><span class="title" frag="标题"> 快速通道</span>
+							</h3>
+						</div>
+						<div class="con">
+															<ul class="news_list clearfix">
+									
+									<li class="news n1 clearfix">
+										<div class="news_box">
+											<div class="news_i
+1000
+mgs"><a href='http://esc.hit.edu.cn' target='_blank' title='创新创业学院共享中心学生预约开放系统'><img src='/_upload/article/images/b5/9a/8bd100f04d3b817cdfdea831fd91/dadf0252-d20e-45f2-ada1-3138d3fe794a_s.jpg' width='320' /></a></div>
+											<div class="news_wz">
+												<div class="news_con">
+													<div class="news_title"><a href='http://esc.hit.edu.cn' target='_blank' title='创新创业学院共享中心学生预约开放系统'>创新创业学院共享中心学生预约开放系统</a></div>
+												</div>
+											</div>
+										</div>
+									</li>
+									
+									<li class="news n2 clearfix">
+										<div class="news_box">
+											<div class="news_imgs"><a href='http://kcsz.hit.edu.cn' target='_blank' title='课程思政'><img src='/_upload/article/images/be/17/66bd71ef477b92cc72771c8f7cd9/2527e357-7abf-466e-8ab7-eece0cf02e24_s.jpg' width='320' /></a></div>
+											<div class="news_wz">
+												<div class="news_con">
+													<div class="news_title"><a href='http://kcsz.hit.edu.cn' target='_blank' title='课程思政'>课程思政</a></div>
+												</div>
+											</div>
+										</div>
+									</li>
+									
+									<li class="news n3 clearfix">
+										<div class="news_box">
+											<div class="news_imgs"><a href='#' target='_blank' title='教师教学发展'><img src='/_upload/article/images/e7/dc/fce2121a4ff3aba279f3e60732ae/1263999e-6dba-4482-9115-7ec468d401e1_s.jpg' width='320' /></a></div>
+											<div class="news_wz">
+												<div class="news_con">
+													<div class="news_title"><a href='#' target='_blank' title='教师教学发展'>教师教学发展</a></div>
+												</div>
+											</div>
+										</div>
+									</li>
+									
+									<li class="news n4 clearfix">
+										<div class="news_box">
+											<div class="news_imgs"><a href='#' target='_blank' title='国际暑期学校'><img src='/_upload/article/images/08/07/846d952b45e68bc02f03717f9f84/d7168ba9-9652-4709-a4ba-35d9e2d424b9_s.jpg' width='320' /></a></div>
+											<div class="news_wz">
+												<div class="news_con">
+													<div class="news_title"><a href='#' target='_blank' title='国际暑期学校'>国际暑期学校</a></div>
+												</div>
+											</div>
+										</div>
+									</li>
+									
+								</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--End||content-->
+	<!--Start||footer-->
+<div class="wrapper footer" id="footer">
+	<div class="inner">
+		<div class="mod clearfix">
+			<div class="foot-left" frag="窗口90" portletmode="simpleSiteAttri">
+				<div class="tt">联系我们</div>
+				<p class="copyright"><span>院办公室：一校区格物楼701-1室</span></p>
+				<p class="copyright"><span>联系电话：0451-86413267</span></p>
+				<p class="copyright"><span>邮箱：hituc@hit.edu.cn</span></p>
+			</div>
+			<div class="foot-center">
+				<div class="foot-logo"><img src="/_upload/tpl/03/e3/995/template995/images/logo.svg"></div>
+			</div>
+			<div class="right_box">
+			<div class="foot-center2" frag="窗口92" portletmode="simpleSudyNavi" configs="{'c5':'0','c9':'0','c6':'0','c4':'_self','c8':'2','c2':'1','c7':'2','c3':'30','c1':'1'}" contents="{'c2':'0', 'c1':'/常见问题'}">
+				
+					
+					<ul class="clearfix" >
+						
+						<li class="links i1"><a href="/17836/list.htm" target="_self">常见问题</a><a href="/17836/list.htm" target="_self"><img src="/_upload/tpl/03/e3/995/template995/images/arrow_more.svg"></a> </li>
+						
+					</ul>
+					
+				
+			</div>
+			<div class="foot-right" frag="窗口91" portletmode="simpleNews" configs="{'c28':'320','c14':'1','c1':'1','c29':'1','c39':'300','c38':'100','c21':'0','c4':'1','c6':'15','c9':'0','c12':'0','c30':'0','c37':'1','c31':'0','c16':'1','c27':'320','c15':'0','c32':'','c5':'_blank','c40':'1','c17':'0','c19':'yyyy-MM-dd','c33':'500','c2':'序号,标题,发布时间','c23':'1','c41':'240','c22':'0','c7':'1','c13':'200','c43':'0','c24':'240','c35':'-1:-1'
+719
+,'c3':'2','c8':'1','c44':'0','c25':'320','c34':'300','c18':'yyyy-MM-dd','c20':'0','c42':'320','c10':'50','c11':'1','c36':'0','c26':'1'}" contents="{'c2':'0', 'c1':'/老网站栏目/友情链接'}">
+				<div class="links">
+					<div class="tt">
+						<h3 class="tit"><span class="title selected" frag="标题">友情链接</span>
+						</h3>
+					</div>
+					
+						<ul>
+							
+							<li class="i1">
+								<span><a href='http://zsb.hit.edu.cn' target='_blank' title='本科生招生办公室'>本科生招生办公室</a></span>
+							</li>
+							
+							<li class="i2">
+								<span><a href='http://xg.hit.edu.cn' target='_blank' title='学生工作部（处）'>学生工作部（处）</a></span>
+							</li>
+							
+						</ul>
+					
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="mod mod2 clearfix">
+			<p class="copyright"><span>Copyright （C）2023 哈尔滨工业大学本科生院 版权所有    技术支持 哈尔滨工业大学网络安全和信息化办公室</span></p>
+		</div>
+	</div>
+</div>
+<!--End||footer-->
+</div>
+</body>
+<script type="text/javascript" src="/_upload/tpl/03/e3/995/template995/slick/slick.min.js"></script>
+<script type="text/javascript" src="/_upload/tpl/03/e3/995/template995/js/comcus.js"></script>
+<script type="text/javascript" src="/_upload/tpl/03/e3/995/template995/js/vivus.js"></script>
+<script type="text/javascript" src="/_upload/tpl/03/e3/995/template995/js/main.js"></script>
+<script type="text/javascript" src="/_upload/tpl/03/e3/995/template995/js/app.js"></script>
+<script type="text/javascript">
+$(function(){
+	// 初始化SDAPP
+	new SDAPP({
+		"menu":{
+			type:"aside"
+		}
+	});
+});
+</script>
+</html>
+
+ <img src="/_visitcount?siteId=28&type=1&columnId=1573" style="display:none" width="0" height="0"/>
+0
+

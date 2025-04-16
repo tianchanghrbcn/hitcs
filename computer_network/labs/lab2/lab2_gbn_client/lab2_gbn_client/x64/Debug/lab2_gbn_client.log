@@ -1,0 +1,11 @@
+﻿  lab2_gbn_client.cpp
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_gbn_client\lab2_gbn_client.cpp(106,27): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_gbn_client\lab2_gbn_client.cpp(107,24): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_gbn_client\lab2_gbn_client.cpp(148,41): warning C4309: '=': truncation of constant value
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_gbn_client\lab2_gbn_client.cpp(173,41): warning C4244: '=': conversion from 'unsigned short' to 'char', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_gbn_client\lab2_gbn_client.cpp(182,41): warning C4244: '=': conversion from 'unsigned short' to 'char', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_gbn_client\lab2_gbn_client.cpp(183,41): warning C4244: '=': conversion from 'unsigned short' to 'char', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_gbn_client\lab2_gbn_client.cpp(247,37): warning C4309: '=': truncation of constant value
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_gbn_client\lab2_gbn_client.cpp(248,69): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_gbn_client\lab2_gbn_client.cpp(321,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  lab2_gbn_client.vcxproj -> D:\ComputerScience\hitcs\hitcs\computer_network\labs\lab2\lab2_gbn_client\x64\Debug\lab2_gbn_client.exe

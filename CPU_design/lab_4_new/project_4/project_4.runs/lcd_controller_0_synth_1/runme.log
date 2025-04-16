@@ -1,0 +1,653 @@
+
+*** Running vivado
+    with args -log lcd_controller_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lcd_controller_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source lcd_controller_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lcd_controller/lcd_controller.srcs/sources_1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ywy_c/Documents/coding/hitcoa_at2024/ma_river_core/ma_river_core.srcs/sources_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2019/Vivado/2019.2/data/ip'.
+Command: synth_design -top lcd_controller_0 -part xc7a200tfbg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 56428 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 833.117 ; gain = 234.328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lcd_controller_0' [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/synth/lcd_controller_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'lcd_controller' [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/imports/hardware/lcd_controller.v:37]
+INFO: [Synth 8-638] synthesizing module 'font_rom' [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/ip/font_rom/synth/font_rom.vhd:66]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 65536 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: font_rom.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 1 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_13' declared at 'c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/ip/font_rom/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_13' [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/ip/font_rom/synth/font_rom.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'font_rom' (4#1) [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/ip/font_rom/synth/font_rom.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'rst_rom' [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/ip/rst_rom/synth/rst_rom.vhd:66]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: rst_rom.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 17 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_13' declared at 'c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/ip/font_rom/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_13' [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/ip/rst_rom/synth/rst_rom.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'rst_rom' (5#1) [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/ip/rst_rom/synth/rst_rom.vhd:66]
+WARNING: [Synth 8-689] width (16) of port connection 'a' does not match port width (10) of module 'rst_rom' [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/imports/hardware/lcd_controller.v:154]
+INFO: [Synth 8-638] synthesizing module 'text_bram' [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/ip/text_bram/synth/text_bram.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: text_bram.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 1 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 1 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.0361 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/ip/text_bram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/ip/text_bram/synth/text_bram.vhd:245]
+INFO: [Synth 8-256] done synthesizing module 'text_bram' (14#1) [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/ip/text_bram/synth/text_bram.vhd:74]
+INFO: [Synth 8-226] default block is never used [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/imports/hardware/lcd_controller.v:338]
+INFO: [Synth 8-226] default block is never used [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/imports/hardware/lcd_controller.v:528]
+INFO: [Synth 8-226] default block is never used [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/imports/hardware/lcd_controller.v:624]
+INFO: [Synth 8-226] default block is never used [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/imports/hardware/lcd_controller.v:750]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_controller' (15#1) [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/imports/hardware/lcd_controller.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_controller_0' (16#1) [c:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.srcs/sources_1/ip/lcd_controller_0/synth/lcd_controller_0.v:58]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[9]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[8]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[7]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[6]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[5]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEA[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEA[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port RSTA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ENA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port RSTB
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AClk
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWID[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWID[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWID[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWID[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[31]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[30]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[29]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[28]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[27]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[26]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[25]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[24]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[23]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[22]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[21]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[20]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[19]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWLEN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWLEN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWLEN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWLEN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWLEN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWLEN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWLEN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWLEN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWSIZE[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWSIZE[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWSIZE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWBURST[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWBURST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWVALID
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_WDATA[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_WDATA[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_WDATA[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_WDATA[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_WDATA[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_WDATA[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_WDATA[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_WDATA[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_WDATA[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_WDATA[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_WDATA[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_WDATA[4]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:16:26 ; elapsed = 00:16:28 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:16:27 ; elapsed = 00:16:29 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:16:27 ; elapsed = 00:16:29 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2553.359 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.runs/lcd_controller_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.runs/lcd_controller_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2553.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 2553.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:16:34 ; elapsed = 00:16:36 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:16:34 ; elapsed = 00:16:36 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/fontrom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rstrom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/textram. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:16:34 ; elapsed = 00:16:36 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:26:06 ; elapsed = 00:26:08 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 10    
+	               16 Bit    Registers := 11    
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 17    
+	  14 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 15    
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	  14 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	  14 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 51    
+	  14 Input      1 Bit        Muxes := 19    
+	   3 Input      1 Bit        Muxes := 5     
+	  15 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lcd_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 10    
+	               16 Bit    Registers := 11    
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 17    
+	  14 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 15    
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	  14 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	  14 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 51    
+	  14 Input      1 Bit        Muxes := 19    
+	   3 Input      1 Bit        Muxes := 5     
+	  15 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:33:32 ; elapsed = 00:33:35 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------+---------------------------------------------------------+---------------+----------------+
+|Module Name          | RTL Object                                              | Depth x Width | Implemented As | 
++---------------------+---------------------------------------------------------+---------------+----------------+
+|rom                  | rom[65535]                                              | 65536x1       | LUT            | 
+|rom                  | rom[1023]                                               | 1024x17       | LUT            | 
+|dist_mem_gen_v8_0_13 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[65535] | 65536x1       | LUT            | 
+|dist_mem_gen_v8_0_13 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[1023]  | 1024x17       | LUT            | 
++---------------------+---------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:33:37 ; elapsed = 00:33:40 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:33:38 ; elapsed = 00:33:40 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:33:38 ; elapsed = 00:33:41 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:33:41 ; elapsed = 00:33:44 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:33:41 ; elapsed = 00:33:44 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:33:41 ; elapsed = 00:33:44 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:33:41 ; elapsed = 00:33:44 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:33:41 ; elapsed = 00:33:44 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:33:41 ; elapsed = 00:33:44 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    35|
+|2     |LUT1     |     2|
+|3     |LUT2     |    69|
+|4     |LUT3     |   188|
+|5     |LUT4     |   137|
+|6     |LUT5     |   218|
+|7     |LUT6     |  1030|
+|8     |MUXF7    |   158|
+|9     |MUXF8    |    52|
+|10    |RAMB18E1 |     1|
+|11    |FDRE     |   567|
+|12    |FDSE     |     1|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------+-------------------------------------------+------+
+|      |Instance                                         |Module                                     |Cells |
++------+-------------------------------------------------+-------------------------------------------+------+
+|1     |top                                              |                                           |  2458|
+|2     |  inst                                           |lcd_controller                             |  2458|
+|3     |    fontrom                                      |font_rom                                   |   922|
+|4     |      U0                                         |dist_mem_gen_v8_0_13                       |   922|
+|5     |        \synth_options.dist_mem_inst             |dist_mem_gen_v8_0_13_synth                 |   922|
+|6     |          \gen_rom.rom_inst                      |rom                                        |   922|
+|7     |    rstrom                                       |rst_rom                                    |   204|
+|8     |      U0                                         |dist_mem_gen_v8_0_13__parameterized1       |   204|
+|9     |        \synth_options.dist_mem_inst             |dist_mem_gen_v8_0_13_synth__parameterized0 |   204|
+|10    |          \gen_rom.rom_inst                      |rom__parameterized1                        |   204|
+|11    |    textram                                      |text_bram                                  |     1|
+|12    |      U0                                         |blk_mem_gen_v8_4_4                         |     1|
+|13    |        inst_blk_mem_gen                         |blk_mem_gen_v8_4_4_synth                   |     1|
+|14    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                            |     1|
+|15    |            \valid.cstr                          |blk_mem_gen_generic_cstr                   |     1|
+|16    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width                     |     1|
+|17    |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                   |     1|
++------+-------------------------------------------------+-------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:33:41 ; elapsed = 00:33:44 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 294 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:17:11 ; elapsed = 00:33:41 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+Synthesis Optimization Complete : Time (s): cpu = 00:33:41 ; elapsed = 00:33:44 . Memory (MB): peak = 2553.359 ; gain = 1954.570
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2553.359 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 246 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2553.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:33:47 ; elapsed = 00:33:50 . Memory (MB): peak = 2553.359 ; gain = 2255.500
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2553.359 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.runs/lcd_controller_0_synth_1/lcd_controller_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP lcd_controller_0, cache-ID = fc14edafa4891fbd
+INFO: [Coretcl 2-1174] Renamed 16 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2553.359 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ywy_c/Documents/coding/hitcoa_at2024/lab4/lab4.runs/lcd_controller_0_synth_1/lcd_controller_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lcd_controller_0_utilization_synth.rpt -pb lcd_controller_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 20 20:34:20 2024...

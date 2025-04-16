@@ -1,0 +1,292 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sat Jan  4 12:50:12 2025
+| Host         : TianChang running 64-bit major release  (build 9200)
+| Command      : report_methodology -file soc_top_methodology_drc_routed.rpt -pb soc_top_methodology_drc_routed.pb -rpx soc_top_methodology_drc_routed.rpx
+| Design       : soc_top
+| Device       : xc7a200tfbg676-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 50
++-----------+------------------+-----------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                               | Violations |
++-----------+------------------+-----------------------------------------------------------+------------+
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree        | 1          |
+| TIMING-6  | Critical Warning | No common primary clock between related clocks            | 1          |
+| TIMING-7  | Critical Warning | No common node between related clocks                     | 1          |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin                 | 1          |
+| SYNTH-5   | Warning          | Mapped onto distributed RAM because of timing constraints | 8          |
+| SYNTH-12  | Warning          | DSP input not registered                                  | 4          |
+| TIMING-16 | Warning          | Large setup violation                                     | 33         |
+| TIMING-18 | Warning          | Missing input or output delay                             | 1          |
++-----------+------------------+-----------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock pll/inst/clk_in is defined downstream of clock sys_clk and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks sys_clk and clk_out_clk_pll are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sys_clk] -to [get_clocks clk_out_clk_pll]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks sys_clk and clk_out_clk_pll are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sys_clk] -to [get_clocks clk_out_clk_pll]
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock pll/inst/clk_in is created on an inappropriate internal pin pll/inst/clk_in. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+SYNTH-5#1 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance mrcore/inst/BranchPredictor_module/global_BPB0_reg_0_127_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#2 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance mrcore/inst/BranchPredictor_module/global_BPB0_reg_128_255_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#3 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance mrcore/inst/BranchPredictor_module/global_BPB1_1_reg_0_127_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#4 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance mrcore/inst/BranchPredictor_module/global_BPB1_1_reg_128_255_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#5 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance mrcore/inst/BranchPredictor_module/global_BPB1_reg_r1_0_127_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#6 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance mrcore/inst/BranchPredictor_module/global_BPB1_reg_r1_128_255_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#7 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance mrcore/inst/BranchPredictor_module/global_BPB1_reg_r2_0_127_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#8 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance mrcore/inst/BranchPredictor_module/global_BPB1_reg_r2_128_255_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-12#1 Warning
+DSP input not registered  
+DSP instance mrcore/inst/FU_MDU_module/mymul/a0b0/DSP48E1_inst is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+Related violations: <none>
+
+SYNTH-12#2 Warning
+DSP input not registered  
+DSP instance mrcore/inst/FU_MDU_module/mymul/a0b1/DSP48E1_inst is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+Related violations: <none>
+
+SYNTH-12#3 Warning
+DSP input not registered  
+DSP instance mrcore/inst/FU_MDU_module/mymul/a1b0/DSP48E1_inst is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+Related violations: <none>
+
+SYNTH-12#4 Warning
+DSP input not registered  
+DSP instance mrcore/inst/FU_MDU_module/mymul/a1b1/DSP48E1_inst is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.070 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and your_cpu/ifid_pc_reg[28]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.115 ns between resetn_reg_rep_replica/C (clocked by sys_clk) and your_cpu/exmem_result_reg[1]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.431 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[25]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.559 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[24]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.560 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[19]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.637 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[11]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.696 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[7]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.705 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[16]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.727 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[0]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.744 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[27]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -1.767 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[3]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -1.774 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[29]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -1.782 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[28]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -1.804 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[2]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -1.805 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[18]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -1.822 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[26]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -1.834 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[6]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -1.841 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[12]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -1.862 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[8]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -1.877 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[23]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -1.881 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[1]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -1.888 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[13]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -1.892 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[31]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -1.908 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[21]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -1.935 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[14]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -1.990 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[30]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -1.993 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[10]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -2.001 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[4]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -2.003 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[5]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -2.018 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[15]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -2.025 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[9]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -2.038 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[17]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -2.100 ns between resetn_reg_rep__1_replica_7/C (clocked by sys_clk) and inst_sram_rdata_reg[22]/D (clocked by clk_out_clk_pll). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on sys_rstn relative to clock(s) sys_clk
+Related violations: <none>
+
+

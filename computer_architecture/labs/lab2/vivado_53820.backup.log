@@ -1,0 +1,1104 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Dec 29 20:18:15 2024
+# Process ID: 53820
+# Current directory: D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent59564 D:\ComputerScience\hitcs\hitcs\computer_architecture\labs\lab2\lab2.xpr
+# Log file: D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/vivado.log
+# Journal file: D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ywy_c/Documents/coding/hitcoa_at2024/coa/release/lab2' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'D:/ComputerScience/hitcs/hitcs/lcd_controller/lcd_controller.srcs/sources_1', nor could it be found using path 'C:/Users/ywy_c/Documents/coding/hitcoa_at2024/lcd_controller/lcd_controller.srcs/sources_1'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'D:/ComputerScience/hitcs/hitcs/ma_river_core/ma_river_core.srcs/sources_1', nor could it be found using path 'C:/Users/ywy_c/Documents/coding/hitcoa_at2024/ma_river_core/ma_river_core.srcs/sources_1'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/ComputerScience/hitcs/hitcs/lcd_controller/lcd_controller.srcs/sources_1'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/ComputerScience/hitcs/hitcs/ma_river_core/ma_river_core.srcs/sources_1'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/StudySoftware/Xilinx_Vivado_2019.2/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'ma_river_core_0' is locked:
+* IP definition 'ma_river_core (1.0)' for IP 'ma_river_core_0' (customized with software release 2019.2) was not found in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'lcd_controller_0' is locked:
+* IP definition 'lcd_controller (1.0)' for IP 'lcd_controller_0' (customized with software release 2019.2) was not found in the IP Catalog.
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/my_alu.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/sign_extend.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/branch_predictor.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/cpu_checker.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/jump_control.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/cpu.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/my_regfile.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/detector.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/data_mux.v}
+import_files -norecurse {D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/my_alu.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/sign_extend.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/branch_predictor.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/cpu_checker.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/jump_control.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/cpu.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/my_regfile.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/detector.v D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/src/lab2/data_mux.v}
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/StudySoftware/Xilinx_Vivado_2019.2/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_ans0_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab2_ans0.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_ans1_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab2_ans1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_ans2_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab2_ans2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab1_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_inst0_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab2_inst0.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_inst1_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab2_inst1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_inst2_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab2_inst2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/font_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/font_rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/rst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/rst_rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/mr_bram.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/bp_lab2_checker.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/decoder_checker.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/decoder_code.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/decoder_ans.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_ans.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_checker.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v" into library blk_mem_gen_v8_4_4
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_4
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_4_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_4_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_4_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/cpu_ans2_rom_1/sim/cpu_ans2_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_ans2_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/cpu_ans1_rom_1/sim/cpu_ans1_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_ans1_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/cpu_ans0_rom_1/sim/cpu_ans0_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_ans0_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_13
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_13
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/cpu_inst2_rom/sim/cpu_inst2_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_inst2_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/cpu_inst1_rom/sim/cpu_inst1_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_inst1_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/cpu_inst0_rom/sim/cpu_inst0_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_inst0_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/cpu_data_ram/sim/cpu_data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/axi_bus/sim/axi_bus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_bus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/ip/bram_td/sim/bram_td.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_td
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/ip/bram_sd/sim/bram_sd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_sd
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/arf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arf
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/bram_32_1024_sd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_32_1024_sd
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/bram_32_1024_td.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_32_1024_td
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/branch_predictor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_predictor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/commit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module commit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/cp0_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/dispatch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dispatch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/dsp_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dsp_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_adder_front.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_adder_front
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_comp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_comp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_divider_front.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frac_divider
+INFO: [VRFC 10-311] analyzing module f_divider_front
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fCSA
+INFO: [VRFC 10-311] analyzing module double_frac_mul
+INFO: [VRFC 10-311] analyzing module f_muler_front
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_normal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_normal
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_prf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module get_free_prf
+INFO: [VRFC 10-311] analyzing module f_prf
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_round.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_round
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_sqrter_front.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_sqrter_front
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fixed_to_float.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fixed_to_float
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/float_base.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module check_spef
+INFO: [VRFC 10-311] analyzing module clz_16
+INFO: [VRFC 10-311] analyzing module float_prepare
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/float_to_fixed.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module float_to_fixed
+INFO: [VRFC 10-2458] undeclared symbol inv, assumed default net type wire [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/float_to_fixed.v:140]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fu_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_fccu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fu_fccu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_fpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fu_fpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_mdu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fu_mdu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_mu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fu_mu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/gpr_table.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpr_table
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/interconnect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interconnect
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/l1_tlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module l1_tlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/l2_tlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module l2_tlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mem_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/rename.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rename
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/rob.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rob
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/station.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module station
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mycpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ma_river_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/sim/ma_river_core_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ma_river_core_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/lcd_controller_0/ip/text_bram/sim/text_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module text_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/lcd_controller_0/ip/rst_rom/sim/rst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/lcd_controller_0/ip/font_rom/sim/font_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module font_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/lcd_controller_0/imports/hardware/lcd_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lcd_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/lcd_controller_0/sim/lcd_controller_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lcd_controller_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/mr_bram/sim/mr_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mr_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/branch_predictor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_branch_predictor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/new/checker_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module checker_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2458] undeclared symbol rst, assumed default net type wire [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/cpu.v:84]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/cpu_checker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_checker
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/cpu_inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/jump_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jump_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/my_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/my_regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/sign_extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sim_1/imports/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1239.508 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '13' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto a09cde91121843259e7dd34b0e71a465 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_20 -L fifo_generator_v13_2_5 -L axi_data_fifo_v2_1_19 -L axi_crossbar_v2_1_21 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/StudySoftware/Xilinx_Vivado_2019.2/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a09cde91121843259e7dd34b0e71a465 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_20 -L fifo_generator_v13_2_5 -L axi_data_fifo_v2_1_19 -L axi_crossbar_v2_1_21 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'sim' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:184]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'dma_valid_dev' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:195]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'dma_last_dev' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:196]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'dma_data_dev' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:197]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 6 for port 'rid' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:211]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 6 for port 'bid' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:234]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 10 for port 'a' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/lcd_controller_0/imports/hardware/lcd_controller.v:154]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 6 for port 'ext_int' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:284]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'a_wait' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mul.v:50]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 48 for port 'C' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/dsp_mul.v:80]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 25 for port 'D' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/dsp_mul.v:82]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'a_wait' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mul.v:53]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'a_wait' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mul.v:56]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'a_wait' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mul.v:59]
+WARNING: [VRFC 10-3091] actual bit length 26 differs from formal bit length 41 for port 'result' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v:70]
+WARNING: [VRFC 10-3091] actual bit length 26 differs from formal bit length 41 for port 'result' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v:82]
+WARNING: [VRFC 10-3091] actual bit length 22 differs from formal bit length 41 for port 'result' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v:85]
+WARNING: [VRFC 10-3091] actual bit length 22 differs from formal bit length 41 for port 'result' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v:88]
+WARNING: [VRFC 10-3091] actual bit length 22 differs from formal bit length 41 for port 'result' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v:91]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 41 for port 'result' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'a_wait' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fpu_top.v:420]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 's_axi_arqos' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:443]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 's_axi_awqos' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:460]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'a' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:531]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'write_address' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/cpu.v:138]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/axi_crossbar_v2_1/hdl/axi_crossbar_v2_1_vl_rfs.v:3103]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_pll_clk_wiz
+Compiling module xil_defaultlib.clk_pll
+Compiling module blk_mem_gen_v8_4_4.beh_vlog_ff_clr_v8_4
+Compiling module blk_mem_gen_v8_4_4.beh_vlog_ff_pre_v8_4
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b101111...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b101010...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011010...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011000...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b0111)
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b111110...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b01000)
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b100010...
+Compiling module blk_mem_gen_v8_4_4.write_netlist_v8_4(C_AXI_TYPE=1)
+Compiling module blk_mem_gen_v8_4_4.blk_mem_axi_write_wrapper_beh_v8...
+Compiling module blk_mem_gen_v8_4_4.beh_vlog_ff_ce_clr_v8_4
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b01011)
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b0100)
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b111011...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b01)
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011101...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b111100...
+Compiling module blk_mem_gen_v8_4_4.beh_vlog_muxf7_v8_4
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_4.read_netlist_v8_4(C_ADDRB_WIDTH=...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_axi_read_wrapper_beh_v8_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.mr_bram
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.font_rom
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.rst_rom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.text_bram
+Compiling module xil_defaultlib.lcd_controller
+Compiling module xil_defaultlib.lcd_controller_0
+Compiling module xil_defaultlib.interconnect
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.bram_sd
+Compiling module xil_defaultlib.bram_32_1024_sd
+Compiling module xil_defaultlib.fetch_default
+Compiling module xil_defaultlib.branch_predictor
+Compiling module xil_defaultlib.buffer
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.rename
+Compiling module xil_defaultlib.gpr_table
+Compiling module xil_defaultlib.arf
+Compiling module xil_defaultlib.dispatch
+Compiling module xil_defaultlib.station
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.fu_alu
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.bram_td
+Compiling module xil_defaultlib.bram_32_1024_td
+Compiling module xil_defaultlib.mem_ctrl
+Compiling module xil_defaultlib.fu_mu_default
+Compiling module xil_defaultlib.div
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module xil_defaultlib.dsp_mul
+Compiling module xil_defaultlib.mul
+Compiling module xil_defaultlib.fu_mdu
+Compiling module xil_defaultlib.rob
+Compiling module xil_defaultlib.commit
+Compiling module xil_defaultlib.cp0_group
+Compiling module xil_defaultlib.l2_tlb
+Compiling module xil_defaultlib.l1_tlb
+Compiling module xil_defaultlib.l1_tlb(isdata=1)
+Compiling module xil_defaultlib.get_free_prf
+Compiling module xil_defaultlib.f_prf
+Compiling module xil_defaultlib.float_prepare
+Compiling module xil_defaultlib.f_adder_front(info_width=42)
+Compiling module xil_defaultlib.fCSA_default
+Compiling module xil_defaultlib.double_frac_mul(info_width=70)
+Compiling module xil_defaultlib.f_muler_front(info_width=42)
+Compiling module xil_defaultlib.frac_divider
+Compiling module xil_defaultlib.f_divider_front(info_width=42)
+Compiling module xil_defaultlib.f_sqrter_front(info_width=42)
+Compiling module xil_defaultlib.float_to_fixed(info_width=42)
+Compiling module xil_defaultlib.fixed_to_float(info_width=42)
+Compiling module xil_defaultlib.clz_16
+Compiling module xil_defaultlib.f_normal(info_width=43)
+Compiling module xil_defaultlib.f_round(info_width=42)
+Compiling module xil_defaultlib.fu_fpu(info_width=22)
+Compiling module xil_defaultlib.check_spef(exp_width=8,frac_widt...
+Compiling module xil_defaultlib.check_spef
+Compiling module xil_defaultlib.f_comp
+Compiling module xil_defaultlib.fu_fccu(info_width=19)
+Compiling module xil_defaultlib.f_decoder
+Compiling module xil_defaultlib.fpu_top
+Compiling module xil_defaultlib.ma_river_core
+Compiling module xil_defaultlib.ma_river_core_0
+Compiling module xil_defaultlib.checker_wrapper
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_addr_decode...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_arbiter_res...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module unisims_ver.SRLC32E_default
+Compiling module axi_data_fifo_v2_1_19.axi_data_fifo_v2_1_19_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_19.axi_data_fifo_v2_1_19_axic_srl_f...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_si_transact...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_si_transact...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_splitter
+Compiling module axi_data_fifo_v2_1_19.axi_data_fifo_v2_1_19_axic_reg_s...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_wdata_route...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_wdata_mux(C...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axi_r...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_19.axi_data_fifo_v2_1_19_axic_srl_f...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_addr_arbite...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_decerr_slav...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_crossbar(C_...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_axi_crossba...
+Compiling module xil_defaultlib.axi_bus
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.cpu_inst0_rom
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.cpu_inst1_rom
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.cpu_inst2_rom
+Compiling module xil_defaultlib.cpu_inst_rom
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.cpu_data_ram
+Compiling module xil_defaultlib.my_branch_predictor
+Compiling module xil_defaultlib.detector
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.sign_extend
+Compiling module xil_defaultlib.data_mux
+Compiling module xil_defaultlib.my_alu
+Compiling module xil_defaultlib.jump_control
+Compiling module xil_defaultlib.cpu
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.cpu_ans0_rom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.cpu_ans1_rom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.cpu_ans2_rom
+Compiling module xil_defaultlib.cpu_checker(SIMULATION=1)
+Compiling module xil_defaultlib.soc_top(SIMULATION=1)
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 29 20:19:29 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 1239.508 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '17' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sim_1/imports/lab4/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sim_1/imports/lab4/tb_behav.wcfg
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.ram.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Block Memory Generator module tb.soc.lcd.inst.textram.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[0].icdat0.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[0].icdat1.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[1].icdat0.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[1].icdat1.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[2].icdat0.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[2].icdat1.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[3].icdat0.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[3].icdat1.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.FU_MU_module.genblk1[0].dcache_data.bt.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.FU_MU_module.genblk1[1].dcache_data.bt.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.FU_MU_module.genblk1[2].dcache_data.bt.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.checker._a0.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.checker._a1.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.checker._a2.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:37 . Memory (MB): peak = 1239.508 ; gain = 0.000
+run 1 ms
+WARNING in tb.soc.checker.ir.i0.inst at time                 5100 ns: 
+Reading from out-of-range address. Max address in tb.soc.checker.ir.i0.inst is          31
+WARNING in tb.soc.checker.ir.i1.inst at time                 5100 ns: 
+Reading from out-of-range address. Max address in tb.soc.checker.ir.i1.inst is          31
+WARNING in tb.soc.checker.ir.i2.inst at time                 5100 ns: 
+Reading from out-of-range address. Max address in tb.soc.checker.ir.i2.inst is          31
+-------------------
+   HIT COA Lab2    
+ Branch Predictor
+-------------------
+Run test case 2
+Your CPU is correct! It spent 983 cycles in total
+
+PASS! You have done well!
+-------------------
+$finish called at time : 92515 ns : File "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/cpu_checker.v" Line 133
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1239.508 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/StudySoftware/Xilinx_Vivado_2019.2/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_ans0_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab2_ans0.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_ans1_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab2_ans1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_ans2_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab2_ans2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab1_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_inst0_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab2_inst0.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_inst1_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab2_inst1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_inst2_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_lab2_inst2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/font_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/font_rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/rst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/rst_rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/mr_bram.mif'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/bp_lab2_checker.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/decoder_checker.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/decoder_code.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/decoder_ans.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_ans.coe'
+INFO: [SIM-utils-43] Exported 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim/cpu_checker.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/cpu_inst2_rom/sim/cpu_inst2_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_inst2_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/cpu_inst1_rom/sim/cpu_inst1_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_inst1_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/cpu_inst0_rom/sim/cpu_inst0_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_inst0_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/cpu_data_ram/sim/cpu_data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/axi_bus/sim/axi_bus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_bus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/ip/bram_td/sim/bram_td.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_td
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/ip/bram_sd/sim/bram_sd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_sd
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/arf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arf
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/bram_32_1024_sd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_32_1024_sd
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/bram_32_1024_td.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_32_1024_td
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/branch_predictor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_predictor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/commit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module commit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/cp0_group.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_group
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/dispatch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dispatch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/dsp_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dsp_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_adder_front.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_adder_front
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_comp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_comp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_divider_front.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frac_divider
+INFO: [VRFC 10-311] analyzing module f_divider_front
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fCSA
+INFO: [VRFC 10-311] analyzing module double_frac_mul
+INFO: [VRFC 10-311] analyzing module f_muler_front
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_normal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_normal
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_prf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module get_free_prf
+INFO: [VRFC 10-311] analyzing module f_prf
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_round.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_round
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_sqrter_front.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_sqrter_front
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fixed_to_float.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fixed_to_float
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/float_base.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module check_spef
+INFO: [VRFC 10-311] analyzing module clz_16
+INFO: [VRFC 10-311] analyzing module float_prepare
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/float_to_fixed.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module float_to_fixed
+INFO: [VRFC 10-2458] undeclared symbol inv, assumed default net type wire [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/float_to_fixed.v:140]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fu_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_fccu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fu_fccu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_fpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fu_fpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_mdu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fu_mdu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fu_mu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fu_mu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/gpr_table.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpr_table
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/interconnect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interconnect
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/l1_tlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module l1_tlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/l2_tlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module l2_tlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mem_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/rename.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rename
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/rob.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rob
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/station.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module station
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mycpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ma_river_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/sim/ma_river_core_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ma_river_core_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/lcd_controller_0/ip/text_bram/sim/text_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module text_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/lcd_controller_0/ip/rst_rom/sim/rst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/lcd_controller_0/ip/font_rom/sim/font_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module font_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/lcd_controller_0/imports/hardware/lcd_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lcd_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/lcd_controller_0/sim/lcd_controller_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lcd_controller_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/mr_bram/sim/mr_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mr_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/branch_predictor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_branch_predictor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/new/checker_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module checker_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2458] undeclared symbol rst, assumed default net type wire [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/cpu.v:84]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/cpu_checker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_checker
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/cpu_inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/jump_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jump_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/my_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/my_regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/sign_extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sim_1/imports/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1239.508 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '14' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 1239.508 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto a09cde91121843259e7dd34b0e71a465 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_20 -L fifo_generator_v13_2_5 -L axi_data_fifo_v2_1_19 -L axi_crossbar_v2_1_21 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/StudySoftware/Xilinx_Vivado_2019.2/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a09cde91121843259e7dd34b0e71a465 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_20 -L fifo_generator_v13_2_5 -L axi_data_fifo_v2_1_19 -L axi_crossbar_v2_1_21 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'sim' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:184]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'dma_valid_dev' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:195]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'dma_last_dev' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:196]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'dma_data_dev' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:197]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 6 for port 'rid' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:211]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 6 for port 'bid' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:234]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 10 for port 'a' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/lcd_controller_0/imports/hardware/lcd_controller.v:154]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 6 for port 'ext_int' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:284]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'a_wait' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mul.v:50]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 48 for port 'C' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/dsp_mul.v:80]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 25 for port 'D' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/dsp_mul.v:82]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'a_wait' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mul.v:53]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'a_wait' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mul.v:56]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'a_wait' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/mul.v:59]
+WARNING: [VRFC 10-3091] actual bit length 26 differs from formal bit length 41 for port 'result' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v:70]
+WARNING: [VRFC 10-3091] actual bit length 26 differs from formal bit length 41 for port 'result' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v:82]
+WARNING: [VRFC 10-3091] actual bit length 22 differs from formal bit length 41 for port 'result' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v:85]
+WARNING: [VRFC 10-3091] actual bit length 22 differs from formal bit length 41 for port 'result' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v:88]
+WARNING: [VRFC 10-3091] actual bit length 22 differs from formal bit length 41 for port 'result' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v:91]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 41 for port 'result' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/f_muler_front.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'a_wait' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/ma_river_core_0/imports/super/fpu_top.v:420]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 's_axi_arqos' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:443]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 's_axi_awqos' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:460]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'a' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/soc_top.v:531]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'write_address' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/cpu.v:138]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/axi_crossbar_v2_1/hdl/axi_crossbar_v2_1_vl_rfs.v:3103]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_pll_clk_wiz
+Compiling module xil_defaultlib.clk_pll
+Compiling module blk_mem_gen_v8_4_4.beh_vlog_ff_clr_v8_4
+Compiling module blk_mem_gen_v8_4_4.beh_vlog_ff_pre_v8_4
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b101111...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b101010...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011010...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011000...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b0111)
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b111110...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b01000)
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b100010...
+Compiling module blk_mem_gen_v8_4_4.write_netlist_v8_4(C_AXI_TYPE=1)
+Compiling module blk_mem_gen_v8_4_4.blk_mem_axi_write_wrapper_beh_v8...
+Compiling module blk_mem_gen_v8_4_4.beh_vlog_ff_ce_clr_v8_4
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b01011)
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b0100)
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b111011...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b01)
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011101...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b111100...
+Compiling module blk_mem_gen_v8_4_4.beh_vlog_muxf7_v8_4
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_4.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_4.read_netlist_v8_4(C_ADDRB_WIDTH=...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_axi_read_wrapper_beh_v8_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.mr_bram
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.font_rom
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.rst_rom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.text_bram
+Compiling module xil_defaultlib.lcd_controller
+Compiling module xil_defaultlib.lcd_controller_0
+Compiling module xil_defaultlib.interconnect
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.bram_sd
+Compiling module xil_defaultlib.bram_32_1024_sd
+Compiling module xil_defaultlib.fetch_default
+Compiling module xil_defaultlib.branch_predictor
+Compiling module xil_defaultlib.buffer
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.rename
+Compiling module xil_defaultlib.gpr_table
+Compiling module xil_defaultlib.arf
+Compiling module xil_defaultlib.dispatch
+Compiling module xil_defaultlib.station
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.fu_alu
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.bram_td
+Compiling module xil_defaultlib.bram_32_1024_td
+Compiling module xil_defaultlib.mem_ctrl
+Compiling module xil_defaultlib.fu_mu_default
+Compiling module xil_defaultlib.div
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module xil_defaultlib.dsp_mul
+Compiling module xil_defaultlib.mul
+Compiling module xil_defaultlib.fu_mdu
+Compiling module xil_defaultlib.rob
+Compiling module xil_defaultlib.commit
+Compiling module xil_defaultlib.cp0_group
+Compiling module xil_defaultlib.l2_tlb
+Compiling module xil_defaultlib.l1_tlb
+Compiling module xil_defaultlib.l1_tlb(isdata=1)
+Compiling module xil_defaultlib.get_free_prf
+Compiling module xil_defaultlib.f_prf
+Compiling module xil_defaultlib.float_prepare
+Compiling module xil_defaultlib.f_adder_front(info_width=42)
+Compiling module xil_defaultlib.fCSA_default
+Compiling module xil_defaultlib.double_frac_mul(info_width=70)
+Compiling module xil_defaultlib.f_muler_front(info_width=42)
+Compiling module xil_defaultlib.frac_divider
+Compiling module xil_defaultlib.f_divider_front(info_width=42)
+Compiling module xil_defaultlib.f_sqrter_front(info_width=42)
+Compiling module xil_defaultlib.float_to_fixed(info_width=42)
+Compiling module xil_defaultlib.fixed_to_float(info_width=42)
+Compiling module xil_defaultlib.clz_16
+Compiling module xil_defaultlib.f_normal(info_width=43)
+Compiling module xil_defaultlib.f_round(info_width=42)
+Compiling module xil_defaultlib.fu_fpu(info_width=22)
+Compiling module xil_defaultlib.check_spef(exp_width=8,frac_widt...
+Compiling module xil_defaultlib.check_spef
+Compiling module xil_defaultlib.f_comp
+Compiling module xil_defaultlib.fu_fccu(info_width=19)
+Compiling module xil_defaultlib.f_decoder
+Compiling module xil_defaultlib.fpu_top
+Compiling module xil_defaultlib.ma_river_core
+Compiling module xil_defaultlib.ma_river_core_0
+Compiling module xil_defaultlib.checker_wrapper
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_addr_decode...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_arbiter_res...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module unisims_ver.SRLC32E_default
+Compiling module axi_data_fifo_v2_1_19.axi_data_fifo_v2_1_19_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_19.axi_data_fifo_v2_1_19_axic_srl_f...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_si_transact...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_si_transact...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_splitter
+Compiling module axi_data_fifo_v2_1_19.axi_data_fifo_v2_1_19_axic_reg_s...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_wdata_route...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_wdata_mux(C...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axi_r...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_19.axi_data_fifo_v2_1_19_axic_srl_f...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_addr_arbite...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_decerr_slav...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_crossbar(C_...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_axi_crossba...
+Compiling module xil_defaultlib.axi_bus
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.cpu_inst0_rom
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.cpu_inst1_rom
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.cpu_inst2_rom
+Compiling module xil_defaultlib.cpu_inst_rom
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.cpu_data_ram
+Compiling module xil_defaultlib.my_branch_predictor
+Compiling module xil_defaultlib.detector
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.sign_extend
+Compiling module xil_defaultlib.data_mux
+Compiling module xil_defaultlib.my_alu
+Compiling module xil_defaultlib.jump_control
+Compiling module xil_defaultlib.cpu
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.cpu_ans0_rom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.cpu_ans1_rom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.cpu_ans2_rom
+Compiling module xil_defaultlib.cpu_checker(SIMULATION=1)
+Compiling module xil_defaultlib.soc_top(SIMULATION=1)
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1239.508 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1239.508 ; gain = 0.000
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.ram.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Block Memory Generator module tb.soc.lcd.inst.textram.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[0].icdat0.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[0].icdat1.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[1].icdat0.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[1].icdat1.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[2].icdat0.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[2].icdat1.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[3].icdat0.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.Fetch_module.genblk1[3].icdat1.bs.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.FU_MU_module.genblk1[0].dcache_data.bt.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.FU_MU_module.genblk1[1].dcache_data.bt.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.mrcore.inst.FU_MU_module.genblk1[2].dcache_data.bt.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.checker._a0.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.checker._a1.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.soc.checker._a2.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:34 . Memory (MB): peak = 1239.508 ; gain = 0.000
+run 1 ms
+WARNING in tb.soc.checker.ir.i0.inst at time                 5100 ns: 
+Reading from out-of-range address. Max address in tb.soc.checker.ir.i0.inst is          31
+WARNING in tb.soc.checker.ir.i1.inst at time                 5100 ns: 
+Reading from out-of-range address. Max address in tb.soc.checker.ir.i1.inst is          31
+WARNING in tb.soc.checker.ir.i2.inst at time                 5100 ns: 
+Reading from out-of-range address. Max address in tb.soc.checker.ir.i2.inst is          31
+-------------------
+   HIT COA Lab2    
+ Branch Predictor
+-------------------
+Run test case 0
+Your CPU is correct! It spent 413 cycles in total
+
+PASS! You have done well!
+-------------------
+$finish called at time : 91955 ns : File "D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/cpu_checker.v" Line 133
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1239.508 ; gain = 0.000
+launch_runs synth_1 -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/axi_bus/axi_bus.xci' is already up-to-date
+WARNING: [HDL 9-3756] overwriting previous definition of module 'cpu_checker' [D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/cpu_checker.v:48]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'cpu_checker()' found in library 'xil_defaultlib'
+Duplicate found at line 48 of file D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/imports/lab2/cpu_checker.v
+	(Active) Duplicate found at line 48 of file D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/new/cpu_checker.v
+[Sun Dec 29 20:21:20 2024] Launched synth_1...
+Run output will be captured here: D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sources_1/ip/axi_bus/axi_bus.xci' is already up-to-date
+[Sun Dec 29 20:23:27 2024] Launched impl_1...
+Run output will be captured here: D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 29 20:34:39 2024...

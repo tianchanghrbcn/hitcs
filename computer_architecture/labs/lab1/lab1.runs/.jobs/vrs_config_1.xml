@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="cpu_data_ram_synth_1" LaunchDir="C:/Users/ywy_c/Documents/coding/hitcoa_at2024/coa/release/lab1/lab1.runs/cpu_data_ram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mr_bram_synth_1" LaunchDir="C:/Users/ywy_c/Documents/coding/hitcoa_at2024/coa/release/lab1/lab1.runs/mr_bram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_inst0_rom_synth_1" LaunchDir="C:/Users/ywy_c/Documents/coding/hitcoa_at2024/coa/release/lab1/lab1.runs/cpu_inst0_rom_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_inst1_rom_synth_1" LaunchDir="C:/Users/ywy_c/Documents/coding/hitcoa_at2024/coa/release/lab1/lab1.runs/cpu_inst1_rom_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_inst2_rom_synth_1" LaunchDir="C:/Users/ywy_c/Documents/coding/hitcoa_at2024/coa/release/lab1/lab1.runs/cpu_inst2_rom_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_ans0_rom_synth_1" LaunchDir="C:/Users/ywy_c/Documents/coding/hitcoa_at2024/coa/release/lab1/lab1.runs/cpu_ans0_rom_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_ans1_rom_synth_1" LaunchDir="C:/Users/ywy_c/Documents/coding/hitcoa_at2024/coa/release/lab1/lab1.runs/cpu_ans1_rom_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_ans2_rom_synth_1" LaunchDir="C:/Users/ywy_c/Documents/coding/hitcoa_at2024/coa/release/lab1/lab1.runs/cpu_ans2_rom_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

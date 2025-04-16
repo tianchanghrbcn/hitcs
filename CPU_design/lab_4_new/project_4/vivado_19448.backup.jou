@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Sep 18 17:07:48 2024
+# Process ID: 19448
+# Current directory: D:/ComputerScience/CPU_design/project_4_new/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26612 D:\ComputerScience\CPU_design\project_4_new\project_4\project_4.xpr
+# Log file: D:/ComputerScience/CPU_design/project_4_new/project_4/vivado.log
+# Journal file: D:/ComputerScience/CPU_design/project_4_new/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ComputerScience/CPU_design/project_4_new/project_4/project_4.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/ComputerScience/CPU_design/project_4_new/project_4/project_4.srcs/sim_1/imports/lab4/tb_behav.wcfg
+source tb.tcl
+run 10 ms
+close_sim

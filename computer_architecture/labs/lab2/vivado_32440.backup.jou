@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Dec 30 15:01:25 2024
+# Process ID: 32440
+# Current directory: D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28068 D:\ComputerScience\hitcs\hitcs\computer_architecture\labs\lab2\lab2.xpr
+# Log file: D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/vivado.log
+# Journal file: D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab2/lab2.srcs/sim_1/imports/lab4/tb_behav.wcfg
+source tb.tcl
+run 10 ms
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+close_sim

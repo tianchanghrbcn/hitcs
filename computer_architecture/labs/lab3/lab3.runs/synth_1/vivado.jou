@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Dec 30 21:37:13 2024
+# Process ID: 28828
+# Current directory: D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab3/lab3.runs/synth_1
+# Command line: vivado.exe -log soc_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_top.tcl
+# Log file: D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab3/lab3.runs/synth_1/soc_top.vds
+# Journal file: D:/ComputerScience/hitcs/hitcs/computer_architecture/labs/lab3/lab3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source soc_top.tcl -notrace

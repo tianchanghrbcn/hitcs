@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Sep  3 16:54:24 2024
+# Process ID: 17628
+# Current directory: D:/computer science/project_4/project_4.runs/mr_bram_synth_1
+# Command line: vivado.exe -log mr_bram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mr_bram.tcl
+# Log file: D:/computer science/project_4/project_4.runs/mr_bram_synth_1/mr_bram.vds
+# Journal file: D:/computer science/project_4/project_4.runs/mr_bram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mr_bram.tcl -notrace

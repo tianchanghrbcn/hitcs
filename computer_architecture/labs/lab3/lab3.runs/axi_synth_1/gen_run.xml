@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="axi_synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1725966567">
+  <File Type="PA-TCL" Name="axi.tcl"/>
+  <File Type="REPORTS-TCL" Name="axi_reports.tcl"/>
+  <File Type="RDS-RDS" Name="axi.vds"/>
+  <File Type="RDS-UTIL" Name="axi_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="axi_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="axi.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axi">
+    <File Path="$PSRCDIR/sources_1/ip/axi/axi.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../hitcoa_at/cache/lab_4/lab_4.srcs/sources_1/ip/axi/axi.xci"/>
+        <Attr Name="ImportTime" Val="1662038012"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="axi"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axi">
+    <File Path="$PSRCDIR/sources_1/ip/axi/axi.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../hitcoa_at/cache/lab_4/lab_4.srcs/sources_1/ip/axi/axi.xci"/>
+        <Attr Name="ImportTime" Val="1662038012"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="axi"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

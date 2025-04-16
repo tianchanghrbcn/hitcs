@@ -1,0 +1,18 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|                  sys_clk |          clk_out_clk_pll |                                                                              your_cpu/idex_instr_reg[1]/D|
+|                  sys_clk |          clk_out_clk_pll |                                                                             your_cpu/idex_instr_reg[15]/D|
+|                  sys_clk |          clk_out_clk_pll |                                                                             your_cpu/idex_instr_reg[19]/D|
+|                  sys_clk |          clk_out_clk_pll |                                                                             your_cpu/idex_instr_reg[16]/D|
+|                  sys_clk |          clk_out_clk_pll |                                                                             your_cpu/idex_instr_reg[18]/D|
+|                  sys_clk |          clk_out_clk_pll |                                                                                 your_cpu/ifid_pc_reg[7]/D|
+|                  sys_clk |          clk_out_clk_pll |                                                                                your_cpu/ifid_pc_reg[23]/D|
+|                  sys_clk |          clk_out_clk_pll |                                                                                your_cpu/ifid_pc_reg[10]/D|
+|                  sys_clk |          clk_out_clk_pll |                                                                                your_cpu/ifid_pc_reg[11]/D|
+|                  sys_clk |          clk_out_clk_pll |                                                                             your_cpu/idex_instr_reg[21]/D|
+|                  sys_clk |          clk_out_clk_pll |                                                                                your_cpu/ifid_pc_reg[15]/D|
+|                  sys_clk |          clk_out_clk_pll |                                                                                your_cpu/ifid_pc_reg[17]/D|
+|                  sys_clk |          clk_out_clk_pll |                                                                                your_cpu/idex_imm_reg[6]/D|
+|                  sys_clk |          clk_out_clk_pll |                                                                                 your_cpu/ifid_pc_reg[1]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
