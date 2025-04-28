@@ -1,0 +1,30 @@
+The scientist carefully analyzed the data, wrote a detailed report, and shared the report with the team, but the team requested more data, so the scientist analyzed it again.
+### COMMANDS ###
+
+# ---------------- 功能2：展示有向图 ----------------
+show --save easy_graph.eps
+
+# ---------------- 功能3：查询桥接词 ----------------
+bridge scientist analyzed
+bridge analyzed report
+bridge report shared
+
+# ---------------- 功能4：根据 bridge 生成新文本 ----------------
+newtext "scientist analyzed report"     # 插入 carefully、the
+newtext "analyzed report shared"        # 插入 the、and
+newtext "report team scientist"         # 没有插入
+
+# ---------------- 功能5：最短路径 ----------------
+shortest scientist again
+shortest scientist team
+shortest scientist              # 单源：到所有节点
+shortest alpha omega            # 不可达示例，应提示 unreachable
+
+# ---------------- 功能6：PageRank ----------------
+pagerank
+
+# ---------------- 功能7：随机游走 ----------------
+walk scientist
+walk
+
+quit
