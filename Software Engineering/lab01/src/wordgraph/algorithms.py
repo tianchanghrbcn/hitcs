@@ -47,18 +47,39 @@ def enumerate_paths(pred,src,tgt):
             stack.pop(); path.pop()
 
 # ---------- PageRank (稀疏优化) ----------
-def page_rank(g: DirectedGraph,d=0.85,eps=1e-6,max_it=100)->Dict[str,float]:
-    nodes=g.nodes(); N=len(nodes)
-    pr={v:1/N for v in nodes}
-    inv_out={v:1/sum(g.out_edges(v).values())
-             for v in nodes if g.out_edges(v)}
+# ---------- PageRank (含 dangling 处理) ----------
+def page_rank(g: DirectedGraph, d: float = 0.85,
+              eps: float = 1e-6, max_it: int = 100) -> Dict[str, float]:
+    nodes = g.nodes()
+    N     = len(nodes)
+    pr    = {v: 1.0 / N for v in nodes}
+
+    # 预存 1/outdeg ；同时找出悬挂节点
+    inv_out = {}
+    dangling = []
+    for v in nodes:
+        out_sum = sum(g.out_edges(v).values())
+        if out_sum:
+            inv_out[v] = 1 / out_sum
+        else:
+            dangling.append(v)
+
     for _ in range(max_it):
-        delta=0.0
+        # 悬挂节点贡献：其 PR×d 均匀分给所有节点
+        dangling_mass = d * sum(pr[v] for v in dangling) / N
+
+        delta = 0.0
         for v in nodes:
-            s=sum(pr[u]*inv_out[u] for u in g.in_edges(v) if u in inv_out)
-            new=(1-d)/N+d*s; delta+=abs(new-pr[v]); pr[v]=new
-        if delta<eps*N: break
+            link_sum = sum(pr[u] * inv_out[u]
+                           for u in g.in_edges(v) if u in inv_out)
+            new_val = (1 - d) / N + dangling_mass + d * link_sum
+            delta  += abs(new_val - pr[v])
+            pr[v]   = new_val
+
+        if delta < eps * N:          # 收敛
+            break
     return pr
+
 
 # ---------- 随机游走 ----------
 _alias={}
