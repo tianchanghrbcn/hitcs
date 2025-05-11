@@ -97,8 +97,8 @@ def main():
         return
 
     print(green("选择运行模式："))
-    print("  1. 运行内置测试用例")
-    print("  2. 指定文本文件交互")
+    print(" 1. 运行内置测试用例")
+    print(" 2. 指定文本文件交互")
     choice = input("输入 1/2 (默认 1): ").strip() or '1'
 
     if choice == '2':
