@@ -1,0 +1,280 @@
+% !TeX program = XeLaTeX 
+\documentclass[UTF8,a4paper]{ctexart}
+
+% ---------------- 基础宏包 ----------------
+\usepackage{geometry}     % 页面边距
+\usepackage{fontspec}     % XeLaTeX 字体
+\usepackage{graphicx}     % 插图
+\usepackage{pdfpages}     % 直接插入外部 PDF，用于封面
+\usepackage{booktabs}     % 表格横线
+\usepackage{array}        % 表格列格式
+\usepackage{tabularx}     % 自动伸缩列
+\usepackage{multirow}     % 表格多行单元格
+\usepackage{caption}      % 图表标题
+\usepackage{hyperref}     % 超链接
+\usepackage{chngcntr}     % 章节内重编号 (图表按章)
+
+% --------------- 字体与排版 ----------------
+\setCJKmainfont{SimSun}          % 中文：宋体
+\setmainfont{Times New Roman}    % 英文：Times
+\setmonofont{Consolas}           % 代码：Consolas
+
+% 正文小四 + 20 pt 行距
+\newcommand{\bodyfont}{\zihao{-4}\setlength{\baselineskip}{20pt}}
+% 表格内部五号
+\newcommand{\tabfont}{\zihao{-5}}
+
+% 页面边距
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+% 段前 6 pt，段后 0 pt
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{2em}
+
+% 各级标题加粗并设字号
+\ctexset{
+  section/format     = {\bfseries\zihao{3}},
+  subsection/format  = {\bfseries\zihao{4}},
+  subsubsection/format = {\bfseries\zihao{-4}}
+}
+
+% 图表编号随章节重置：表 1-1、图 2-1 ...
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
+
+% -------------- 文档开始 ------------------
+\begin{document}
+
+% 把封面 PDF 的第一页插入为封面
+% 将 cover.pdf 改成你的文件名；若只需第一页，用 pages=1
+\includepdf[pages=1]{cover.pdf}
+
+
+\bodyfont
+\tableofcontents
+\newpage
+
+% ==================================================
+\section{应用场景}
+\textbf{本节图表索引：} 表~\ref{tab:scenario}。
+
+\begin{table}[htbp]
+    \centering
+    \caption{Ultra-Green v2.0 场景与目标}
+    \label{tab:scenario}
+    \tabfont
+    \begin{tabularx}{\textwidth}{@{}p{2.5cm}X@{}}
+        \toprule
+        \textbf{维度} & \textbf{描述} \\ \midrule
+        场景 & 连栋薄膜温室，面积约 $8\,\mathrm{m}\times30\,\mathrm{m}$，经济作物（黄瓜／番茄）。 \\
+        目标 & 年均温度 $22\pm2\,^\circ\mathrm{C}$、湿度 $60\pm5\,\%$RH；光合有效辐射 $\ge400\,\mu\mathrm{mol\,m^{-2}\,s^{-1}}$；灌溉水节省 $\ge20\%$。 \\
+        约束 & 220 VAC + 屋顶光伏；弱网（NB-IoT／LTE Cat-M1）；现场维护频次 $\le1$ 次／月。 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\vspace{-2em}
+
+% ==================================================
+\section{系统整体架构}
+\textbf{本节图表索引：} 图~\ref{fig:sys}。整体硬件与网络拓扑如图~\ref{fig:sys} 所示。  
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{system_architecture.pdf}
+    \caption{系统组成方框图}
+    \label{fig:sys}
+\end{figure}
+
+% ==================================================
+\section{硬件设计}
+\textbf{本节图表索引：} 表~\ref{tab:bom}、表~\ref{tab:inputs}、表~\ref{tab:outputs}。
+
+\subsection{关键器件与 BOM}
+\begin{table}[htbp]
+    \centering
+    \caption{核心器件与参数（千片级）}
+    \label{tab:bom}
+    \tabfont
+    \begin{tabular}{@{}llllp{5cm}@{}}
+        \toprule
+        \textbf{类别} & \textbf{器件} & \textbf{主要参数} & \textbf{单价} & \textbf{选型理由} \\ \midrule
+        MCU & STM32H753ZI & 480 MHz M7／2 MB Flash／1 MB SRAM & \$10 & 充裕 SRAM 支撑 RT-Thread + TLS \& AI Lite \\
+        协处理 & STM32L051K8 & 80 µA/MHz；STOP2 1.2 µA & \$2 & 夜间深睡，RTC 唤醒 \\
+        Modem & Quectel BG95-M3 & Cat-M1／NB-IoT／GNSS；PSM 5 µA & \$8 & 弱网友好，低功耗 \\
+        LoRa SoC & ASR6502 & SX1262 RF + M0 & \$3 & 2 km LOS，Mesh 组网 \\
+        eMMC & Kingston 8 GB & −40 ℃–85 ℃ & \$4 & 环形缓冲，双系统 \\
+        电源 & TPS54386 + TLV70033 & 3 A Buck + 3.3 V LDO & \$1.5 & 二级供电 \\ \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{原理图 \& PCB 亮点}
+\begin{itemize}
+    \item \textbf{6-Layer 堆栈}：Signal／GND／5 V／3.3 V／GND／Signal；Ethernet \& RMII 差分 50 Ω。
+    \item \textbf{模拟隔离}：CO\textsubscript{2} NDIR \& 土壤 EC 前端独立 AGND。
+    \item \textbf{过流\&雷击防护}：24 V TVS + 共模电感；RS485 芯片 SN65HVD78（IEC 61000-4-5 ±15 kV）。
+    \item \textbf{可维护性}：USB-C OTG、ST-LINK VCP，全板 0402 封装。
+\end{itemize}
+
+\subsection{输入／输出信号}
+\begin{table}[htbp]
+    \centering
+    \caption{主要输入信号}
+    \label{tab:inputs}
+    \tabfont
+    \begin{tabular}{@{}cccccc@{}}
+        \toprule
+        \# & 类型 & 精度 & 接口 & 速率 & 备注 \\ \midrule
+        1 & 温度（SHT45） & ±0.1 ℃ & I²C & 1 Hz & 环境空气 \\
+        2 & 湿度（SHT45） & ±1 \%RH & I²C & 1 Hz & 环境空气 \\
+        3 & CO\textsubscript{2}（S8） & ±30 ppm & UART & 0.2 Hz & NDIR \\
+        4 & 土壤湿度（Cap-EC） & ±2 \% & I²C+ADC & 0.5 Hz & 电容式 \\
+        5 & 光照（VEML7700） & ±0.045 lux & I²C & 1 Hz & 可见光 \\
+        6 & 风速（Anem） & ±0.3 m/s & RS485 & 1 Hz & 0–30 m/s \\ \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+    \centering
+    \caption{主要输出执行信号}
+    \label{tab:outputs}
+    \tabfont
+    \begin{tabular}{@{}ccp{3cm}p{4cm}@{}}
+        \toprule
+        \# & 执行对象 & 驱动方式 & 规格 \\ \midrule
+        1 & 排风／加热风机 & MOSFET ×4 & 24 V／2 A PWM \\
+        2 & 滴灌泵 + 阀门 & 继电器 & 220 VAC／10 A \\
+        3 & 补光 LED & 恒流 Buck ×3 & 12 V，0–1 A \\
+        4 & 卷膜机／百叶 & CANopen & 24 V 60 W \\
+        5 & 蜂鸣 + OLED & GPIO／I²C & 85 dB；128×64 \\ \bottomrule
+    \end{tabular}
+\end{table}
+
+% ==================================================
+\section{软件设计}
+\textbf{本节图表索引：} 表~\ref{tab:tasks}、图~\ref{fig:soft}。
+
+\subsection{双核任务栈}
+\begin{table}[htbp]
+    \centering
+    \caption{主要任务与堆栈分配}
+    \label{tab:tasks}
+    \tabfont
+    \begin{tabular}{@{}p{3cm}p{1.8cm}p{1.8cm}p{6cm}@{}}
+        \toprule
+        处理器／OS & 任务 & 周期／触发 & 职责 \\ \midrule
+        \multirow{5}{*}{\shortstack{Cortex-M7\\RT-Thread 4.2}}
+          & sense    & 1 s & 传感器采样→环形缓冲 \\
+          & ctrl     & 500 ms & PID + 模糊→PWM／Relay \\
+          & comm     & 100 ms+IRQ & MQTT(TLS 1.3) 上下行 \\
+          & lora\_gw & 20 ms+IRQ & 叶节点 LoRa-MAC 汇聚 \\
+          & ui       & 100 ms & 菜单／报警／OTA 进度 \\[2pt]
+        \multirow{2}{*}{\shortstack{Cortex-M4\\FreeRTOS}}
+          & sleep\_mon & 5 s & 门磁、供电→唤醒 MCU \\
+          & pulse\_cnt & IRQ & 电能脉冲计量 \\ \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{软件功能图}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{software_flow.pdf}
+    \caption{软件功能方框图}
+    \label{fig:soft}
+\end{figure}
+
+% ==================================================
+\section{开发工具与里程碑}
+\textbf{本节图表索引：} 表~\ref{tab:tools}、表~\ref{tab:mile}。
+
+\begin{table}[htbp]
+    \centering
+    \caption{主要开发工具}
+    \label{tab:tools}
+    \tabfont
+    \begin{tabular}{@{}p{3cm}p{4cm}p{6cm}@{}}
+        \toprule
+        流程块 & 工具 & 说明 \\ \midrule
+        MCU 固件 & VS Code + GNU ARM GCC 12 & C/C++17；CMake；OpenOCD／J-Link；RT-Thread Env \\
+        LoRa 协议 & SX1262 DevKit + Semtech Studio & FSK／GFSK；Mesh 调试 \\
+        AI 控制 & TensorFlow-Lite-Micro & LSTM 温度预测（M7 FPU） \\
+        云端 & Docker Compose & EMQX 5 + TimescaleDB + Grafana 10 \\
+        手机端 & uni-app + Vant & 实时曲线 + 推送告警 \\
+        PCB & KiCad 8／Altium 24 & ERC、DRC、3D \\
+        机械结构 & SolidWorks 2023 & IP55 外壳 + 散热风道 \\ \bottomrule
+    \end{tabular}
+\end{table}
+\vspace{-3em}
+\begin{table}[htbp]
+    \centering
+    \caption{项目进度规划}
+    \label{tab:mile}
+    \tabfont
+    \begin{tabular}{@{}cp{6cm}c@{}}
+        \toprule
+        阶段 & 核心输出 & 典型耗时 \\ \midrule
+        1 & SRS v1.0、功能分配表 & 1 周 \\
+        2 & SCH、Gerber、BOM & 3 周 \\
+        3 & RT-Thread BSP 跑灯 & 1 周 \\
+        4 & HAL 单元测试 & 2 周 \\
+        5 & PID／模糊调参 & 1 周 \\
+        6 & MQTT 贯通、Grafana 面板 & 1 周 \\
+        7 & LoRa Mesh ≥95\% & 1 周 \\
+        8 & A/B rollback；TLS 测试 & 1 周 \\
+        9 & 72 h 烘箱 + 功耗 & 2 周 \\
+        10 & Demo 视频 & 1 周 \\ \bottomrule
+    \end{tabular}
+\end{table}
+
+% ==================================================
+\section{验收与评测}
+\textbf{本节图表索引：} 表~\ref{tab:evaluate}。
+
+\begin{table}[htbp]
+    \centering
+    \caption{关键评测指标}
+    \label{tab:evaluate}
+    \tabfont
+    \begin{tabular}{@{}llll@{}}
+        \toprule
+        类别 & 指标 & 要求 & 测试方法 \\ \midrule
+        功能 & 温度稳定度 & ±1.0 ℃ & 恒温箱扰动 \\
+        功能 & 湿度稳定度 & ±3 \%RH & 湿度腔体阶跃 \\
+        通信 & 云端丢包率 & <1 \%／h & EMQX 统计 \\
+        通信 & LoRa 覆盖 & ≥2 km & 实地测速 \\
+        能耗 & 平均功耗 & <2.5 W & 台式功率计 \\
+        异常 & 断网自控 & >24 h & LTE 断链 \\
+        安全 & TLS 握手成功率 & 100\% & \texttt{sslyze} 扫描 \\ \bottomrule
+    \end{tabular}
+\end{table}
+
+% ==================================================
+\section{结果预测}
+\textbf{本节图表索引：} 表~\ref{tab:result}。
+
+\begin{table}[htbp]
+    \centering
+    \caption{环境控制精度预测}
+    \label{tab:result}
+    \tabfont
+    \begin{tabular}{@{}lcc@{}}
+        \toprule
+        测试项 & 目标值 & 预测 RMS 误差 \\ \midrule
+        温度 & 22 ℃ & ±0.92 ℃ \\
+        湿度 & 60 \%RH & ±2.7 \%RH \\
+        土壤含水率 & 30 \% & ±1.8 \% \\ \bottomrule
+    \end{tabular}
+\end{table}
+
+% ==================================================
+\section{结论}
+本报告详细阐述了 Ultra-Green v2.0 智能温室平台的硬件设计、软件架构、BOM、开发里程碑及评测指标，满足“≥4 输入、≥2 输出、硬软深度融合、具体应用场景”等要求，为后续视觉识别与光伏-储能协同调度奠定基础。
+
+% ---------------- 参考文献 -----------------
+\begin{thebibliography}{9}
+\bibitem{stm32h7} STMicroelectronics.\ \emph{STM32H7 Series Reference Manual}, 2024.
+\bibitem{rtt} RT-Thread Community.\ \emph{RT-Thread Programmer’s Guide}, 2025.
+\bibitem{bg95} Quectel.\ \emph{BG95-M3 Hardware Design}, 2024.
+\bibitem{asr6502} ASR Microelectronics.\ \emph{ASR650x Datasheet}, 2023.
+\end{thebibliography}
+
+\end{document}
