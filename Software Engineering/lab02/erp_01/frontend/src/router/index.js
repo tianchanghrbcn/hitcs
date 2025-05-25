@@ -15,7 +15,7 @@ import yindao from './yindao'
 const index = {
   path: '/',
   component: () => import('@/layouts/BaseLayout'),
-  redirect: '/home',
+  redirect: '/user/login',
   children: [
     {
       path: '/home',

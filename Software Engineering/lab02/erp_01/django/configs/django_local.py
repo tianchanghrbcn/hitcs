@@ -16,7 +16,7 @@ DATABASES = {
         'HOST': 'localhost',  # 本地MySQL
         'PORT': '3306',       # 默认MySQL端口
         'USER': 'root',       # 修改为你的MySQL用户名
-        'PASSWORD': '040715',   # 修改为你的MySQL密码
+        'PASSWORD': 'ITHhtc725901',   # 修改为你的MySQL密码
         'NAME': 'erp_db',
         'OPTIONS': {'charset': 'utf8mb4'},
     }
