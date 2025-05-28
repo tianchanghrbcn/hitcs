@@ -11,10 +11,7 @@ def bridge_words(g: DirectedGraph, w1: str, w2: str) -> List[str]:
     if w1 not in g.adj or w2 not in g.adj:
         return []
 
-    bridges = [
-        mid for mid in g.out_edges(w1)
-        if w2 in g.out_edges(mid)
-    ]
+    bridges = [mid for mid in g.out_edges(w1) if w2 in g.out_edges(mid)]
     return bridges
 
 

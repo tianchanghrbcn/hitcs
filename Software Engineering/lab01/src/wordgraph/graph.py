@@ -1,123 +1,224 @@
 from __future__ import annotations
-from collections import defaultdict, Counter
-from typing import Dict, List, Tuple, Optional
-import os, tempfile, webbrowser, math, shutil, subprocess
 
-# -------------------------------------------------------------
-# 确保 dot.exe 能被找到
-# -------------------------------------------------------------
-def _ensure_graphviz():
+"""wordgraph.graph
+-------------------
+
+Drawing utilities for the *word‑graph* project.
+
+The module tries Graphviz (via **pydot**) first because layout quality is
+significantly better; if either *pydot* or *dot.exe* is missing, it falls back
+on a pure‑matplotlib implementation.
+
+Public API
+~~~~~~~~~~
+- :class:`DirectedGraph` – a super‑light directed multigraph with drawing
+  helpers.
+
+The rest of the functions are considered private implementation details.
+"""
+
+# ---------------------------------------------------------------------------
+# Standard‑library imports (PEP 8 / isort order)
+# ---------------------------------------------------------------------------
+import math
+import os
+import shutil
+import subprocess
+import tempfile
+import webbrowser
+from collections import Counter, defaultdict
+from itertools import pairwise
+from typing import Dict, List, Optional, Tuple
+
+# ---------------------------------------------------------------------------
+# Third‑party imports
+# ---------------------------------------------------------------------------
+try:
+    import pydot  # type: ignore
+except ImportError:  # pragma: no cover – optional dependency
+    pydot = None  # pylint: disable=invalid-name
+
+import matplotlib.pyplot as plt  # pylint: disable=wrong-import-order
+from matplotlib.patches import FancyArrowPatch
+
+# ---------------------------------------------------------------------------
+# Local imports (must come *after* matplotlib so its backend is set properly)
+# ---------------------------------------------------------------------------
+from .utils import red, yellow  # noqa: E402  (local import after 3rd‑party)
+
+__all__ = ["DirectedGraph"]
+
+# ---------------------------------------------------------------------------
+# Helper: locate Graphviz on Windows if it isn't on PATH already
+# ---------------------------------------------------------------------------
+
+
+def _ensure_graphviz() -> None:
+    """Append Graphviz's *bin* directory to *PATH* if ``dot.exe`` is absent.
+
+    This is a *best‑effort* operation – it silently does nothing if Graphviz
+    still cannot be located.
+    """
+
     if shutil.which("dot"):
         return
-    for p in (r"C:\Program Files\Graphviz\bin",
-              r"C:\Program Files (x86)\Graphviz\bin"):
-        if os.path.exists(os.path.join(p, "dot.exe")):
-            os.environ["PATH"] += os.pathsep + p
+
+    candidate_dirs = (
+        r"C:\\Program Files\\Graphviz\\bin",
+        r"C:\\Program Files (x86)\\Graphviz\\bin",
+    )
+    for path in candidate_dirs:
+        if os.path.exists(os.path.join(path, "dot.exe")):
+            os.environ["PATH"] += os.pathsep + path
             return
+
+
 _ensure_graphviz()
 
-try:
-    import pydot
-except ImportError:
-    pydot = None
+# ---------------------------------------------------------------------------
+# Private helpers
+# ---------------------------------------------------------------------------
 
-import matplotlib.pyplot as plt
-from matplotlib.patches import FancyArrowPatch
-from itertools import pairwise
-from .utils import yellow, red
 
-# ---------- 权重 → 颜色 + 线宽 ----------
-def _edge_style(w: int, w_max: int) -> Tuple[str, float]:
+def _edge_style(weight: int, max_weight: int) -> Tuple[str, float]:
+    """Map an edge *weight* to an RGB colour and pen‑width."""
+
     palette = ["#a6cee3", "#66b2d6", "#4292c3", "#2176b9", "#1f78b4"]
-    idx     = min(4, int((w - 1) / max(1, w_max) * 4))
-    return palette[idx], 1.0 + 0.5 * idx   # color, penwidth
+    idx = min(4, int((weight - 1) / max(1, max_weight) * 4))
+    return palette[idx], 1.0 + 0.5 * idx
 
-# =============================================================
+
+# ===========================================================================
+# Public mini‑graph class (enough for this lab without external libraries)
+# ===========================================================================
+
+
 class DirectedGraph:
-    def __init__(self):
-        self.adj: Dict[str, Counter] = defaultdict(Counter)
+    """A *very* small directed multigraph focused on drawing convenience."""
 
-    # ---------- 构图 ----------
-    def add_edge(self, s: str, t: str):
-        if s and t:
-            self.adj[s][t] += 1
-            self.adj.setdefault(t, Counter())
+    def __init__(self) -> None:
+        self.adj: Dict[str, Counter[str]] = defaultdict(Counter)
 
-    # ---------- 查询 ----------
+    # ---------------------------------------------------------------------
+    # Construction helpers
+    # ---------------------------------------------------------------------
+
+    def add_edge(self, src: str, dst: str) -> None:
+        if src and dst:
+            self.adj[src][dst] += 1
+            self.adj.setdefault(dst, Counter())
+
+    # ---------------------------------------------------------------------
+    # Query helpers
+    # ---------------------------------------------------------------------
+
     def nodes(self) -> List[str]:
-        s = set(self.adj)
-        for nb in self.adj.values():
-            s.update(nb)
-        return list(s)
+        out: set[str] = set(self.adj)
+        for neighbours in self.adj.values():
+            out.update(neighbours)
+        return sorted(out)
 
-    def out_edges(self, v: str) -> Counter:
+    def out_edges(self, v: str) -> Counter[str]:
         return self.adj.get(v, Counter())
 
-    def in_edges(self, v: str) -> Counter:
-        inc = Counter()
-        for s, nb in self.adj.items():
-            if v in nb:
-                inc[s] = nb[v]
+    def in_edges(self, v: str) -> Counter[str]:
+        inc: Counter[str] = Counter()
+        for src, neighbours in self.adj.items():
+            if v in neighbours:
+                inc[src] = neighbours[v]
         return inc
 
-    # ---------- 打印 ----------
-    def pretty_print(self, show_weight=False):
-        for s in sorted(self.adj):
-            line = ", ".join(f"{d}({w})" if show_weight else d
-                             for d, w in self.adj[s].items())
-            print(f"{s:>15}  ->  {line}")
+    # ---------------------------------------------------------------------
+    # Utility printing – handy while debugging
+    # ---------------------------------------------------------------------
 
-    # =========================================================
-    # 绘图主入口
-    # =========================================================
-    def draw(self, *, save: Optional[str] = None,
-             path: List[str] | None = None,
-             interactive: bool = True):
+    def pretty_print(
+        self, show_weight: bool = False
+    ) -> None:  # noqa: D401 – imperative mood
+        for src in self.nodes():
+            line = ", ".join(
+                f"{dst}({w})" if show_weight else dst
+                for dst, w in self.adj[src].items()
+            )
+            print(f"{src:>15}  ->  {line}")
+
+    # =====================================================================
+    # DRAWING API – tries Graphviz first, falls back to matplotlib
+    # =====================================================================
+
+    def draw(
+        self,
+        *,
+        save: Optional[str] = None,
+        path: Optional[List[str]] = None,
+        interactive: bool = True,
+    ) -> None:
+        """Render the graph to file or screen.
+
+        Parameters
+        ----------
+        save
+            If given, **without** extension, use as output basename.  ``None``
+            means an *EPS* is written to a temporary file (and opened).
+        path
+            An optional shortest‑path node sequence to highlight.
+        interactive
+            In *batch* mode set to ``False`` so we don't call ``plt.show()``.
         """
-        save  : 指定文件名前缀（不含扩展）; None = 交互模式时写临时 eps
-        path  : 最短路径节点序列，高亮
-        interactive: False = 批处理，不调用 plt.show()
-        """
-        # -------- 批处理且未指定文件名：完全跳过 ----------
+
         if not interactive and save is None:
+            # Batch mode: nothing to show and nowhere to save.
             return
 
-        if pydot and shutil.which("dot"):
+        if pydot is not None and shutil.which("dot"):
             if self._draw_graphviz(save, path, interactive):
                 return
 
         print(red("[!] Graphviz 不可用 → 使用 matplotlib 回退"))
         self._draw_matplotlib(save, path, interactive)
 
-    # ---------------------------------------------------------
-    # Graphviz EPS + PDF
-    # ---------------------------------------------------------
-    def _draw_graphviz(self, save, path, interactive) -> bool:
+    # ------------------------------------------------------------------
+    # Implementation: Graphviz via pydot
+    # ------------------------------------------------------------------
+
+    def _draw_graphviz(
+        self,
+        save: Optional[str],
+        path: Optional[List[str]],
+        interactive: bool,
+    ) -> bool:
+        """Return *True* if Graphviz succeeded."""
+
         try:
-            dot = pydot.Dot(graph_type='digraph', rankdir='LR',
-                            splines='ortho', nodesep="0.4", ranksep="0.5")
-        except Exception as e:
-            print(red(f"[!] pydot 创建失败: {e}"))
+            dot = pydot.Dot(
+                graph_type="digraph",
+                rankdir="LR",
+                splines="ortho",
+                nodesep="0.4",
+                ranksep="0.5",
+            )
+        except Exception as exc:  # pragma: no cover – pydot internal error
+            print(red(f"[!] pydot 创建失败: {exc}"))
             return False
 
-        # 节点
+        # ------------------- nodes -------------------
         for v in self.nodes():
             dot.add_node(pydot.Node(v, shape="circle", fontsize="10"))
 
-        hilite = {(a, b) for a, b in zip(path, path[1:])} if path else set()
-        w_max  = max((w for nb in self.adj.values() for w in nb.values()), default=1)
+        hilite = {(a, b) for a, b in zip(path or [], (path or [])[1:])}
+        w_max = max((w for nb in self.adj.values() for w in nb.values()), default=1)
 
-        # 边
-        for s, nb in self.adj.items():
-            for d, w in nb.items():
-                if (s, d) in hilite:
-                    color, pw = "red", "3"
-                else:
-                    color, pw = _edge_style(w, w_max); pw = str(pw)
-                dot.add_edge(pydot.Edge(s, d, color=color,
-                                        penwidth=pw, arrowsize="0.6"))
+        # ------------------- edges -------------------
+        for src, nb in self.adj.items():
+            for dst, w in nb.items():
+                color, pw = (
+                    ("red", "3") if (src, dst) in hilite else _edge_style(w, w_max)
+                )
+                dot.add_edge(
+                    pydot.Edge(src, dst, color=color, penwidth=str(pw), arrowsize="0.6")
+                )
 
-        # 输出 eps
+        # ------------------- write EPS -------------------
         if save is None:
             fd, eps_path = tempfile.mkstemp(suffix=".eps", prefix="wg_")
             os.close(fd)
@@ -128,80 +229,109 @@ class DirectedGraph:
         try:
             dot.write(eps_path, format="eps")
             print(yellow(f"[+] Graphviz 输出 → {eps_path}"))
-        except Exception as e:
-            print(red(f"[!] Graphviz 失败: {e}"))
+        except Exception as exc:  # pragma: no cover – I/O error
+            print(red(f"[!] Graphviz 失败: {exc}"))
             return False
 
-        # 自动转 PDF（无损）
+        # Auto‑convert to loss‑less PDF if possible
         if shutil.which("epstopdf"):
             pdf_path = os.path.splitext(eps_path)[0] + ".pdf"
             try:
-                subprocess.run(["epstopdf", eps_path, "--outfile=" + pdf_path],
-                               check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                subprocess.run(
+                    ["epstopdf", eps_path, "--outfile=" + pdf_path],
+                    check=True,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    text=True,
+                )
                 print(yellow(f"[+] 已生成 PDF → {pdf_path}"))
-            except Exception as e:
-                print(red(f"[!] epstopdf 转换失败: {e}"))
+            except Exception as exc:  # pragma: no cover – epstopdf missing
+                print(red(f"[!] epstopdf 转换失败: {exc}"))
 
-        # 交互模式自动打开
         if save is None and interactive:
             try:
                 webbrowser.open("file://" + os.path.abspath(eps_path))
-            except Exception:
+            except Exception:  # pragma: no cover – browser failed
                 pass
         return True
 
-    # ---------------------------------------------------------
-    # matplotlib 回退
-    # ---------------------------------------------------------
-    def _draw_matplotlib(self, save, path, interactive):
+    # ------------------------------------------------------------------
+    # Implementation: pure matplotlib fallback
+    # ------------------------------------------------------------------
+
+    def _draw_matplotlib(
+        self,
+        save: Optional[str],
+        path: Optional[List[str]],
+        interactive: bool,
+    ) -> None:
+        """Matplotlib fallback renderer."""
+
         if len(self.adj) <= 1:
             print(yellow("[绘图] 节点≤1，跳过"))
             return
 
-        nodes = sorted(self.nodes())
+        nodes = self.nodes()
         n = len(nodes)
-        pos = {v: (math.cos(2 * math.pi * i / n),
-                   math.sin(2 * math.pi * i / n))
-               for i, v in enumerate(nodes)}
+        pos = {
+            v: (math.cos(2 * math.pi * i / n), math.sin(2 * math.pi * i / n))
+            for i, v in enumerate(nodes)
+        }
         w_max = max((w for nb in self.adj.values() for w in nb.values()), default=1)
 
-        fig, ax = plt.subplots(figsize=(6, 6))
-        ax.axis('off'); ax.set_aspect('equal')
+        fig, ax = plt.subplots(figsize=(6, 6), dpi=120)
+        ax.axis("off")
+        ax.set_aspect("equal")
 
         for v, (x, y) in pos.items():
-            ax.plot(x, y, 'o', ms=8)
-            ax.text(x, y, v, ha='center', va='center', fontsize=8)
+            ax.plot(x, y, "o", ms=8)
+            ax.text(x, y, v, ha="center", va="center", fontsize=8)
 
-        for s, nb in self.adj.items():
-            x0, y0 = pos[s]
-            for d, w in nb.items():
-                if s == d:
+        for src, nb in self.adj.items():
+            x0, y0 = pos[src]
+            for dst, w in nb.items():
+                if src == dst:
                     continue
-                x1, y1 = pos[d]
+                x1, y1 = pos[dst]
                 color, pw = _edge_style(w, w_max)
-                ax.add_patch(FancyArrowPatch((x0, y0), (x1, y1),
-                                             arrowstyle='-|>', mutation_scale=10,
-                                             linewidth=pw, color=color,
-                                             alpha=0.9,
-                                             connectionstyle="arc3,rad=0.2"))
+                ax.add_patch(
+                    FancyArrowPatch(
+                        (x0, y0),
+                        (x1, y1),
+                        arrowstyle="-|>",
+                        mutation_scale=10,
+                        linewidth=pw,
+                        color=color,
+                        alpha=0.9,
+                        connectionstyle="arc3,rad=0.2",
+                    )
+                )
 
         if path and len(path) > 1:
             for a, b in pairwise(path):
-                xa, ya = pos[a]; xb, yb = pos[b]
-                ax.add_patch(FancyArrowPatch((xa, ya), (xb, yb),
-                                             arrowstyle='-|>', mutation_scale=16,
-                                             linewidth=3, color='red',
-                                             connectionstyle="arc3,rad=0.2"))
+                xa, ya = pos[a]
+                xb, yb = pos[b]
+                ax.add_patch(
+                    FancyArrowPatch(
+                        (xa, ya),
+                        (xb, yb),
+                        arrowstyle="-|>",
+                        mutation_scale=16,
+                        linewidth=3,
+                        color="red",
+                        connectionstyle="arc3,rad=0.2",
+                    )
+                )
 
         if save:
             root, _ = os.path.splitext(save)
             png = root + ".png"
-            plt.savefig(png, bbox_inches='tight')
+            plt.savefig(png, bbox_inches="tight")
             print(yellow(f"[+] 备用 PNG → {png}"))
 
         if interactive:
             try:
                 plt.show()
-            except Exception:
+            except Exception:  # pragma: no cover – backend missing
                 pass
         plt.close(fig)

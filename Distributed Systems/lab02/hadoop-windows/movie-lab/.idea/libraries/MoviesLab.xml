@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MoviesLab">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MoviesLab.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

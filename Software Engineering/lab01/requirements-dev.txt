@@ -1,0 +1,10 @@
+black
+isort
+flake8
+pylint
+bandit
+pytest
+pytest-cov
+coverage
+radon
+pre-commit
