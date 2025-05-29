@@ -1,0 +1,9 @@
+com\example\paxos\PaxosMain.class
+com\example\paxos\Proposal.class
+com\example\paxos\Learner.class
+com\example\paxos\message\PrepareRequest.class
+com\example\paxos\Acceptor.class
+com\example\paxos\message\AcceptRequest.class
+com\example\paxos\Proposer.class
+com\example\paxos\message\PromiseResponse.class
+com\example\paxos\message\AcceptedNotification.class
