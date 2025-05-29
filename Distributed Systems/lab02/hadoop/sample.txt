@@ -1,0 +1,2 @@
+An Apache Hadoop MapReduce job works by breaking the processing
+into two phases: map and reduce. The map phase processes data in parallel.

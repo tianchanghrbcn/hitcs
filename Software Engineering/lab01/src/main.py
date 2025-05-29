@@ -5,12 +5,11 @@ Lab01 Word-Graph – 主入口
 1) 运行 test/*.wg   2) 自定义文本文件交互
 """
 
-import itertools
 from pathlib import Path
-
-from wordgraph.cli import CLI
+import itertools
 from wordgraph.graph import DirectedGraph
-from wordgraph.utils import green, red, tokens_from_line, yellow
+from wordgraph.utils import tokens_from_line, yellow, red, green
+from wordgraph.cli import CLI
 
 BASE_DIR = Path(__file__).resolve().parent
 TEST_DIR = BASE_DIR.parent / "test"
@@ -24,7 +23,8 @@ DATASETS = {
 # ---------- 公用工具 ----------
 def split_wg(path: Path):
     with path.open(encoding="utf-8") as f:
-        text = list(itertools.takewhile(lambda ln: ln.strip() != "### COMMANDS ###", f))
+        text = list(itertools.takewhile(
+            lambda ln: ln.strip() != "### COMMANDS ###", f))
         cmds = [ln for ln in f]
     return text, cmds
 
@@ -67,7 +67,7 @@ def run_predefined():
         print(f"  {k}. {desc}")
     sel = input("输入 1/2，回车 = 全部: ").strip()
     if sel:
-        files = [TEST_DIR / DATASETS.get(sel, DATASETS["1"])[0]]
+        files = [TEST_DIR / DATASETS.get(sel, DATASETS['1'])[0]]
     else:
         files = [TEST_DIR / v[0] for v in DATASETS.values()]
 
@@ -97,11 +97,11 @@ def main():
         return
 
     print(green("选择运行模式："))
-    print(" 1. 运行内置测试用例")
-    print(" 2. 指定文本文件交互")
-    choice = input("输入 1/2 (默认 1): ").strip() or "1"
+    print("  1. 运行内置测试用例")
+    print("  2. 指定文本文件交互")
+    choice = input("输入 1/2 (默认 1): ").strip() or '1'
 
-    if choice == "2":
+    if choice == '2':
         run_custom_file()
     else:  # 默认 1
         run_predefined()

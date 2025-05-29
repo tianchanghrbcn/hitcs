@@ -1,4 +1,0 @@
-Hello World Our World
-Hello BigData Real BigData
-Hello Hadoop Great Hadoop
-Hadoop MapReduce
