@@ -10,12 +10,6 @@ import java.util.stream.Collectors;
  * Proposer（提议者）
  * 负责在 Paxos 协议的两大阶段（Prepare / Accept）中不断重试，
  * 直至获取到“多数派”承诺与接受，最终将被 Learner 学习到的值返回。
- *
- * 逻辑保持不变，仅补充：
- *   1. **中文日志** —— 让运行输出更友好、便于实验报告截图；
- *   2. **中文注释** —— 逐行解释关键步骤，便于阅卷老师快速理解。
- *
- * ⚠️ 请注意：除日志字符串与注释外，算法逻辑完全未改动。
  */
 public class Proposer {
 

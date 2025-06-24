@@ -4,8 +4,6 @@ import java.util.List;
 
 /**
  * 实验入口 —— 用于一次性演示 3 组不同丢包率下的 Paxos 运行效果。
- *
- * ⚠️ 仅添加中文注释，保持原有业务逻辑不变，防止引入错误。
  */
 public class PaxosMain {
 

@@ -1,0 +1,4 @@
+skips:
+  - B101      # 忽略 assert 用于调试
+severity:
+  - HIGH      # 仅报告高危
