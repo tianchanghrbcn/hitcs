@@ -1,16 +1,18 @@
 # src/evaluate.py
-import torch
-import numpy as np
+import torch, numpy as np
+from pathlib import Path
 from sklearn.metrics import confusion_matrix, accuracy_score
 
 @torch.no_grad()
-def evaluate(model, loader, device: torch.device):
+def evaluate(model,
+             loader,
+             device: torch.device,
+             save_path: Path | None = None):
     """
-    评估模型并返回 dict:
-        {"accuracy": float, "confusion_matrix": np.ndarray}
-    会自动把模型权重迁移到 `device`，以避免 CPU↔GPU 不匹配。
+    评估准确率与混淆矩阵。
+    若传入 save_path，则把混淆矩阵保存为 CSV。
     """
-    model = model.to(device)       # ← 关键修补
+    model = model.to(device)
     model.eval()
 
     y_true, y_pred = [], []
@@ -21,6 +23,11 @@ def evaluate(model, loader, device: torch.device):
         y_true.extend(y.numpy())
         y_pred.extend(y_hat)
 
-    acc = accuracy_score(y_true, y_pred)
     cm  = confusion_matrix(y_true, y_pred)
+    acc = accuracy_score(y_true, y_pred)
+
+    if save_path is not None:
+        save_path.parent.mkdir(parents=True, exist_ok=True)
+        np.savetxt(save_path, cm, delimiter=",", fmt="%d")
+
     return {"accuracy": acc, "confusion_matrix": cm}
