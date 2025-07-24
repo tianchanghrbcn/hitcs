@@ -1,0 +1,9 @@
+torch>=2.3.0
+torchvision>=0.18.0
+numpy
+pandas
+matplotlib
+scikit-learn
+tqdm
+kaggle          # 若用 Kaggle 源
+opendatasets    # 简化下载（可选）
